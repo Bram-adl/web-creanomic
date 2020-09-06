@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
-:root {
-  --animate-delay: 0.2s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-$white: #f5f5f5;
-
-@mixin formatText($size, $spacing) {
-  font-size: $size;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: $spacing;
-}
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "animations.scss";
