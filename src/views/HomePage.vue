@@ -62,6 +62,7 @@ export default {
   }),
   mounted: function () {
     this.eventBus.$on("loadLandingPage", () => this.loadLandingPage())
+    this.eventBus.$on("loadAboutPage", () => this.loadAboutPage())
 
     let tl = this.gsap.timeline()
     tl.from(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut"})
@@ -70,7 +71,10 @@ export default {
   },
   methods: {
     loadLandingPage() {
-      this.gsap.to(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push("/")})
+      this.gsap.to(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push({ name: "landing" })})
+    },
+    loadAboutPage() {
+      this.gsap.to(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push({ name: "about" })})
     },
 
     changeBackground(image) {
@@ -78,7 +82,7 @@ export default {
     },
 
     enterPage(path) {
-      this.gsap.to(".card", {opacity: 0, duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push('home/' + path)})
+      this.gsap.to(".card", {opacity: 0, duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push({ name: path })})
     }
   }
 }

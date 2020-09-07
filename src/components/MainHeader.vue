@@ -10,7 +10,7 @@
     </div>
 
     <div class="link-box box">
-      <router-link to="/about">About Creanomic</router-link>
+      <a href="/about" @click.prevent="goToAboutPage">About Creanomic</a>
     </div>
   </header>
 </template>
@@ -25,6 +25,10 @@ export default {
       } else {
         this.eventBus.$emit("loadHomePage")
       }
+    },
+
+    goToAboutPage() {
+      this.eventBus.$emit("loadAboutPage")
     }
   }
 }

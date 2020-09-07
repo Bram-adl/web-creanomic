@@ -1,5 +1,5 @@
 <template>
-  <button class="btn">{{ text }}</button>
+  <button class="btn" @click="handleClick">{{ text }}</button>
 </template>
 
 <script>
@@ -9,6 +9,18 @@ export default {
     text: {
       type: String,
       required: true,
+    }
+  },
+  methods: {
+    handleClick() {
+      if ( this.text == "Enter Art Exhibition" ) {
+        console.log("SHOW ART GALLERY")
+      }
+      else if ( this.text == "Enroll Webinar Now" ) {
+        this.eventBus.$emit("showForm")
+      } else {
+        console.log("SHOW COMPETITIONS")
+      }
     }
   }
 }
@@ -35,6 +47,12 @@ export default {
 
   &:hover {
     background: darken(#C58B3E, 15%);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn {
+    font-size: 14px;
   }
 }
 </style>

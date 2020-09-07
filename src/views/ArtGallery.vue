@@ -54,7 +54,7 @@ export default {
       tl.to(".text-title", {y: 50, duration: 1, ease: "circ.inOut"})
       .to(".text", {x: -100, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=1")
       .to(".btn", {y: -16, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=0.75")
-      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push("/home")})
+      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push({ name: "home" })})
     }
   }
 }
@@ -74,7 +74,7 @@ export default {
 .art-gallery {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   overflow: hidden;
 
   .background {

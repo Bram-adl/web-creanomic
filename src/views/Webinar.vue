@@ -14,6 +14,8 @@
       <main-button text="Enroll Webinar Now"></main-button>
     </div>
 
+    <webinar-form></webinar-form>
+
     <div class="background-image"></div>
   </div>
 </template>
@@ -22,6 +24,7 @@
 import MainHeader from "../components/MainHeader"
 import MainTitle from "../components/MainTitle"
 import MainButton from "../components/MainButton"
+import WebinarForm from "../components/section/WebinarForm"
 
 export default {
   name: 'art-gallery',
@@ -29,6 +32,7 @@ export default {
     MainHeader,
     MainTitle,
     MainButton,
+    WebinarForm,
   },
   mounted: function () {    
     this.eventBus.$on("loadHomePage", () => this.loadHomePage())
@@ -54,8 +58,8 @@ export default {
       tl.to(".text-title", {y: 50, duration: 1, ease: "circ.inOut"})
       .to(".text", {x: -100, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=1")
       .to(".btn", {y: -16, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=0.75")
-      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push("/home")})
-    }
+      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push({ name: "home" })})
+    },
   }
 }
 </script>
@@ -74,7 +78,7 @@ export default {
 .art-gallery {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   overflow: hidden;
 
   .background {

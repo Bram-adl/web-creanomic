@@ -8,12 +8,18 @@ export default new VueRouter({
   routes: [
     {
       path: "/",
+      name: "landing",
       component: () => import('../views/LandingPage.vue')
     },
     {
       path: "/home",
       name: "home",
       component: () => import('../views/HomePage.vue'),  
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: () => import('../views/AboutPage.vue'),  
     },
     {
       path: "/home/art-gallery",

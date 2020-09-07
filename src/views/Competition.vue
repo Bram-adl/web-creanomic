@@ -8,10 +8,13 @@
 
     <div class="text-box">
       <div class="text-title-container">
-        <h3 class="text-title">Online Webinars</h3>
+        <h3 class="text-title">Competitions</h3>
       </div>
       <p class="text">Creanomic provides both international and national competitions. We are open for everyone to participate with an ease of registrations. Starting from an international photography, short movies, into national essay and many more. Grand prizes awaits you along with the certificates. To get more details about all of the competitions, please kindly hit the button below. </p>
-      <main-button text="Read Competitions Detail"></main-button>
+      <div class="btn-group">
+        <main-button text="International"></main-button>
+        <main-button text="National"></main-button>
+      </div>
     </div>
 
     <div class="background-image"></div>
@@ -54,17 +57,28 @@ export default {
       tl.to(".text-title", {y: 50, duration: 1, ease: "circ.inOut"})
       .to(".text", {x: -100, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=1")
       .to(".btn", {y: -16, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=0.75")
-      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push("/home")})
+      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push({ name: "home" })})
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.btn-group {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: unset;
+  }
+}
+
 .overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: #363C3E;
   z-index: 10;
   top: 100%;
