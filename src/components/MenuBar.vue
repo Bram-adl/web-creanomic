@@ -17,6 +17,9 @@
 <script>
 export default {
   name: 'menu-bar',
+  data: () => ({
+    toggleMenu: false,
+  }),
   mounted: function() {
     const tl = this.gsap.timeline()
 
@@ -24,15 +27,24 @@ export default {
   },
   methods: {
     handleClick() {
-      this.gsap.to(".faded", {opacity: 0, duration: 1, ease: "bounce"})
+      if (!this.toggleMenu) {
+        this.toggleMenu = true
+        this.gsap.to(".faded", {opacity: 0, duration: 1, ease: "bounce"})
+        this.eventBus.$emit('openMenu')
+      } else {
+        this.toggleMenu = false
+        this.gsap.to(".faded", {opacity: 1, duration: 1, ease: "bounce"})
+        this.eventBus.$emit('closeMenu')
+      }
     }
-  }
+  },
 }
 </script>
 
 <style lang="scss">
 .menu-bar {
   position: absolute;
+  z-index: 15;
   cursor: pointer;
 
   &:hover {

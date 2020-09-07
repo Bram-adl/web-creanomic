@@ -23,7 +23,9 @@
     </div>
 
     <div class="link-box">
-      <a href="#" class="link">Click to explore</a>
+      <span href="#" class="link">
+        <a href="#" @click.prevent="loadHomePage">Click to explore</a>
+      </span>
     </div>
   </div>
 </template>
@@ -35,11 +37,16 @@ export default {
     const tl = this.gsap.timeline()
 
     tl.fromTo(".main-text", {y: "200%", borderRadius: "0%"}, {y: "0%", borderRadius: "50%", rotate: 720, ease: "back.out(1.4)", duration: 2})
-    tl.from(".creanomic-text", {y: "100%", duration: 1, delay: .4})
+    tl.from(".creanomic-text", {y: "100px", duration: 1, delay: .4})
     tl.from(".explore-text", {y: "100px", duration: 1}, "-=1")
     tl.from(".taglines-text-wrapper span", {y: "100px", duration: 1}, "-=.75")
-    tl.from(".link", {y: "100px", duration: 1}, "-=1")
+    tl.from(".link a", {y: "100px", duration: 1}, "-=1")
     tl.from(".logo", {opacity: 0, duration: 3, delay: 1})
+  },
+  methods: {
+    loadHomePage() {
+      this.eventBus.$emit("goToHomePage")
+    }
   }
 }
 </script>
@@ -142,11 +149,12 @@ export default {
 
     overflow: hidden;
 
-    .link {
+    .link a {
       display: inline-block;
       color: rgba(254, 254, 254, 0.75);
       font-family: 'Open Sans', sans-serif;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 }

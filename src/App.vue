@@ -1,35 +1,30 @@
 <template>
   <div id="app">
-
-    <landing-page></landing-page>
-    
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import LandingPage from './views/LandingPage'
-
 export default {
   name: 'App',
-  components: {
-    LandingPage,
-  }
 }
 </script>
 
-<style>
-body {
-  overflow: hidden;
-}
-
+<style lang="scss">
 #app {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   
   display: flex;
   align-items: center;
   justify-content: center;
 
-  overflow: hidden;
+  #cursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 </style>
