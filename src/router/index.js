@@ -22,19 +22,29 @@ export default new VueRouter({
       component: () => import('../views/AboutPage.vue'),  
     },
     {
-      path: "/home/art-gallery",
+      path: "/art-gallery",
       name: "art-gallery",
       component: () => import('../views/ArtGallery.vue'),
     },
     {
-      path: "/home/webinar",
+      path: "/webinar",
       name: "webinar",
       component: () => import('../views/Webinar.vue'),
     },
     {
-      path: "/home/competition",
+      path: "/competition",
       name: "competition",
       component: () => import('../views/Competition.vue'),
+    },
+    {
+      path: "/international",
+      name: "internationalComp",
+      component: () => import('../views/comp-international.vue')
+    },
+    {
+      path: "/national",
+      name: "nationalComp",
+      component: () => import('../views/comp-national.vue')
     },
   ]
 })

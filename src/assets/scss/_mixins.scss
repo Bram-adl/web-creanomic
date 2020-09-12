@@ -1,7 +1,0 @@
-@mixin formatText($size, $spacing) {
-  font-size: $size;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: $spacing;
-}

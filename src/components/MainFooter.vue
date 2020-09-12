@@ -1,6 +1,6 @@
 <template>
   <div class="main-footer">
-    <small>&copy;Creanomic, Universitas Brawijaya</small>
+    <small>&copy;Creanomic, <a href="https://www.ub.ac.id" target="__blank">Universitas Brawijaya</a></small>
     <span class="line"></span>
     <a href="#">
       <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"/></svg>
@@ -14,173 +14,135 @@
 <script>
 export default {
   name: 'main-footer',
-  mounted: function () {
-    this.gsap.from(".main-footer", {x: 200, opacity: 0, duration: 1, delay: 1})
-  },
+  
+  // mounted () {
+  //   this.gsap.from(".main-footer", {
+  //     x: "100%",
+  //     opacity: 0,
+  //     duration: 2,
+  //     ease: "circ.out"
+  //   })
+  // },
 }
 </script>
 
 <style lang="scss" scoped>
+/* 
+  =========================================================
+  | SCSS Variables and Mixins
+  =========================================================
+  Di kode ini, kita membuat beberapa variable untuk warna 
+  dan fonts, sehingga berikutnya saat kita ingin menggunakan 
+  warna yang sudah ditentukan dari design dan sifatnya global
+  kita cukup merubah nya melalui variable ini.
+
+  Berikutnya terdapat mixin yang fokusnya untuk mempermudah
+  penulisan media queries atau bekerja untuk responsive web
+  design. Mixin sudah dibuat menggunakan @mixin sehingga
+  untuk menggunakannya, cukup include dengan @include 
+  directive milik SCSS.
+
+  Untuk mobile first approach, kita tidak tentukan breakpoint
+  untuk ukuran xs, untuk itu kita hanya deklarasikan ukuran
+  lainnya dimana sm untuk small screen seperti handphone, md
+  untuk ukuran tablet atau handphone portrait, lg untuk mini
+  laptop seperti notebook atau tablet pro, dan xl untuk ukuran
+  desktop.
+*/
+
+// Global Color Variables.
+$white: #F5F5F5;
+$white-50: rgba(254, 254, 254, 0.75);
+$yellow: #FFB149;
+$blue: #00A8AA;
+$grey: #363C3E;
+$serif: "Merriweather", serif;
+$sans-serif: "Open Sans", sans-serif;
+
+// Twitter Bootstrap Grid System. 
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+// Media Queries Breakpoints.
+@mixin sm {
+  @media (min-width: #{$sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-min}) {
+    @content;
+  }
+}
+
+/* 
+  =========================================================
+  | SCSS Bases Styles - Mobile First
+  =========================================================
+*/
 .main-footer {
   position: absolute;
   bottom: 16px;
   right: 50%;
-  transform: translate(50%, 0);
-
-  white-space: nowrap;
-
+  transform: translateX(50%);
+  width: 100%;
+  color: $white;
   display: flex;
   align-items: center;
-
-  z-index: 10;
-
-  small {
-    color: #FEFEFE;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px; 
+  justify-content: center;
+  z-index: 20;
+  @include lg {
+    right: 16px;
+    transform: translateX(0);
+    width: auto;
   }
-
-  span {
-    width: 25px;
-    border: 1px solid #FEFEFE;
+  small {
+    font-family: $sans-serif;
+    font-size: 12px;
+    a {
+      color: $blue;
+      transition: .4s ease-out;
+      &:hover {
+        color: lighten($blue, 25%);
+      }
+    }
+    @include md {
+      font-size: 14px;
+    }
+    @include lg {
+      font-size: 16px;
+    }
+  }
+  .line {
+    width: 50px;
+    border: 1px solid $white;
     border-radius: 1px;
     margin-left: 10px;
   }
-
-  a svg {
-    width: 16px;
-    height: 16px;
-    fill: #FEFEFE;
+  svg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: $white;
     margin-left: 10px;
-
     transition: .4s ease-out;
-
     &:hover {
       transform: translateY(-4px);
-    }
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .main-footer {
-    position: absolute;
-    bottom: 16px;
-    right: 50%;
-    transform: translate(50%, 0);
-
-    white-space: nowrap;
-
-    display: flex;
-    align-items: center;
-
-    small {
-      color: #FEFEFE;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 10px; 
-    }
-
-    span {
-      width: 25px;
-      border: 1px solid #FEFEFE;
-      border-radius: 1px;
-      margin-left: 10px;
-    }
-
-    a svg {
-      width: 16px;
-      height: 16px;
-      fill: #FEFEFE;
-      margin-left: 10px;
-    }
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  .main-footer {
-    small {
-      font-size: 14px; 
-    }
-
-    span {
-      width: 30px;
-    }
-
-    a svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-  .main-footer {
-    right: 16px;
-    transform: translate(0, 0);
-
-    small {
-      font-size: 10px; 
-    }
-
-    span {
-      width: 16px;
-      margin-left: 8px;
-    }
-
-    a svg {
-      width: 16px;
-      height: 16px;
-      margin-left: 8px;
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-  .main-footer {
-    small {
-      font-size: 16px; 
-    }
-
-    span {
-      width: 30px;
-      margin-left: 12px;
-    }
-
-    a svg {
-      width: 24px;
-      height: 24px;
-      margin-left: 12px;
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  .main-footer {
-    right: 16px;
-    transform: translate(0, 0);
-
-    small {
-      font-size: 12px; 
-    }
-
-    a svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .main-footer {
-    right: 16px;
-    transform: translate(0, 0);
-
-    small {
-      font-size: 12px; 
-    }
-
-    a svg {
-      width: 20px;
-      height: 20px;
     }
   }
 }

@@ -3,9 +3,6 @@ import App from './App.vue'
 import router from './router'
 
 import 'animate.css'
-
-import '@/assets/scss/main.scss'
-
 import { gsap } from 'gsap'
 
 Vue.prototype.gsap = gsap

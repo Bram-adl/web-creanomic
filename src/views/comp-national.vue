@@ -104,7 +104,7 @@ export default {
 }
 .hexagon {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: url(img/short-movie.jpg) no-repeat;
+  /* background: url(img/short-movie.jpg) no-repeat; */
   background-size: cover;
   margin-top: 10px;
   margin-right: 30px;
@@ -113,7 +113,7 @@ export default {
 }
 .hexagon2 {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: url(img/2.jpg) no-repeat;
+  /* background: url(img/2.jpg) no-repeat; */
   background-size: cover;
   margin-top: 10px;
   margin-right: 30px;
@@ -123,7 +123,7 @@ export default {
 
 .hexagon3 {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: url(img/3.jpg) no-repeat;
+  /* background: url(img/3.jpg) no-repeat; */
   background-size: cover;
   margin-top: 10px;
   margin-right: 30px;

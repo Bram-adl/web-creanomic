@@ -35,12 +35,12 @@ export default {
     const tl = this.gsap.timeline()
 
     tl.fromTo("#figure *", 
-      {scale: 0, y: 75}, 
+      {scale: 0, y: 75},
       {scale: 1, y: 0, ease: "power1.inOut", duration: 1, stagger: {
         from: "center",
         ease: "power2.inOut",
         amount: 1
-      }, delay: 3}
+      }, delay: 1}
     )
   }
 }

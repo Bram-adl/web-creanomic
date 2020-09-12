@@ -11,20 +11,21 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+:root {
+  --animate-duration: 2s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
 #app {
   width: 100%;
-  height: 100%;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  #cursor {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    background: rgba(0, 0, 0, 0.5);
-  }
+  height: 100vh;
 }
 </style>

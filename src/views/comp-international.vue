@@ -1,24 +1,16 @@
 <template>
   <div class="container">
+    <main-header></main-header>
+
     <div class="header">
-      <div class="back">
-        <i class="fas fa-arrow-left"></i>
-        <h3>Go Back</h3>
-      </div>
-      <div class="logo">
-        <img src="img/logo.png">
-      </div>
-      <div class="about">
-        <h3>about creanomic</h3>
-      </div>
+      <h2 class="title">Creanomic Competition</h2>
+      <div class="line"></div>
+      <h3 class="sub-title">International</h3>
     </div>
 
-    <div class="judul">
-      <h1>CREANOMIC COMPETITION</h1>
-    </div>
-    <div class="photography">
+    <div class="box-container">
       <div class="hexagon">
-        
+        test
       </div>
       <div class="photo-text">
         <h2>Photography</h2><br>
@@ -35,53 +27,64 @@
 </template>
 
 <script>
-export default {
+import MainHeader from '../components/MainHeader'
 
+export default {
+  name: 'international-comp',
+  components: {
+    MainHeader,
+  }
 }
 </script>
 
-<style>
-  .container{
-  width: 90%;
+<style lang="scss" scoped>
+.container{
+  background: #363C3E;
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
+  overflow: hidden;
 }
-.header{
-  display: flex;
-  height: 60px;
-  background: transparent;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.back{
-  display: flex;
-}
-.back i{
-  margin: 18px;
 
-}
-.back h3{
-  margin-top: 12px;
-}
-.logo img{
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-}
-.judul{
-  margin-top: 50px;
-  letter-spacing: 0.8px;
-}
-.photography{
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 50px;
+.header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  color: #FFB149;
+  font-family: "Merriweater", serif;
+  margin: 50px 0;
+
+  .title {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .line {
+    width: 100px;
+    border: 1px solid #FFB149;
+    border-radius: 1px;
+    margin: 0 25px;
+  }
+
+  .sub-title {
+    opacity: 0.75;
+    font-size: 30px;
+    font-weight: 300;
+  }
+}
+
+.box-container {
+  border: 1px solid white;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  padding: 0 50px;
+  overflow: auto;
 }
 .hexagon {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: url(img/4.jpg) no-repeat;
+  background: red;
   background-size: cover;
   background-position: center;
   margin-top: 10px;

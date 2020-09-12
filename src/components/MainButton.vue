@@ -18,8 +18,10 @@ export default {
       }
       else if ( this.text == "Enroll Webinar Now" ) {
         this.eventBus.$emit("showForm")
+      } else if ( this.text == "International" ) {
+        this.eventBus.$emit("showInternationalComp")
       } else {
-        console.log("SHOW COMPETITIONS")
+        this.eventBus.$emit("showNationalComp")
       }
     }
   }
