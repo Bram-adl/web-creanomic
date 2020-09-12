@@ -1,169 +1,206 @@
 <template>
-  <header class="main-header">
-    <div class="go-back-box box" @click="goToPreviousPage">
-      <i class="fas fa-long-arrow-alt-left"></i>
-      <span>Go Back</span>
+  <div class="main-header">
+    <div class="box box-prev">
+      <router-link class="link" :to="prevLink">
+        <i class="fas fa-chevron-left"></i>
+        <span @click.prevent="goToPrevPage(prevLink)">Go back</span>
+      </router-link>
     </div>
-
-    <div class="logo-box box">
-      <img src="@/assets/logo.png" alt="logo" class="logo">
+    <div class="box box-logo">
+      <img src="@/assets/logo.png" alt="logo-creanomic" class="logo">
     </div>
-
-    <div class="link-box box">
-      <a href="/about" @click.prevent="goToAboutPage">About Creanomic</a>
+    <div class="box box-link">
+      <router-link class="link" to="/about">
+        <span @click.prevent="goToAboutPage">About</span>
+        <i class="fas fa-chevron-right"></i>
+      </router-link>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'main-header',  
+  name: 'main-header',
+
+  props: {
+    prevLink: {
+      type: String,
+    }
+  },
+
+  mounted () {
+    this.runAnimation()
+  },
+
   methods: {
-    goToPreviousPage() {
-      if ( this.$route.name == "home" ) {
-        this.eventBus.$emit("loadLandingPage")
-      } else {
-        this.eventBus.$emit("loadHomePage")
+    runAnimation () {
+      let tl = this.gsap.timeline()
+      tl.from(".box-prev > a *", {
+        opacity: 0,
+        x: 25,
+        duration: 1,
+        ease: "power2.in",
+        delay: 2,
+        stagger: {
+          amount: 0.1
+        }
+      }).from(".box-link > a *", {
+        opacity: 0,
+        x: -25,
+        duration: 1,
+        ease: "power2.in",
+        stagger: {
+          amount: 0.1
+        }
+      }, "-=0.75").to(".logo", {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+      }, "+=1")
+    },
+
+    goToPrevPage (link) {
+      if ( link == '/' ) {
+        this.eventBus.$emit('loadLandingPage')
       }
     },
 
-    goToAboutPage() {
-      this.eventBus.$emit("loadAboutPage")
+    goToAboutPage () {
+      this.eventBus.$emit('loadAboutPage')
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.main-header {  
+/* 
+  =========================================================
+  | SCSS Variables and Mixins
+  =========================================================
+  Di kode ini, kita membuat beberapa variable untuk warna 
+  dan fonts, sehingga berikutnya saat kita ingin menggunakan 
+  warna yang sudah ditentukan dari design dan sifatnya global
+  kita cukup merubah nya melalui variable ini.
+
+  Berikutnya terdapat mixin yang fokusnya untuk mempermudah
+  penulisan media queries atau bekerja untuk responsive web
+  design. Mixin sudah dibuat menggunakan @mixin sehingga
+  untuk menggunakannya, cukup include dengan @include 
+  directive milik SCSS.
+
+  Untuk mobile first approach, kita tidak tentukan breakpoint
+  untuk ukuran xs, untuk itu kita hanya deklarasikan ukuran
+  lainnya dimana sm untuk small screen seperti handphone, md
+  untuk ukuran tablet atau handphone portrait, lg untuk mini
+  laptop seperti notebook atau tablet pro, dan xl untuk ukuran
+  desktop.
+*/
+
+// Global Color Variables.
+$white: #F5F5F5;
+$yellow: #FFB149;
+$blue: #00A8AA;
+$grey: #363C3E;
+$serif: "Merriweather", serif;
+$sans-serif: "Open Sans", sans-serif;
+
+// Twitter Bootstrap Grid System. 
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+// Media Queries Breakpoints.
+@mixin sm {
+  @media (min-width: #{$sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-min}) {
+    @content;
+  }
+}
+
+/* 
+  =========================================================
+  | SCSS Bases Styles - Mobile First
+  =========================================================
+*/
+.main-header {
   position: relative;
-  
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 20px 16px;
-  color: rgba(254, 254, 254, 0.75);
-
+  height: 15vh;
+  padding: 0 25px;
+  @include md {
+    height: 20vh;
+    padding: 0 50px;
+  }
   .box {
     width: 100%;
-  }
-
-  .go-back-box {
-    font-family: "Open Sans", sans-serif;
+    font-family: $serif;
     font-size: 12px;
-    cursor: pointer;
-
-    span {
-      margin-left: 16px;
-      transition: .4s ease-out;
+    @include sm {
+      font-size: 16px;
     }
-
-    &:hover {
-      span {margin-left: 20px}
+    @include md {
+      font-size: 18px;
     }
-  }
-
-  .logo-box {
-    line-height: 0;
-
-    .logo {
-      display: block;
-      width: 50px;
-      height: 50px;
-      margin: auto;
-    }
-  }
-
-  .link-box { 
-    text-align: right;
-    
-    a {
-      display: inline-block;
-      color: inherit;
-      font-family: "Open Sans", sans-serif;
-      font-size: 10px;
-      text-decoration: none;
-      position: relative;
-      
-      &::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        right: 0%;
-        transform: translate(0, 25%);
-        width: 0%;
-        height: 1px;
-        background: #FEFEFE;
+    &-prev {
+      text-align: left;
+      color: $white;
+      &:hover {
+        span {margin-left: 16px;}
+      }
+      span {
+        display: inline-block;
+        margin-left: 10px;
         transition: .4s ease-out;
       }
-
-      &:hover {
-        &::after {
-          width: 100%;
+    }
+    &-logo {
+      text-align: center;
+      line-height: 0;
+      .logo {
+        opacity: 0;
+        width: 50px;
+        height: 50px;
+        @include md {
+          width: 60px;
+          height: 60px;
+        }
+        @include lg {
+          width: 75px;
+          height: 75px;
         }
       }
     }
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .main-header {
-    padding: 20px 50px;
-    .go-back-box {
-      font-size: 20px;
-    }
-
-    .logo-box {
-      .logo {
-        width: 75px;
-        height: 75px;
+    &-link {
+      text-align: right;
+      color: $white;
+      &:hover {
+        span {margin-right: 16px;}
       }
-    }
-
-    .link-box a {
-      font-size: 18px;
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .main-header {
-    .go-back-box {
-      font-size: 16px;
-    }
-
-    .logo-box {
-      .logo {
-        width: 75px;
-        height: 75px;
+      span {
+        display: inline-block;
+        margin-right: 10px;
+        transition: .4s ease-out;
       }
-    }
-
-    .link-box a {
-      font-size: 16px;
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .main-header {
-    padding: 20px 50px;
-    .go-back-box {
-      font-size: 16px;
-    }
-
-    .logo-box {
-      line-height: 0;
-
-      .logo {
-        width: 75px;
-        height: 75px;
-      }
-    }
-
-    .link-box a {
-      font-size: 16px;
     }
   }
 }

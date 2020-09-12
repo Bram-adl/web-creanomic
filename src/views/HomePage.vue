@@ -1,214 +1,324 @@
 <template>
-  <div class="home-page">
-    <div class="overlay"></div>
-    <div class="background" :style="`background-image: url('img/${image}')`"></div>
+  <div class="container">
+    <div class="background">
+      <div class="background-image" :style="`background-image: url('img/${image}.jpg')`"></div>
+    </div>
     
-    <main-header></main-header>
-    <main-title></main-title>
+    <div class="overlay"></div>
+    <main-header :prevLink="prevLink"></main-header>
+    
+    <header class="heading">
+      <h2 class="heading-text">Explore Creanomic</h2>
+    </header>
 
-    <!-- Cards Section --> <br>
-    <carousel 
-      :perPage="1" 
-      :perPageCustom="[[480, 1], [720, 2], [1024, 3]]" 
-      :paginationEnabled="false">
-      <slide v-for="card in cards" :key="card.id" style="padding: 16px;">
-        <div 
-          class="card" 
-          :style="`background-image: url('img/${card.image}')`"
-          @mouseenter="changeBackground(card.image)"
-          @click="enterPage(card.path)">
-          <h2 class="card-text">{{ card.title }}</h2>
-        </div>
-      </slide>
-    </carousel>
+    <div class="cards-container">
+      <carousel 
+        style="width: 100%;"
+        :perPage="1" 
+        :perPageCustom="[[480, 1], [720, 2], [1024, 3]]" 
+        :paginationEnabled="false">
+        <slide v-for="card in cards" :key="card.id" style="padding: 50px 0;">
+          <div 
+            class="card" 
+            :style="`background-image: url('img/${card.image}.jpg')`"
+            @mouseenter="changeBackground(card.image)">
+            <h3 class="card-title">{{ card.title }}</h3>
+          </div>
+        </slide>
+      </carousel>
+    </div>
   </div>
 </template>
 
 <script>
 import MainHeader from "../components/MainHeader"
-import MainTitle from "../components/MainTitle"
 import { Carousel, Slide } from 'vue-carousel';
 
 export default {
   name: 'home-page',
+
   components: {
     MainHeader,
-    MainTitle,
     Carousel,
     Slide,
   },
+
   data: () => ({
-    image: 'art-gallery.jpg',
+    prevLink: '/',
+    image: 'art-gallery',
     cards: [
       {
         id: 1,
-        title: "1. Virtual Art Exhibition",
-        image: "art-gallery.jpg",
-        path: "art-gallery"
+        title: 'Virtual Art Exhibition',
+        image: 'art-gallery'
       },
       {
         id: 2,
-        title: "2. Online Webinar",
-        image: "webinar.jpg",
-        path: "webinar"
+        title: 'Online Webinar',
+        image: 'webinar'
       },
       {
         id: 3,
-        title: "3. Competitions",
-        image: "competition.jpg",
-        path: "competition"
+        title: 'Competitions',
+        image: 'competition'
       },
     ]
   }),
-  mounted: function () {
-    this.eventBus.$on("loadLandingPage", () => this.loadLandingPage())
-    this.eventBus.$on("loadAboutPage", () => this.loadAboutPage())
 
-    let tl = this.gsap.timeline()
-    tl.from(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut"})
-    .from(".title", {y: 100, duration: 1, ease: "circ.inOut"}, "+=0.5")
-    .from(".card", {scale: 0, duration: 1, ease: "circ.inOut", stagger: {amount: 0.4, from: "center"}}, "-=1")
+  mounted () {
+    this.runAnimation()
+
+    this.eventBus.$on('loadLandingPage', () => this.loadLandingPage())
+    this.eventBus.$on('loadAboutPage', () => this.loadAboutPage())
   },
-  methods: {
-    loadLandingPage() {
-      this.gsap.to(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push({ name: "landing" })})
-    },
-    loadAboutPage() {
-      this.gsap.to(".overlay", {top: "0", duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push({ name: "about" })})
-    },
 
-    changeBackground(image) {
+  methods: {
+    changeBackground (image) {
       this.image = image
     },
 
-    enterPage(path) {
-      this.gsap.to(".card", {opacity: 0, duration: 1, delay: 1, ease: "circ.inOut", onComplete: () => this.$router.push({ name: path })})
+    runAnimation () {
+      let tl = this.gsap.timeline()
+      tl.to(".overlay", {
+        top: "-100vh",
+        delay: 1,
+        duration: 1,
+        ease: "circ.inOut"
+      }).from(".card", {
+        scale: 0,
+        duration: 2,
+        ease: "circ.inOut",
+        stagger: {
+          amount: 0.2,
+          from: "center"
+        }
+      }, "+=1").from(".heading-text", {
+        opacity: 0,
+        top: "150%",
+        duration: 3,
+        ease: "power2.inOut"
+      }, "-=2")
+    },
+
+    loadLandingPage () {
+      this.gsap.to(".overlay", {
+        top: 0,
+        delay: 1,
+        duration: 1,
+        ease: "circ.inOut",
+        onComplete: () => this.$router.push({ name: 'landing' })
+      })
+    },
+
+    loadAboutPage () {
+      this.gsap.to(".overlay", {
+        top: 0,
+        delay: 1,
+        duration: 1,
+        ease: "circ.inOut",
+        onComplete: () => this.$router.push({ name: 'about' })
+      })
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.overlay {
-  width: 100%;
-  height: 100%;
+/* 
+  =========================================================
+  | SCSS Variables and Mixins
+  =========================================================
+  Di kode ini, kita membuat beberapa variable untuk warna 
+  dan fonts, sehingga berikutnya saat kita ingin menggunakan 
+  warna yang sudah ditentukan dari design dan sifatnya global
+  kita cukup merubah nya melalui variable ini.
 
-  position: absolute;
-  top: -100%;
-  left: 0;
+  Berikutnya terdapat mixin yang fokusnya untuk mempermudah
+  penulisan media queries atau bekerja untuk responsive web
+  design. Mixin sudah dibuat menggunakan @mixin sehingga
+  untuk menggunakannya, cukup include dengan @include 
+  directive milik SCSS.
 
-  background-color: #363C3E;
-  z-index: 10;
+  Untuk mobile first approach, kita tidak tentukan breakpoint
+  untuk ukuran xs, untuk itu kita hanya deklarasikan ukuran
+  lainnya dimana sm untuk small screen seperti handphone, md
+  untuk ukuran tablet atau handphone portrait, lg untuk mini
+  laptop seperti notebook atau tablet pro, dan xl untuk ukuran
+  desktop.
+*/
+
+// Global Color Variables.
+$white: #F5F5F5;
+$white-50: rgba(254, 254, 254, 0.75);
+$yellow: #FFB149;
+$blue: #00A8AA;
+$grey: #363C3E;
+$serif: "Merriweather", serif;
+$sans-serif: "Open Sans", sans-serif;
+
+// Twitter Bootstrap Grid System. 
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+// Media Queries Breakpoints.
+@mixin sm {
+  @media (min-width: #{$sm-min}) {
+    @content;
+  }
 }
 
-.home-page {
-  width: 100%;
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
+@mixin md {
+  @media (min-width: #{$md-min}) {
+    @content;
+  }
+}
 
-  .background {
+@mixin lg {
+  @media (min-width: #{$lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-min}) {
+    @content;
+  }
+}
+
+/* 
+  =========================================================
+  | SCSS Bases Styles - Mobile First
+  =========================================================
+*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 25;
+  background: $grey;
+}
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  .background-image {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-
+    background-size: cover;
+    background-position: center;
+    filter: blur(25px);
+    transform: scale(1.15);
     transition: .4s ease-out;
-
-    background-size: 100%;
-    transform: scale(1.5);
-    filter: blur(50px);
-
     &::after {
       content: "";
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      left: 0;
-      top: 0;
       background: rgba(0, 0, 0, 0.5);
     }
   }
 }
-
-.card {
-  width: 250px;
-  height: 250px;
-  margin: auto;
-
-  background-size: 150%;
-  background-position: center;
-  background-repeat: no-repeat;
-
+.container {
+  background: $grey;
+  width: 100%;
+  min-height: 100%;
+}
+.heading {
+  height: 15vh;
   position: relative;
-  transition: background-size .4s ease-out;
-
-  cursor: pointer;
-
-  &:hover {
-    background-size: 175%;
-
-    &::after {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  overflow: hidden;
+  .heading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: $yellow;
+    font-family: $serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include md {
+      font-size: 1.8rem;
+    }
+    @include lg {
+      font-size: 2.2rem;
+    }
+    @include xl {
+      font-size: 2.6rem;
     }
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 5px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(254, 254, 254, 0.75);
-    transition: .4s ease-out;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .card-text {
-    color: #FEFEFE;
-    font-family: "Merriweather", serif;
-    font-size: 24px;
-    font-weight: 300;
-    white-space: nowrap;
-
-    position: absolute;
-    left: -30px;
-    bottom: 30px;
+}
+.cards-container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  @include md {
+    height: 65vh;
   }
 }
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .card {
-    width: 350px;
-    height: 350px;
+.card {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  @include sm {
+    width: 400px;
+    height: 400px;
   }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .card {
+  @include md {
     width: 300px;
     height: 300px;
   }
-}
-
-@media only screen and (min-width: 1025px) {
-  .card {
-    width: 325px;
-    height: 325px;
+  &:hover {
+    &::after {
+      transform: translate(-50%, -50%);
+    }
+    .card-title {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &::before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  &::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    border: 1px solid $white-50;
+    transition: .4s ease-out;
+  }
+  &-title {
+    color: $white;
+    font-family: $serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+    white-space: nowrap;
+    position: absolute;
+    left: -25px;
+    bottom: 25px;
+    transition: .4s ease-out;
   }
 }
 </style>

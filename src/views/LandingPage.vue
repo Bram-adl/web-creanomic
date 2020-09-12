@@ -145,7 +145,7 @@ export default {
         stagger: {
           amount: 0.6
         },
-        onComplete: () => this.$router.push('home')
+        onComplete: () => this.$router.push({ name: 'home' })
       })
     }
   }
