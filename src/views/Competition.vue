@@ -92,7 +92,7 @@ export default {
         delay: 1,
         duration: 1,
         ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: link })
+        onComplete: () => this.$router.push({ name: link }).catch(() => {})
       })
     },
 
@@ -240,6 +240,7 @@ $xl-min: 1200px;
     margin: 25px 0 30px;
   }
   &-btn {
+    opacity: 0;
     display: block;
     margin-bottom: 16px;
     background: #C58B3E;

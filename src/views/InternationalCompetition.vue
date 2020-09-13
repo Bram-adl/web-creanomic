@@ -70,13 +70,7 @@ export default {
     },
 
     goToCompetitionPage () {
-      this.gsap.to(".overlay", {
-        left: "0",
-        duration: 1,
-        delay: 1,
-        ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: 'competition' })
-      })
+      this.$router.push({ name: 'competition' }).catch(() => {})
     }
   }
 }

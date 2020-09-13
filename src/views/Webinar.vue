@@ -14,36 +14,32 @@
     <section class="section">
       <h3 class="section-title">Online Webinar</h3>
       <p class="section-text">The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venun has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below</p>
-      <button class="section-btn" @click="isFormOpen = true">
+      <button class="section-btn" @click="showForm">
         Enroll Online Webinar
       </button>
     </section>
 
-    <transition
-      enter-active-class="animate__animated animate__slideInLeft"
-      leave-active-class="animate__animated animate__slideOutLeft">
-      <form class="form" v-if="isFormOpen">
-        <i class="fas fa-times" @click="isFormOpen = false"></i>
-        <h3 class="form-title">
-          Enroll Online Webinar
-        </h3>
-        <p class="form-info">
-          Once you have enrolled using your verified email account, we will send you an invitation link to join the webinar. Please kindly provide the correct email address.
-        </p>
-        <div class="form-input">
-          <input type="text" class="input" placeholder="First Name">
-        </div>
-        <div class="form-input">
-          <input type="text" class="input" placeholder="Last Name">
-        </div>
-        <div class="form-input">
-          <input type="text" class="input" placeholder="Email Address">
-        </div>
-        <button class="form-btn">
-          Submit
-        </button>
-      </form>
-    </transition>
+    <form class="form">
+      <i class="fas fa-times" @click="closeForm"></i>
+      <h3 class="form-title">
+        Enroll Online Webinar
+      </h3>
+      <p class="form-info">
+        Once you have enrolled using your verified email account, we will send you an invitation link to join the webinar. Please kindly provide the correct email address.
+      </p>
+      <div class="form-input">
+        <input type="text" class="input" placeholder="First Name">
+      </div>
+      <div class="form-input">
+        <input type="text" class="input" placeholder="Last Name">
+      </div>
+      <div class="form-input">
+        <input type="text" class="input" placeholder="Email Address">
+      </div>
+      <button class="form-btn">
+        Submit
+      </button>
+    </form>
 
     <div class="image-showcase">
       <img src="@/assets/img/home/webinar.jpg" alt="Virtual Art Exhibition">
@@ -63,7 +59,6 @@ export default {
 
   data: () => ({
     prevLink: 'home',
-    isFormOpen: false,
   }),
 
   mounted () {
@@ -108,13 +103,31 @@ export default {
       }, "-=0.5")
     },
 
+    showForm () {
+      this.gsap.to(".form", {
+        display: "block",
+        left: "0%",
+        duration: 1,
+        ease: "power2.inOut"
+      })
+    },
+
+    closeForm () {
+      this.gsap.to(".form", {
+        display: "none",
+        left: "-100%",
+        duration: 1,
+        ease: "power2.inOut"
+      })
+    },
+
     goTo (link) {
       this.gsap.to(".overlay", {
         left: 0,
         delay: 1,
         duration: 1,
         ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: link })
+        onComplete: () => this.$router.push({ name: link }).catch(() => {})
       })
     },
 
@@ -269,7 +282,7 @@ $xl-min: 1200px;
     border-radius: 4px;
     padding: 14px 24px;
     font-family: $sans-serif;
-    font-size: .8rem;
+    font-size: 1rem;
     color: $white;
     transition: .4s ease-out;
     cursor: pointer;
@@ -279,6 +292,7 @@ $xl-min: 1200px;
   }
 }
 .form {
+  display: none;
   position: absolute;
   top: 50%;
   left: 0;

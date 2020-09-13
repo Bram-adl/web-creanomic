@@ -8,7 +8,7 @@
     <main-header :prevLink="prevLink"></main-header>
     
     <header class="heading">
-      <h2 class="heading-text">Explore Creanomic</h2>
+      <h2 class="heading-text">{{ $t('tagline') }} Creanomic</h2>
     </header>
 
     <div class="cards-container">
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import i18n from "@/plugins/i18n"
+
 import MainHeader from "../components/MainHeader"
 import { Carousel, Slide } from 'vue-carousel';
 
@@ -50,19 +52,19 @@ export default {
     cards: [
       {
         id: 1,
-        title: 'Virtual Art Exhibition',
+        title: i18n.locale == 'id' ? 'Pameran Seni Virtual' : 'Virtual Art Exhibition',
         image: 'art-gallery',
         link: 'virtual-art-exhibition'
       },
       {
         id: 2,
-        title: 'Online Webinar',
+        title: i18n.locale == 'id' ? 'Webinar Online' : 'Online Webinar',
         image: 'webinar',
         link: 'webinar',
       },
       {
         id: 3,
-        title: 'Competitions',
+        title: i18n.locale == 'id' ? 'Perlombaan' : 'Competitions',
         image: 'competition',
         link: 'competition',
       },
@@ -110,7 +112,7 @@ export default {
         delay: 1,
         duration: 1,
         ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: link })
+        onComplete: () => this.$router.push({ name: link }).catch(() => {})
       })
     },
 
@@ -131,10 +133,10 @@ export default {
         stagger: {
           amount: 0.2
         },
-        onComplete: () => this.$router.push({ name: link })
+        onComplete: () => this.$router.push({ name: link }).catch(() => {})
       })
     }
-  }
+  },
 }
 </script>
 

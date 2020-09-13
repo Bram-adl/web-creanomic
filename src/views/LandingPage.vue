@@ -28,37 +28,31 @@
             <div class="circle-text">
               <div class="heading">
                 <div class="wrapper">
-                  <p class="sub-title">Explore</p>
+                  <p class="sub-title">{{ $t('tagline') }}</p>
                 </div>
                 <div class="wrapper">
                   <h1 class="title">Creanomic</h1>
                 </div>
               </div>
               <div class="sub-heading">
-                <span>Creative</span>
+                <span>{{ $t('creanomic.cr') }}</span>
                 <span class="dot"></span>
-                <span>Economy</span>
+                <span>{{ $t('creanomic.ea') }}</span>
                 <span class="dot"></span>
-                <span>Inovation</span>
+                <span>{{ $t('creanomic.no') }}</span>
                 <span class="dot"></span>
-                <span>Center</span>
+                <span>{{ $t('creanomic.mic') }}</span>
               </div>
             </div>
             <div class="circle-link">
               <router-link to="/home">
-                <span class="link" @click.prevent="goToHome">Click to Explore</span>
+                <span class="link" @click.prevent="goToHome">{{ $t('cta') }}</span>
               </router-link>
             </div>
           </div>
         </kinesis-element>
       </kinesis-container>
     </main>
-    
-    <transition
-      enter-active-class="animate__animated animate__fadeInRight"
-      leave-active-class="animate__animated animate__fadeOutRight">
-      <main-footer v-if="menuIsOpen"></main-footer>
-    </transition>
   </div>
 </template>
 
@@ -67,7 +61,6 @@ import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 import MenuBar from "../components/MenuBar"
 import MainMenu from "../components/MainMenu"
 import MainFigure from "../components/MainFigure"
-import MainFooter from "../components/MainFooter"
 
 export default {
   name: 'landing-page',
@@ -76,7 +69,6 @@ export default {
     MenuBar,
     MainMenu,
     MainFigure,
-    MainFooter,
     KinesisContainer,
     KinesisElement
   },
@@ -87,6 +79,7 @@ export default {
 
   mounted () {
     this.eventBus.$on('showMenu', () => this.toggleMenu())
+    this.eventBus.$on('loadHomePage', () => this.goToHome())
     
     this.runAnimation()
   },
@@ -145,7 +138,7 @@ export default {
         stagger: {
           amount: 0.6
         },
-        onComplete: () => this.$router.push({ name: 'home' })
+        onComplete: () => this.$router.push({ name: 'home' }).catch(() => {})
       })
     }
   }

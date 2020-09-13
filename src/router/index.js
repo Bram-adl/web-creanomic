@@ -6,6 +6,9 @@ Vue.use(VueRouter)
 export default new VueRouter({
   mode: 'history',
   routes: [
+    /**
+     * Routes di bawah ini adalah routes yang berbahasa inggris.
+     */
     {
       path: "/",
       name: "landing",
@@ -46,5 +49,9 @@ export default new VueRouter({
       name: "national-competition",
       component: () => import('../views/NationalCompetition.vue')
     },
+    // {
+    //   path: "*",
+    //   component: () => import('../views/NotFound.vue')
+    // }
   ]
 })

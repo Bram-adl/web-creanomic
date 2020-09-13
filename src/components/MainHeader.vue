@@ -3,7 +3,7 @@
     <div class="box box-prev">
       <router-link class="link" :to="prevLink">
         <i class="fas fa-chevron-left"></i>
-        <span @click.prevent="goToPrevPage(prevLink)">Go back</span>
+        <span @click.prevent="goToPrevPage(prevLink)">{{ $t('prev') }}</span>
       </router-link>
     </div>
     <div class="box box-logo">
@@ -11,7 +11,7 @@
     </div>
     <div class="box box-link">
       <router-link class="link" to="/about">
-        <span @click.prevent="goToAboutPage">About</span>
+        <span @click.prevent="goToAboutPage">{{ $t('about') }}</span>
         <i class="fas fa-chevron-right"></i>
       </router-link>
     </div>

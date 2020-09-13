@@ -8,7 +8,7 @@
     <main-header :prevLink="prevLink"></main-header>
     
     <header class="heading">
-      <h2 class="heading-text">Explore Creanomic</h2>
+      <h2 class="heading-text">Virtual Art Exhibition</h2>
     </header>
 
     <section class="section">
@@ -87,7 +87,7 @@ export default {
         delay: 1,
         duration: 1,
         ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: link })
+        onComplete: () => this.$router.push({ name: link }).catch(() => {})
       })
     },
 
@@ -242,7 +242,7 @@ $xl-min: 1200px;
     border-radius: 4px;
     padding: 14px 24px;
     font-family: $sans-serif;
-    font-size: .8rem;
+    font-size: 1rem;
     color: $white;
     transition: .4s ease-out;
     cursor: pointer;
