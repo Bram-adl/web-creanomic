@@ -13,9 +13,9 @@
 
     <section class="section">
       <h3 class="section-title">Virtual Art Exhibition</h3>
-      <p class="section-text">Virtual Art Exhibition is an online platform art gallery or a showcase of creative arts made by all <i>vocational student</i>, Brawijaya Unversity. All arts are collected and provided inside this art exhibition. To take a visit, please click the button below.</p>
+      <p class="section-text">Virtual Art Exhibition adalah galeri seni platform online dan showcase seni virtual hasil karya seluruh <i>mahasiswa vokasi</i>, Universitas Brawijaya. Semua seni dikumpulkan dan disediakan di dalam galeri seni virtual online kami. Sekarang Anda dapat melihat semua kreativitas dengan memasukkan proyek seni virtual merek baru kami.</p>
       <button class="section-btn">
-        Enter Virtual Art Exhibition
+        Masuk ke Virtual Art Exhibition
       </button>
     </section>
 

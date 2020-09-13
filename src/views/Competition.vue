@@ -12,15 +12,15 @@
     </header>
 
     <section class="section">
-      <h3 class="section-title">Competition</h3>
+      <h3 class="section-title">Kompetisi</h3>
       <p class="section-text">
-        Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short film, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.
+        Creanomic menyediakan kompetisi internasional dan nasional. Kami terbuka bagi semua orang untuk berpartisipasi dengan kemudahan pendaftaran. Mulai dari fotografi internasional, film pendek, esai dan masih banyak lagi. Untuk mendapatkan detil lebih lanjut tentang semua kompetisi, silahkan klik tombol di bawah ini.
       </p>
       <button class="section-btn" @click="goTo('international-competition')">
-        International Competition
+        Kompetisi Internasional
       </button>
       <button class="section-btn" @click="goTo('national-competition')">
-        National Competition
+        Kompetisi Nasional
       </button>
     </section>
 
