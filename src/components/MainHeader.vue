@@ -29,7 +29,9 @@ export default {
   },
 
   mounted () {
-    this.runAnimation()
+    if ( this.$route.name == 'home' ) {
+      this.runAnimation()
+    }
   },
 
   methods: {
@@ -52,7 +54,7 @@ export default {
         stagger: {
           amount: 0.1
         }
-      }, "-=0.75").to(".logo", {
+      }, "-=0.75").from(".logo", {
         opacity: 1,
         duration: 1,
         ease: "power2.inOut",
@@ -62,40 +64,21 @@ export default {
     goToPrevPage (link) {
       if ( link == '/' ) {
         this.eventBus.$emit('loadLandingPage')
+      } else if ( link == 'competition' ) {
+        this.eventBus.$emit('loadCompetitionPage')
+      } else {
+        this.eventBus.$emit('loadHomePage')
       }
     },
 
     goToAboutPage () {
       this.eventBus.$emit('loadAboutPage')
-    }
+    },
   }
 }
 </script>
 
 <style lang="scss" scoped>
-/* 
-  =========================================================
-  | SCSS Variables and Mixins
-  =========================================================
-  Di kode ini, kita membuat beberapa variable untuk warna 
-  dan fonts, sehingga berikutnya saat kita ingin menggunakan 
-  warna yang sudah ditentukan dari design dan sifatnya global
-  kita cukup merubah nya melalui variable ini.
-
-  Berikutnya terdapat mixin yang fokusnya untuk mempermudah
-  penulisan media queries atau bekerja untuk responsive web
-  design. Mixin sudah dibuat menggunakan @mixin sehingga
-  untuk menggunakannya, cukup include dengan @include 
-  directive milik SCSS.
-
-  Untuk mobile first approach, kita tidak tentukan breakpoint
-  untuk ukuran xs, untuk itu kita hanya deklarasikan ukuran
-  lainnya dimana sm untuk small screen seperti handphone, md
-  untuk ukuran tablet atau handphone portrait, lg untuk mini
-  laptop seperti notebook atau tablet pro, dan xl untuk ukuran
-  desktop.
-*/
-
 // Global Color Variables.
 $white: #F5F5F5;
 $yellow: #FFB149;
@@ -177,7 +160,7 @@ $xl-min: 1200px;
       text-align: center;
       line-height: 0;
       .logo {
-        opacity: 0;
+        opacity: 1;
         width: 50px;
         height: 50px;
         @include md {

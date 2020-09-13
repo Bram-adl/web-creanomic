@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <main-header></main-header>
+    <main-header :prevLink="prevLink"></main-header>
 
     <div class="header">
       <h2 class="title">Creanomic Competition</h2>
@@ -31,9 +31,14 @@ import MainHeader from '../components/MainHeader'
 
 export default {
   name: 'international-comp',
+
   components: {
     MainHeader,
-  }
+  },
+
+  data: () => ({
+    prevLink: 'competition',
+  })
 }
 </script>
 

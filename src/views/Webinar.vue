@@ -1,173 +1,378 @@
 <template>
-  <div class="art-gallery">
-    <div class="overlay"></div>
-    <div class="background"></div>
-
-    <main-header></main-header>
-    <main-title></main-title>
-
-    <div class="text-box">
-      <div class="text-title-container">
-        <h3 class="text-title">Online Webinars</h3>
-      </div>
-      <p class="text">Presence of corona virus apocalypse had pushed technologies to evolve and a new inovative way is created. The seminar which takes place and audiences has now been evolved into a brand new online seminar works with website. Webinar is our creanomic online seminar which takes place at your favor. Creanomic presents an online seminar with a topic of creativity amidst industry. Enroll now to get notified.</p>
-      <main-button text="Enroll Webinar Now"></main-button>
+  <div class="container">
+    <div class="background">
+      <div class="background-image"></div>
     </div>
 
-    <webinar-form></webinar-form>
+    <div class="overlay"></div>
+    <main-header :prevLink="prevLink"></main-header>
+    
+    <header class="heading">
+      <h2 class="heading-text">Explore Creanomic</h2>
+    </header>
 
-    <div class="background-image"></div>
+    <section class="section">
+      <h3 class="section-title">Online Webinar</h3>
+      <p class="section-text">The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venun has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below</p>
+      <button class="section-btn" @click="isFormOpen = true">
+        Enroll Online Webinar
+      </button>
+    </section>
+
+    <transition
+      enter-active-class="animate__animated animate__slideInLeft"
+      leave-active-class="animate__animated animate__slideOutLeft">
+      <form class="form" v-if="isFormOpen">
+        <i class="fas fa-times" @click="isFormOpen = false"></i>
+        <h3 class="form-title">
+          Enroll Online Webinar
+        </h3>
+        <p class="form-info">
+          Once you have enrolled using your verified email account, we will send you an invitation link to join the webinar. Please kindly provide the correct email address.
+        </p>
+        <div class="form-input">
+          <input type="text" class="input" placeholder="First Name">
+        </div>
+        <div class="form-input">
+          <input type="text" class="input" placeholder="Last Name">
+        </div>
+        <div class="form-input">
+          <input type="text" class="input" placeholder="Email Address">
+        </div>
+        <button class="form-btn">
+          Submit
+        </button>
+      </form>
+    </transition>
+
+    <div class="image-showcase">
+      <img src="@/assets/img/home/webinar.jpg" alt="Virtual Art Exhibition">
+    </div>
   </div>
 </template>
 
 <script>
-import MainHeader from "../components/MainHeader"
-import MainTitle from "../components/MainTitle"
-import MainButton from "../components/MainButton"
-import WebinarForm from "../components/section/WebinarForm"
+import MainHeader from '../components/MainHeader'
 
 export default {
-  name: 'art-gallery',
+  name: 'virtual-art-exhibition',
+
   components: {
     MainHeader,
-    MainTitle,
-    MainButton,
-    WebinarForm,
   },
-  mounted: function () {    
-    this.eventBus.$on("loadHomePage", () => this.loadHomePage())
-    
-    let tl = this.gsap.timeline()
-    
-    if ( window.innerWidth > 768 ) {
-      tl.to(".title", {left: "0", x: "0", width: "0", marginLeft: "50px", fontSize: "36px", duration: 2, delay: 1, ease: "circ.inOut"})
-      .from(".background-image", {x: "100%", opacity: 0, ease: "circ.inOut", duration: 1}, "-=1.5")
-    } else {
-      tl.to(".title", {left: "0", x: "0", width: "0", marginLeft: "50px", fontSize: "24px", duration: 2, delay: 1, ease: "circ.inOut"})
-      .from(".background-image", {x: "100%", opacity: 0, ease: "circ.inOut", duration: 1}, "-=1.5")
-    }
 
-    tl.from(".text-title", {y: 50, duration: 1, delay: 1, ease: "circ.inOut"}, "-=0.5")
-    .from(".text", {x: -100, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=1")
-    .fromTo(".btn", {x: -50, opacity: 0}, {x: 0, opacity: 1, duration: 1, ease: "circ.inOut"}, "-=0.25")
+  data: () => ({
+    prevLink: 'home',
+    isFormOpen: false,
+  }),
+
+  mounted () {
+    this.runAnimation()
+    this.eventBus.$on('loadHomePage', () => this.goToHomePage())
+    this.eventBus.$on('loadAboutPage', () => this.goToAboutPage())
   },
+
   methods: {
-    loadHomePage() {
+    runAnimation () {
+      let fontSize = null
+      let left = null
+      if ( window.screen.width < 768 ) {
+        fontSize = '1.2rem' 
+        left = '25px'
+      } else {
+        fontSize = '2rem'
+        left = '50px'
+      }
+      
       let tl = this.gsap.timeline()
+      tl.to(".heading-text", {
+        left: left,
+        fontSize: fontSize,
+        transform: "translate(0, -50%)",
+        duration: 1,
+        delay: 1,
+        ease: "circ.inOut"
+      }).from(".image-showcase", {
+        x: "100%",
+        duration: 1,
+        ease: "circ.inOut",
+      }, "-=1").fromTo(".section-title, .section-text, .section-btn", {
+        x: -50,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.2
+      }, "-=0.5")
+    },
 
-      tl.to(".text-title", {y: 50, duration: 1, ease: "circ.inOut"})
-      .to(".text", {x: -100, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=1")
-      .to(".btn", {y: -16, opacity: 0, duration: 1, ease: "circ.inOut"}, "-=0.75")
-      .to(".overlay", {top: "0", duration: 1, onComplete: () => this.$router.push({ name: "home" })})
+    goTo (link) {
+      this.gsap.to(".overlay", {
+        left: 0,
+        delay: 1,
+        duration: 1,
+        ease: "circ.inOut",
+        onComplete: () => this.$router.push({ name: link })
+      })
+    },
+
+    goToHomePage () {
+      this.goTo('home')
+    },
+
+    goToAboutPage () {
+      this.goTo('about')
     },
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #363C3E;
-  z-index: 10;
-  top: 100%;
-  left: 0;
+// Global Color Variables.
+$white: #F5F5F5;
+$yellow: #FFB149;
+$blue: #00A8AA;
+$grey: #363C3E;
+$serif: "Merriweather", serif;
+$sans-serif: "Open Sans", sans-serif;
+
+// Twitter Bootstrap Grid System. 
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+// Media Queries Breakpoints.
+@mixin sm {
+  @media (min-width: #{$sm-min}) {
+    @content;
+  }
 }
 
-.art-gallery {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
+@mixin md {
+  @media (min-width: #{$md-min}) {
+    @content;
+  }
+}
 
-  .background {
+@mixin lg {
+  @media (min-width: #{$lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-min}) {
+    @content;
+  }
+}
+
+/* 
+  =========================================================
+  | SCSS Bases Styles - Mobile First
+  =========================================================
+*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 25;
+  background: $grey;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  &-image {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-
-    transition: .4s ease-out;
-
-    background-image: url("../assets/img/home/webinar.jpg");
-    background-size: 100%;
-    transform: scale(1.5);
-    filter: blur(50px);
-
+    background: url('../assets/img/home/webinar.jpg') center center/cover;
+    filter: blur(25px);
+    transform: scale(1.15);
+    position: relative;
     &::after {
       content: "";
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      left: 0;
-      top: 0;
       background: rgba(0, 0, 0, 0.5);
     }
   }
 }
-
-.text-box {
-  max-width: 50%;
-  padding: 0 50px;
-
-  .text-title-container {
-    overflow: hidden;
-
-    .text-title {
-      color: #FEFEFE;
-      font-family: "Merriweather", serif;
-      font-size: 30px;
+.container {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.heading {
+  height: 15vh;
+  position: relative;
+  overflow: hidden;
+  .heading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: $yellow;
+    font-family: $serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include md {
+      font-size: 1.8rem;
+    }
+    @include lg {
+      font-size: 2.2rem;
+    }
+    @include xl {
+      font-size: 2.6rem;
+    }
+  }
+}
+.section {
+  color: $white;
+  padding: 0 25px;
+  @include md {
+    max-width: 40%;
+    padding-left: 50px;
+  }
+  &-title {
+    font-family: $serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  &-text {
+    font-family: $sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 25px 0 30px;
+  }
+  &-btn {
+    opacity: 0;
+    background: #C58B3E;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 24px;
+    font-family: $sans-serif;
+    font-size: .8rem;
+    color: $white;
+    transition: .4s ease-out;
+    cursor: pointer;
+    &:hover {
+      background: darken(#C58B3E, 15%);
+    }
+  }
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  padding: 25px;
+  background: #1E1E1E;
+  font-family: $sans-serif;
+  text-align: center;
+  color: $white;
+  @include md {
+    top: 20vh;
+    transform: translate(0, 0);
+    width: 400px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  i {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  &-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    @include md {
+      font-size: 1.8rem;
+    }
+  }
+  &-info {
+    line-height: 1.2;
+    font-size: .8rem;
+    font-weight: 300;
+    opacity: 0.75;
+    margin: 30px 0;
+    @include md {
+      font-size: .9rem;
+    }
+  }
+  &-input {
+    margin-bottom: 30px;
+    border-left: 8px solid #BA843C;
+    border-bottom: 1px solid #BA843C;
+    .input {
+      width: 100%;
+      background: none;
+      outline: none;
+      border: none;
+      padding: 10px 14px;
+      color: $white;
+      font-size: 1rem;
       font-weight: 300;
     }
   }
-
-  .text {
-    color: rgba(254, 254, 254, 0.75);
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 20px 0 25px;
+  &-btn {
+    background: #BA843C;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 24px;
+    color: $white;
+    font-family: $sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
-
-.background-image {
+.image-showcase {
+  width: 100%;
+  height: 450px;
   position: absolute;
-  top: 150px;
+  top: 20vh;
   right: 0;
-
-  width: 50%;
-  height: 400px;
-
-  background-image: url("../assets/img/home/webinar.jpg");
-  background-size: cover;
-}
-
-@media only screen and (max-width: 768px) {
-  .text-box {
-    max-width: 100%;
-
-    .text-title-container {      
-      .text-title {
-        font-size: 24px;
-      }
+  z-index: -1;
+  @include md {
+    width: 55%;
+    &::after {
+      display: none;
     }
   }
-
-  .background-image {
+  &::after {
+    content: "";
     position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 400px;
-
-    z-index: -1;
-
-    background-image: url("../assets/img/home/webinar.jpg");
-    background-size: cover;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 </style>

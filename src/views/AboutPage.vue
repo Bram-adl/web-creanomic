@@ -17,7 +17,7 @@
       <div class="box box-text">
         <h1 class="title">About Creanomic</h1>
         <p class="text">
-          Creative Inovative and Economic Center, which well-known as Creanomic, is an annual event where Vocational Programe, Brawijaya University holds. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.
+          Creative Inovative and Economic Center, which well-known as Creanomic, is an annual event which holds by Vocational Education Program, Brawijaya University. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.
         </p>
         <p class="text">Due to <i>corona virus pandemy</i>, the event evolves to adapt the current situation along with bringing new concept this year. Creanomic also brings up new events: <strong>Art Exhibition</strong>, <strong>Online Webinar</strong>, and widen our competition scope to International level.</p>
       </div>

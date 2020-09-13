@@ -12,20 +12,15 @@
     </header>
 
     <section class="section">
-      <h3 class="section-title">Competition</h3>
-      <p class="section-text">
-        Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short film, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.
-      </p>
-      <button class="section-btn" @click="goTo('international-competition')">
-        International Competition
-      </button>
-      <button class="section-btn" @click="goTo('national-competition')">
-        National Competition
+      <h3 class="section-title">Virtual Art Exhibition</h3>
+      <p class="section-text">Virtual Art Exhibition is an online platform art gallery or a showcase of creative arts made by all <i>vocational student</i>, Brawijaya Unversity. All arts are collected and provided inside this art exhibition. To take a visit, please click the button below.</p>
+      <button class="section-btn">
+        Enter Virtual Art Exhibition
       </button>
     </section>
 
     <div class="image-showcase">
-      <img src="@/assets/img/home/competition.jpg" alt="Virtual Art Exhibition">
+      <img src="@/assets/img/home/art-gallery.jpg" alt="Virtual Art Exhibition">
     </div>
   </div>
 </template>
@@ -172,7 +167,7 @@ $xl-min: 1200px;
   &-image {
     width: 100%;
     height: 100%;
-    background: url('../assets/img/home/competition.jpg') center center/cover;
+    background: url('../assets/img/home/art-gallery.jpg') center center/cover;
     filter: blur(25px);
     transform: scale(1.15);
     position: relative;
@@ -240,8 +235,7 @@ $xl-min: 1200px;
     margin: 25px 0 30px;
   }
   &-btn {
-    display: block;
-    margin-bottom: 16px;
+    opacity: 0;
     background: #C58B3E;
     outline: none;
     border: none;
@@ -252,9 +246,6 @@ $xl-min: 1200px;
     color: $white;
     transition: .4s ease-out;
     cursor: pointer;
-    @include md {
-      font-size: 1rem;
-    }
     &:hover {
       background: darken(#C58B3E, 15%);
     }

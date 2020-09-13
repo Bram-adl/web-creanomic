@@ -22,9 +22,9 @@ export default new VueRouter({
       component: () => import('../views/AboutPage.vue'),  
     },
     {
-      path: "/art-gallery",
-      name: "art-gallery",
-      component: () => import('../views/ArtGallery.vue'),
+      path: "/virtual-art-exhibition",
+      name: "virtual-art-exhibition",
+      component: () => import('../views/VirtualArtExhibition.vue'),
     },
     {
       path: "/webinar",
@@ -37,14 +37,14 @@ export default new VueRouter({
       component: () => import('../views/Competition.vue'),
     },
     {
-      path: "/international",
-      name: "internationalComp",
-      component: () => import('../views/comp-international.vue')
+      path: "/international-competition",
+      name: "international-competition",
+      component: () => import('../views/InternationalCompetition.vue')
     },
     {
-      path: "/national",
-      name: "nationalComp",
-      component: () => import('../views/comp-national.vue')
+      path: "/national-competition",
+      name: "national-competition",
+      component: () => import('../views/NationalCompetition.vue')
     },
   ]
 })

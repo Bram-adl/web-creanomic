@@ -21,7 +21,8 @@
           <div 
             class="card" 
             :style="`background-image: url('img/${card.image}.jpg')`"
-            @mouseenter="changeBackground(card.image)">
+            @mouseenter="changeBackground(card.image)"
+            @click="goToPage(card.link)">
             <h3 class="card-title">{{ card.title }}</h3>
           </div>
         </slide>
@@ -50,17 +51,20 @@ export default {
       {
         id: 1,
         title: 'Virtual Art Exhibition',
-        image: 'art-gallery'
+        image: 'art-gallery',
+        link: 'virtual-art-exhibition'
       },
       {
         id: 2,
         title: 'Online Webinar',
-        image: 'webinar'
+        image: 'webinar',
+        link: 'webinar',
       },
       {
         id: 3,
         title: 'Competitions',
-        image: 'competition'
+        image: 'competition',
+        link: 'competition',
       },
     ]
   }),
@@ -100,23 +104,34 @@ export default {
       }, "-=2")
     },
 
-    loadLandingPage () {
+    goTo (link) {
       this.gsap.to(".overlay", {
         top: 0,
         delay: 1,
         duration: 1,
         ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: 'landing' })
+        onComplete: () => this.$router.push({ name: link })
       })
     },
 
+    loadLandingPage () {
+      this.goTo('landing')
+    },
+
     loadAboutPage () {
-      this.gsap.to(".overlay", {
-        top: 0,
+      this.goTo('about')
+    },
+
+    goToPage (link) {
+      this.gsap.to(".card", {
+        scale: 0,
         delay: 1,
         duration: 1,
         ease: "circ.inOut",
-        onComplete: () => this.$router.push({ name: 'about' })
+        stagger: {
+          amount: 0.2
+        },
+        onComplete: () => this.$router.push({ name: link })
       })
     }
   }
@@ -230,7 +245,6 @@ $xl-min: 1200px;
   }
 }
 .container {
-  background: $grey;
   width: 100%;
   min-height: 100%;
 }
@@ -276,6 +290,7 @@ $xl-min: 1200px;
   margin: auto;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
   @include sm {
     width: 400px;
     height: 400px;
