@@ -8,38 +8,16 @@
     <main-header :prevLink="prevLink"></main-header>
     
     <header class="heading">
-      <h2 class="heading-text">Explore Creanomic</h2>
+      <h2 class="heading-text">{{ $t('tagline') }} Creanomic</h2>
     </header>
 
     <section class="section">
-      <h3 class="section-title">Online Webinar</h3>
-      <p class="section-text">The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venun has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below</p>
-      <button class="section-btn" @click="showForm">
-        Enroll Online Webinar
+      <h3 class="section-title">{{ $t('webinar') }}</h3>
+      <p class="section-text" v-html="$t('wPage.WebinarText')"></p>
+      <button class="section-btn">
+        {{ $t('wPage.WebinarBtn') }}
       </button>
     </section>
-
-    <form class="form">
-      <i class="fas fa-times" @click="closeForm"></i>
-      <h3 class="form-title">
-        Enroll Online Webinar
-      </h3>
-      <p class="form-info">
-        Once you have enrolled using your verified email account, we will send you an invitation link to join the webinar. Please kindly provide the correct email address.
-      </p>
-      <div class="form-input">
-        <input type="text" class="input" placeholder="First Name">
-      </div>
-      <div class="form-input">
-        <input type="text" class="input" placeholder="Last Name">
-      </div>
-      <div class="form-input">
-        <input type="text" class="input" placeholder="Email Address">
-      </div>
-      <button class="form-btn">
-        Submit
-      </button>
-    </form>
 
     <div class="image-showcase">
       <img src="@/assets/img/home/webinar.jpg" alt="Virtual Art Exhibition">
@@ -101,24 +79,6 @@ export default {
         ease: "power2.inOut",
         stagger: 0.2
       }, "-=0.5")
-    },
-
-    showForm () {
-      this.gsap.to(".form", {
-        display: "block",
-        left: "0%",
-        duration: 1,
-        ease: "power2.inOut"
-      })
-    },
-
-    closeForm () {
-      this.gsap.to(".form", {
-        display: "none",
-        left: "-100%",
-        duration: 1,
-        ease: "power2.inOut"
-      })
     },
 
     goTo (link) {
@@ -289,76 +249,6 @@ $xl-min: 1200px;
     &:hover {
       background: darken(#C58B3E, 15%);
     }
-  }
-}
-.form {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  width: 100%;
-  padding: 25px;
-  background: #1E1E1E;
-  font-family: $sans-serif;
-  text-align: center;
-  color: $white;
-  @include md {
-    top: 20vh;
-    transform: translate(0, 0);
-    width: 400px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-  }
-  i {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    cursor: pointer;
-  }
-  &-title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    @include md {
-      font-size: 1.8rem;
-    }
-  }
-  &-info {
-    line-height: 1.2;
-    font-size: .8rem;
-    font-weight: 300;
-    opacity: 0.75;
-    margin: 30px 0;
-    @include md {
-      font-size: .9rem;
-    }
-  }
-  &-input {
-    margin-bottom: 30px;
-    border-left: 8px solid #BA843C;
-    border-bottom: 1px solid #BA843C;
-    .input {
-      width: 100%;
-      background: none;
-      outline: none;
-      border: none;
-      padding: 10px 14px;
-      color: $white;
-      font-size: 1rem;
-      font-weight: 300;
-    }
-  }
-  &-btn {
-    background: #BA843C;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    width: 100%;
-    padding: 12px 24px;
-    color: $white;
-    font-family: $sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
   }
 }
 .image-showcase {

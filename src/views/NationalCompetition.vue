@@ -5,7 +5,7 @@
 
     <header class="header">
       <h1 class="title">
-        Creanomic National Competition
+        {{ $t('cPage.NationalCompTitle') }}
       </h1>
     </header>
 

@@ -3,59 +3,10 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-/* 
-  ===================================================================
-  |
-  | Translate Bahasa - English to Bahasa
-  |
-  ===================================================================
-  |
-  | Di sini ada dua buah object bernama en dan id. Untuk bagian en, 
-  | kita tulisan teks dengan variable bebas tetapi value nya adalah
-  | konten yang berbahasa inggris, setelah sudah dituliskan bahasa
-  | inggrisnya, kita lakukan yang sama di object berikutnya, tetapi
-  | kali ini kita tulisnya menggunakan bahasa indonesia. Penamaan
-  | variable sebetulnya bebas, tetapi berdasarkan penggunaannya di 
-  | dalam components, maka disesuaikan saja dengan isi utamanya.
-  |
-  ===================================================================
-  |
-  | Cheat Sheet - Penamaan Variable
-  |
-  ===================================================================
-  |
-  | 1. VirtualArtExhibitionText -> Paragraf penjelasan virtual art 
-  | exhibition di halaman VirtualArtExhibition.vue
-  | 2. VirtualArtExhibitionBtn -> Teks pada button di dalam halaman
-  | VirtualArtExhibiion.vue
-  | 3. WebinarText -> Paragraf penjelasan webinar di halaman 
-  | Webinar.vue
-  | 4. WebinarBtn -> Teks pada button di dalam halaman Webinar.vue
-  | 5. WebinarFormTitle -> Judul pada formulir pendaftaran webinar
-  | di dalam halaman Webinar.vue
-  | 6. WebinarFormInfo -> Paragraf untuk informasi yang terletak di
-  | form dalam halaman Webinar.Vue
-  | 7. WebinarFName -> Placeholder untuk input First Name dalam 
-  | halaman Webinar.vue
-  | 8. WebinarLName -> Placeholder untuk input Last Name dalam
-  | halaman Webinar.vue
-  | 9. WebinarEMail -> Placeholder untuk input Email Address dalam
-  | halaman Webinar.vue
-  | 10. WebinarFormBtn -> Teks untuk button pada form dalam halaman
-  | Webinar.vue
-  | 11. CompetitionText -> Paragraf penjelasan competitions di dalam
-  | halaman Competitions.vue
-  | 12. CompetitionBtn1 -> Teks pada button International Competition
-  | 13. CompetitionBtn2 -> Teks pada button National Competition
-  | 14. NationalCompTitle -> Judul untuk halaman 
-  | NationalCompetition.vue
-  | 15. InternationalCompTitle -> Judul untuk halaman 
-  | InternationalCompetition.vue
-*/
 const messages = {
   'en': {
     home: 'Home',
-    virtualArtGallery: 'Virtual Art Gallery',
+    virtualArtGallery: 'Virtual Art Exhibition',
     webinar: 'Online Webinar',
     competition: 'Competitions',
     tagline: 'Explore',
@@ -70,6 +21,21 @@ const messages = {
       ea: 'Economy',
       no: 'Innovation',
       mic: 'Center'
+    },
+    vaePage: {
+      VirtualArtExhibitionText: `Virtual Art Exhibition is an online platform art gallery or a showcase of creative arts made by all <i>vocational student</i>, Brawijaya Unversity. All arts are collected and provided inside this art exhibition. To take a visit, please click the button below.`,
+      VirtualArtExhibitionBtn: 'Enter Virtual Art Exhibition',
+    },
+    wPage: {
+      WebinarText: `The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venun has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below`,
+      WebinarBtn: 'Enroll Online Webinar',
+    },
+    cPage: {
+      CompetitionText: `Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short film, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.`,
+      CompetitionBtn1: 'International Competition',
+      CompetitionBtn2: 'National Competition',
+      NationalCompTitle: 'Creanomic National Competition',
+      InternationalCompTitle: 'Creanomic International Competition',
     }
   },
   'id': {
@@ -89,6 +55,21 @@ const messages = {
       ea: 'Ekonomi',
       no: 'Inovasi',
       mic: 'Kreatif'
+    },
+    vaePage: {
+      VirtualArtExhibitionText: `Virtual Art Exhibition adalah galeri seni platform online dan showcase seni virtual hasil karya seluruh <i>mahasiswa vokasi</i> Universitas Brawijaya. Semua seni dikumpulkan dan disediakan di dalam galeri seni virtual online kami. Sekarang anda dapat melihat semua kreativitas dengan mengunjungi pameran seni virtual kami.`,
+      VirtualArtExhibitionBtn: 'Masuk ke Pameran Seni Virtual',
+    },
+    wPage: {
+      WebinarText: `Kehadiran <i>pandemi virus corona</i> telah mendorong teknologi berkembang dan inovasi baru pun diciptakan. Seminar yang berlangsung dengan hadirin kini telah berkembang menjadi seminar online yang bekerja dengan website. Webinar adalah seminar online Creanomic kami yang berlangsung sesuai keinginan Anda dan Creanomic mempersembahkan seminar online dengan topik <strong>kreativitas untuk mengelola industri ekonomi</strong>. Daftar sekarang untuk mendapatkan pemberitahuan.`,
+      WebinarBtn: 'Daftar Webinar Online',
+    },
+    cPage: {
+      CompetitionText: `Creanomic menyediakan kompetisi international dan nasional. Kami terbuka bagi semua orang untuk berpartisipasi dengan kemudahan pendaftaran. Mulai dari fotografi internasional, film pendek, essay, dan masih banyak lagi. Kami memiliki hadiah utama khusus yang akan menanti anda bersama dengan sertifikatnya. Untuk mendapatkan detail lebih lanjut tentang semua kompetisi, silahkan klik tombol di bawah ini.`,
+      CompetitionBtn1: 'Kompetisi Internasional',
+      CompetitionBtn2: 'Kompetisi Nasional',
+      NationalCompTitle: 'Kompetisi Nasional Creanomic',
+      InternationalCompTitle: 'Kompetisi Internasional Creanomic',
     }
   }
 }

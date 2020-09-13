@@ -8,19 +8,17 @@
     <main-header :prevLink="prevLink"></main-header>
     
     <header class="heading">
-      <h2 class="heading-text">Explore Creanomic</h2>
+      <h2 class="heading-text">{{ $t('tagline') }} Creanomic</h2>
     </header>
 
     <section class="section">
-      <h3 class="section-title">Competition</h3>
-      <p class="section-text">
-        Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short film, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.
-      </p>
+      <h3 class="section-title">{{ $t('competition') }}</h3>
+      <p class="section-text" v-html="$t('cPage.CompetitionText')"></p>
       <button class="section-btn" @click="goTo('international-competition')">
-        International Competition
+        {{ $t('cPage.CompetitionBtn1') }}
       </button>
       <button class="section-btn" @click="goTo('national-competition')">
-        National Competition
+        {{ $t('cPage.CompetitionBtn2') }}
       </button>
     </section>
 
