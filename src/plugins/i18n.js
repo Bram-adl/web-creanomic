@@ -84,12 +84,15 @@ const messages = {
     aboutCrea: 'Tentang Creanomic',
     aboutCreaText1: `Pusat Ekonomi dan Inovasi Kreatif, yang kemudian disebut CREANOMIC, merupakan kegiatan tahunan yang diadakan oleh Program Pendidikan Vokasi di Universitas Brawijaya. Acara ini mengangkat topik mengenai <i>Kreativitas</i> dan <i>Inovasi</i> yang menjaga standard ekonomi.`,
     aboutCreaText2: `Karena adanya <i>pandemi virus corona</i>, acara ini berkembang untuk menyesuaikan situasi saat ini dengan membawa konsep baru tahun ini. Creanomic juga menghadirkan event event baru seperti <strong>Art Exhibition</strong> dan <strong>Online Webinar</strong>, dan sesuatu yang baru dari Creanomic adalah memperluas cakupan kompetisi kita ke tingkat internasional.`,
+    VirtualArtExhibitionText: `Virtual Art Exhibition adalah galeri seni flatform online dan showcase seni virtual hasil karya seluruh mahasiswa vokasi Universitas Brawijaya. Semua seni dikumpulkan dan disediakan di dalam galeri seni virtual online kami. Sekarang Anda dapat melihat semua kreativitas dengan memasukkan proyek seni virtual merek baru kami.`,
+    WebinarText: `Kehadiran pandemi virus corona Creanomic telah mendorong teknologi berkembang dan cara inovasi baru diciptakan. Seminar yang berlangsung dan hadirin kini telah berkembang menjadi seminar online yang bekerja dengan website. Webinar adalah seminar online Creanomic kami yang berlangsung sesuai keinginan anda dan creanomic mempersembahkan seminar online dengan topik kreativitas untuk mengelola industri ekonomi, daftar sekarang untuk mendapatkan pemberitahuan.`,
+    CompetitionText: `Creanomic menyediakan kompetisi internasional dan nasional. Kami terbuka bagi semua orang untuk berpartisipasi dengan kemudahan pendaftaran. Mulai dari fotografi internasional, film pendek, essay dan masih banyak lagi. Kami memiliki hadiah utama khusus yang akan menanti anda bersama dengan sertifikatnya. Untuk mendapatkan detil lebih lanjut tentang semua kompetisi, silahkan klik tombol dibawah ini.`,
     creanomic: {
       cr: 'Pusat',
       ea: 'Ekonomi',
       no: 'Inovasi',
       mic: 'Kreatif'
-    }
+    },
   }
 }
 
