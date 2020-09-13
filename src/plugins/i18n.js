@@ -78,6 +78,7 @@ const i18n = new VueI18n({
   locale: 'en',
   fallbackLocale: 'id',
   silentFallbackWarn: true,
+  silentTranslationWarn: true,
   messages,
 })
 

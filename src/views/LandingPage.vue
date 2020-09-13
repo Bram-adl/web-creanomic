@@ -123,7 +123,7 @@ export default {
         opacity: 1,
         duration: 1,
         ease: "power1.inOut"
-      })
+      }, "+=0.5")
     },
 
     toggleMenu () {
