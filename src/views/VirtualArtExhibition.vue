@@ -8,14 +8,14 @@
     <main-header :prevLink="prevLink"></main-header>
     
     <header class="heading">
-      <h2 class="heading-text">Virtual Art Exhibition</h2>
+      <h2 class="heading-text">{{ $t('tagline') }} Creanomic</h2>
     </header>
 
     <section class="section">
-      <h3 class="section-title">Virtual Art Exhibition</h3>
-      <p class="section-text">Virtual Art Exhibition adalah galeri seni platform online dan showcase seni virtual hasil karya seluruh <i>mahasiswa vokasi</i>, Universitas Brawijaya. Semua seni dikumpulkan dan disediakan di dalam galeri seni virtual online kami. Sekarang Anda dapat melihat semua kreativitas dengan memasukkan proyek seni virtual merek baru kami.</p>
+      <h3 class="section-title">{{ $t('VirtualArtGallery') }}</h3>
+      <p class="section-text" v-html="$t('vaePage.VirtualArtExhibitionText')"></p>
       <button class="section-btn">
-        Masuk ke Virtual Art Exhibition
+        {{ $t('vaePage.VirtualArtExhibitionBtn') }}
       </button>
     </section>
 
