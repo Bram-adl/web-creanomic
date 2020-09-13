@@ -32,7 +32,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
           </p>
           <button class="comp-btn">
-            Download PDF
+            Unduh PDF
           </button>
         </div>
       </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            Bisnis Plan
+            Bussiness Plan
           </h2>
           <p class="comp-text">
             <strong>Persyaratan:</strong> <br>
@@ -58,7 +58,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
           </p>
           <button class="comp-btn">
-            Download PDF
+            Unduh PDF
           </button>
         </div>
       </div>
@@ -84,7 +84,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
           </p>
           <button class="comp-btn">
-            Download PDF
+            Unduh PDF
           </button>
         </div>
       </div>

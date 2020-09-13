@@ -20,7 +20,7 @@
             Photography
           </h2>
           <p class="comp-text">
-            <strong>Persyaratan:</strong> <br>
+            <strong>Persyaratan</strong> <br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
           </p>
           <p class="comp-text">

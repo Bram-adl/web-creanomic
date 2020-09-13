@@ -12,17 +12,17 @@
     </header>
 
     <section class="section">
-      <h3 class="section-title">Online Webinar</h3>
-      <p class="section-text">The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venun has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below</p>
+      <h3 class="section-title">Webinar Online</h3>
+      <p class="section-text">Kehadiran pandemi virus Corona telah mendorong teknologi berkembang dan cara inovasi baru telah diciptakan. Seminar yang berlangsung dan hadirin kini telah berkembang menjadi seminar online baru yang bekerja dengan website. Webinar ini adalah seminar online Creanomic kami  yang berlangsung sesuai keinginan Anda dan Creanomic mempersembahkan seminar online dengan topik kreativitas untuk mengelola industri ekonomi. Daftar sekarang untuk mendapatkan pemberitahuan.</p>
       <button class="section-btn" @click="showForm">
-        Enroll Online Webinar
+        Daftar Webinar Online
       </button>
     </section>
 
     <form class="form">
       <i class="fas fa-times" @click="closeForm"></i>
       <h3 class="form-title">
-        Enroll Online Webinar
+        Daftae Webinar Online
       </h3>
       <p class="form-info">
         Once you have enrolled using your verified email account, we will send you an invitation link to join the webinar. Please kindly provide the correct email address.

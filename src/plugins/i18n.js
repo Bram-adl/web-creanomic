@@ -64,7 +64,7 @@ const messages = {
     about: 'About',
     aboutCrea: 'About Creanomic',
     aboutCreaText1: `Creative Inovative and Economic Center, which well-known as Creanomic, is an annual event which holds by Vocational Education Program, Brawijaya University. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.`,
-    aboutCreaText2: `Due to <i>corona virus pandemy</i>, the event evolves to adapt the current situation along with bringing new concept this year. Creanomic also brings up new events: <strong>Art Exhibition</strong>, <strong>Online Webinar</strong>, and widen our competition scope to International level.`,
+    aboutCreaText2: `Due to <i>corona virus pandemic</i>, the event evolves to adapt the current situation along with bringing new concept this year. Creanomic also brings up new events: <strong>Art Exhibition</strong>, <strong>Online Webinar</strong>, and widen our competition scope to International level.`,
     creanomic: {
       cr: 'Creative',
       ea: 'Economy',
