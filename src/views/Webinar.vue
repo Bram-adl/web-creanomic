@@ -14,7 +14,7 @@
     <section class="section">
       <h3 class="section-title">{{ $t('webinar') }}</h3>
       <p class="section-text" v-html="$t('wPage.WebinarText')"></p>
-      <button class="section-btn">
+      <button class="section-btn" @click="showMaintenance">
         {{ $t('wPage.WebinarBtn') }}
       </button>
     </section>
@@ -79,6 +79,10 @@ export default {
         ease: "power2.inOut",
         stagger: 0.2
       }, "-=0.5")
+    },
+
+    showMaintenance () {
+      window.alert('Webinar is not opened yet')
     },
 
     goTo (link) {

@@ -12,10 +12,10 @@
     </header>
 
     <section class="section">
-      <h3 class="section-title">{{ $t('VirtualArtGallery') }}</h3>
+      <h3 class="section-title">{{ $t('virtualArtGallery') }}</h3>
       <p class="section-text" v-html="$t('vaePage.VirtualArtExhibitionText')"></p>
-      <button class="section-btn">
-        {{ $t('vaePage.VirtualArtExhibitionBtn') }}
+      <button class="section-btn" @click="showMaintenance">
+          {{ $t('vaePage.VirtualArtExhibitionBtn') }}
       </button>
     </section>
 
@@ -79,6 +79,10 @@ export default {
         ease: "power2.inOut",
         stagger: 0.2
       }, "-=0.5")
+    },
+
+    showMaintenance () {
+      window.alert('Virtual Art Gallery is now under maintenance')
     },
 
     goTo (link) {
