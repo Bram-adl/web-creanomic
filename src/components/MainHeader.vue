@@ -7,7 +7,7 @@
       </router-link>
     </div>
     <div class="box box-logo">
-      <img src="@/assets/logo.png" alt="logo-creanomic" class="logo">
+      <a href="/"><img src="@/assets/logo.png" alt="logo-creanomic" class="logo"></a>
     </div>
     <div class="box box-link">
       <router-link class="link" to="/about">

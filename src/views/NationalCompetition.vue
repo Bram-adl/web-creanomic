@@ -17,23 +17,68 @@
         </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            Short Movie
+            {{ $t('competitions.shortMovie')}}
           </h2>
-          <p class="comp-text">
-            <strong>Persyaratan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Peraturan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Pendaftaran:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <button class="comp-btn">
-            Unduh PDF
-          </button>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.theme')}}</strong> <br>
+            <p>"{{ $t('competitions.shortMovieTheme')}}"</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.timeline')}}</strong> <br>
+            <table>
+              <tr>
+                <td>{{ $t('competitions.regist')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>12 {{ $t('competitions.october') }} - 29 {{ $t('competitions.october') }} 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.techmeet') }}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>31 {{ $t('competitions.october') }} 2020 (<i>via google meets/zoom</i>)</td>
+              </tr>
+            </table>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.reward')}}</strong> <br>
+            <table>
+              <tr>
+                <td>{{ $t ('competitions.Winner1')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 5.000.000 + {{ $t('competitions.certificate') }}.</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner2')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 4.000.000 + {{ $t('competitions.certificate') }}.</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner1')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 3.000.000 + {{ $t('competitions.certificate') }}.</td>
+              </tr>
+            </table>
+            <p>({{ $t('competitions.tax') }})</p>
+          </div>
+          <div class="comp-text">
+            <table>
+              <tr>
+                <td>Line</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>riyadhussh</td>
+              </tr>
+              <tr>
+                <td>Whatsapp</td>
+                <td style="padding: 0 4px;">:</td>
+                <td><a href="https://api.whatsapp.com/send?+6285806553948&text=Halo">0858 - 0655 - 5394 (Galuh)</a></td>
+              </tr>
+            </table>
+          </div>
+          <a href="pdf/nationalShortMovie.pdf" target="_blank" class="comp-btn">
+            {{ $t('competitions.downloadPDF') }}
+          </a>
+          <a href="pdf/nationalShortMovie.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
+            {{ $t('competitions.enrollComp') }}
+          </a>
         </div>
       </div>
       <div class="competition-box flex-reversed">
@@ -43,23 +88,93 @@
         </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            Bussiness Plan
+            {{ $t('competitions.bussinessPlan')}}
           </h2>
-          <p class="comp-text">
-            <strong>Persyaratan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Peraturan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Pendaftaran:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <button class="comp-btn">
-            Unduh PDF
-          </button>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.theme') }}</strong> <br>
+            <p>"{{ $t('competitions.bussinessPlanTheme') }}"</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.timeline')}}</strong> <br>
+            <table>
+              <tr>
+                <td>{{ $t('competitions.regist')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>10 {{ $t('competitions.october') }} - 29 {{ $t('competitions.october') }} 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.techmeet') }} I</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>31 {{ $t('competitions.october') }} 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.shortMovieText.pengumpulan') }} I</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>2 November - 15 November 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.shortMovieText.penyisihan') }} I</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>17 - 19 November 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.shortMovieText.pengumpulan') }} II</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>20 November 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.shortMovieText.penyisihan') }} (Wawancara)</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>26 November - 27 November 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.shortMovieText.pengumuman') }}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>30 November 2020</td>
+              </tr>
+            </table>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.reward')}}</strong> <br>
+            <table>
+              <tr>
+                <td>{{ $t ('competitions.Winner1')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 5.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner2')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 4.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner3')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 3.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+            </table>
+            <p>({{ $t('competitions.tax') }})</p>
+          </div>
+          <div class="comp-text">
+            <table>
+              <tr>
+                <td>Line</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>veniamantikasari</td>
+              </tr>
+              <tr>
+                <td>Whatsapp</td>
+                <td style="padding: 0 4px;">:</td>
+                <td><a href="https://api.whatsapp.com/send?+6285157235221&text=Halo">0851 - 5723 - 5221 (Mikail)</a></td>
+              </tr>
+            </table>
+          </div>
+          <a href="pdf/nationalBusinessPlan.pdf" target="_blank" class="comp-btn">
+            {{ $t('competitions.downloadPDF') }}
+          </a>
+          <a href="pdf/nationalBusinessPlan.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
+            {{ $t('competitions.enrollComp') }}
+          </a>
         </div>
       </div>
       <div class="competition-box">
@@ -69,23 +184,83 @@
         </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            Essay
+            {{ $t('competitions.essay')}}
           </h2>
-          <p class="comp-text">
-            <strong>Persyaratan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Peraturan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Pendaftaran:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <button class="comp-btn">
-            Unduh PDF
-          </button>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.theme')}}</strong> <br>
+            <p>"{{ $t('competitions.essayTheme') }}"</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.timeline')}}</strong> <br>
+            <table>
+              <tr>
+                <td>{{ $t('competitions.regist')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>12 {{ $t('competitions.october') }} - 29 {{ $t('competitions.october') }} 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.techmeet') }}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>31 {{ $t('competitions.october') }} 2020 (<i>via google meet/zoom</i>)</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.essayText.penilaian') }}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>19 November - 27 November 2020</td>
+              </tr>
+              <tr>
+                <td>{{ $t('competitions.shortMovieText.pengumuman') }}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>30 November 2020</td>
+              </tr>
+            </table>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.reward')}}</strong> <br>
+            <table>
+              <tr>
+                <td>{{ $t ('competitions.Winner1')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 5.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner2')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 4.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner3')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 3.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.runnerup')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>Rp 2.000.000 + {{ $t('competitions.certificate') }}</td>
+              </tr>
+            </table>
+            <p>({{ $t('competitions.tax') }})</p>
+          </div>
+          <div class="comp-text">
+            <table>
+              <tr>
+                <td>Line</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>novymjth89</td>
+              </tr>
+              <tr>
+                <td>Whatsapp</td>
+                <td style="padding: 0 4px;">:</td>
+                <td><a href="https://api.whatsapp.com/send?+6281336781434&text=Halo">0813 - 3678 - 1434 (Edwin)</a></td>
+              </tr>
+            </table>
+          </div>
+         <a href="pdf/nationalEssay.pdf" target="_blank" class="comp-btn">
+             {{ $t('competitions.downloadPDF') }}
+          </a>
+          <a href="pdf/nationalEssay.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
+            {{ $t('competitions.enrollComp') }}
+          </a>
         </div>
       </div>
     </section>
@@ -213,6 +388,7 @@ $xl-min: 1200px;
   padding: 0 50px;
   .competition-box {
     margin-bottom: 50px;
+    padding: 50px 0;
     display: block;
     @include md {
       display: flex;

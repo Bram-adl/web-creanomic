@@ -17,23 +17,66 @@
         </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            Photography
+            {{ $t('competitions.photography') }}
           </h2>
-          <p class="comp-text">
-            <strong>Persyaratan</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Peraturan:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <p class="comp-text">
-            <strong>Pendaftaran:</strong> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis doloribus veniam numquam facere maxime minus at neque, perspiciatis, porro laudantium pariatur voluptatibus natus illum labore nobis unde veritatis autem quia accusantium provident quisquam omnis, nesciunt nisi! Id qui tempora porro iure fugiat? Unde velit suscipit in, quasi laudantium tempore.
-          </p>
-          <button class="comp-btn">
-            Download PDF
-          </button>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.theme') }}</strong>
+            <p>{{ $t('competitions.photographyTheme')}}</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.timeline') }}</strong>
+            <p>{{ $t('competitions.photographyText.line1')}}</p>
+            <p>{{ $t('competitions.photographyText.line2')}}</p>
+            <p>{{ $t('competitions.photographyText.line3')}}</p>
+            
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.reward') }}</strong>
+            <table>
+              <tr>
+                <td>{{ $t ('competitions.Winner1')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>$500 + {{ $t('competitions.certificate')}}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner2')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>$400 + {{ $t('competitions.certificate')}}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.Winner3')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>$400 + {{ $t('competitions.certificate')}}</td>
+              </tr>
+              <tr>
+                <td>{{ $t ('competitions.favwin')}}</td>
+                <td style="padding: 0 4px;">:</td>
+                <td>$200 + {{ $t('competitions.certificate')}}</td>
+              </tr>
+            </table>
+            <p>{{ $t('competitions.tax')}}</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t('competitions.contactPerson') }}</strong>
+            <table>
+              <tr>
+                <td>Email</td>
+                <td style="padding: 0 4px;">:</td>
+                <td><a style="text-decoration: underline;" href="mailto:photographycreanomic2020@gmail.com">photographycreanomic2020@gmail.com</a></td>
+              </tr>
+              <tr>
+                <td>Whatsapp</td>
+                <td style="padding: 0 4px;">:</td>
+                <td><a style="text-decoration: underline;" href="https://api.whatsapp.com/send?+6281295639608&text=Halo">0812 - 9563 - 9608 (Rachma Pebhira)</a></td>
+              </tr>
+            </table>
+          </div>
+          <a href="pdf/internationalPhotography.pdf" target="_blank" class="comp-btn">
+            {{ $t('competitions.downloadPDF') }}
+          </a>
+          <a href="pdf/internationalForm.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
+            {{ $t('competitions.enrollComp') }}
+          </a>
         </div>
       </div>
     </section>
