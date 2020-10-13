@@ -14,8 +14,8 @@ const messages = {
         prev: 'Go Back',
         about: 'About',
         aboutCrea: 'About Creanomic',
-        aboutCreaText1: `Creative Inovative and Economic Center, which well-known as Creanomic, is an annual event which holds by Vocational Education Program, Brawijaya University. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.`,
-        aboutCreaText2: `Due to <i>corona virus pandemic</i>, the event evolves to adapt the current situation along with bringing new concept this year. Creanomic also brings up new events: <strong>Art Exhibition</strong>, <strong>Online Webinar</strong>, and widen our competition scope to International level.`,
+        aboutCreaText1: `Creative Economy and Innovation Center, which well-known as Creanomic, is an annual event which holds by Vocational Education Program, Brawijaya University. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.`,
+        aboutCreaText2: `Due to <i>corona virus pandemic</i>, the event evolves to adapt the current situation along with bringing new concept this year. Creanomic also brings up new events: <strong>Virtual Art Exhibition</strong>, <strong>Webinar</strong>, and widen our competitions scope to International level.`,
         creanomic: {
             cr: 'Creative',
             ea: 'Economy',
@@ -23,11 +23,11 @@ const messages = {
             mic: 'Centre'
         },
         vaePage: {
-            VirtualArtExhibitionText: `Virtual Art Exhibition is an online platform art gallery or a showcase of creative arts made by all <i>vocational student</i>, Brawijaya Unversity. All arts are collected and provided inside this art exhibition. To take a visit, please click the button below.`,
+            VirtualArtExhibitionText: `Virtual Art Exhibition is an online platform art gallery or a showcase of creative arts made by all <i>vocational student</i>, Brawijaya University. All arts are collected and provided inside this art exhibition. To take a visit, please click the button below.`,
             VirtualArtExhibitionBtn: 'Enter Virtual Art Exhibition',
         },
         wPage: {
-            WebinarText: `The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venun has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below`,
+            WebinarText: `The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venue has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below`,
             WebinarBtn: 'Enroll Online Webinar',
         },
         cPage: {
@@ -50,8 +50,8 @@ const messages = {
             regist: 'Registration',
 
             Winner1: "1st Winner",
-            Winner2: "2st Winner",
-            Winner3: "3st Winner",
+            Winner2: "2nd Winner",
+            Winner3: "3rd Winner",
             runnerup: "Runner Up",
             techmeet: "Technical Meeting",
             october: "October",
@@ -60,9 +60,12 @@ const messages = {
             // Photography
             photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
             photographyText: {
-                line1: "Open Registration and Submission 12th October - 13th November 2020",
-                line2: "Scoring 20th November - 28th November 2020",
-                line3: "Winner Announcement 30th November 2020",
+                open: "Open Registration and Submission",
+                opendate: "12<sup>th</sup> October - 13<sup>th</sup> November 2020",
+                scor: "Scoring ",
+                scordate: "20<sup>th</sup> November - 28<sup>th</sup> November 2020",
+                win: "Winner Announcement",
+                windate: "30<sup>th</sup> November 2020",
             },
 
             shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
@@ -79,7 +82,7 @@ const messages = {
                 penilaian: "Scoring",
             },
 
-            certificate: "e-certificate",
+            certificate: "E-Certificate",
             tax: "Rewards do not include tax",
 
             downloadPDF: 'Download Terms & Conditions',
@@ -98,7 +101,7 @@ const messages = {
         about: 'Tentang',
         aboutCrea: 'Tentang Creanomic',
         aboutCreaText1: `Pusat Ekonomi dan Inovasi Kreatif, yang kemudian disebut CREANOMIC, merupakan kegiatan tahunan yang diadakan oleh Program Pendidikan Vokasi di Universitas Brawijaya. Acara ini mengangkat topik mengenai <i>Kreativitas</i> dan <i>Inovasi</i> yang menjaga standard ekonomi.`,
-        aboutCreaText2: `Karena adanya <i>pandemi virus corona</i>, acara ini berkembang untuk menyesuaikan situasi saat ini dengan membawa konsep baru tahun ini. Creanomic juga menghadirkan event event baru seperti <strong>Art Exhibition</strong> dan <strong>Online Webinar</strong>, dan sesuatu yang baru dari Creanomic adalah memperluas cakupan kompetisi kita ke tingkat internasional.`,
+        aboutCreaText2: `Karena adanya <i>pandemi virus corona</i>, acara ini berkembang untuk menyesuaikan situasi saat ini dengan membawa konsep baru tahun ini. Creanomic juga menghadirkan event event baru seperti <strong>Pameran Seni Virtual</strong> dan <strong>Webinar</strong>, dan sesuatu yang baru dari Creanomic adalah memperluas cakupan kompetisi kita ke tingkat internasional.`,
         creanomic: {
             cr: 'Pusat',
             ea: 'Ekonomi',
@@ -142,9 +145,12 @@ const messages = {
 
             photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
             photographyText: {
-                line1: "Buka Pendaftaran dan Pengumpulan 12 Oktober - 13 November 2020",
-                line2: "Penilaian 20 November - 28 November 2020",
-                line3: "Pengumuman Juara 30 November 2020",
+                open: "Buka Pendaftaran dan Pengumpulan",
+                opendate: "12 Oktober - 13 November 2020",
+                scor: "Penilaian ",
+                scordate: "20 November - 28 November 2020",
+                win: "Pengumuman Juara",
+                windate: "30 November 2020",
             },
 
             shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
@@ -161,10 +167,10 @@ const messages = {
                 penilaian: "Penilaian",
             },
 
-            certificate: "e-sertifikat",
+            certificate: "E-Sertifikat",
             tax: "Hadiah belum termasuk pajak",
 
-            downloadPDF: 'Unduh PDF',
+            downloadPDF: 'Unduh Ketentuan & Persyaratan',
             enrollComp: 'Daftar Lomba',
         }
     }

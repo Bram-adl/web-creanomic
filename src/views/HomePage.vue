@@ -58,7 +58,7 @@ export default {
       },
       {
         id: 2,
-        title: i18n.locale == 'id' ? 'Webinar Online' : 'Online Webinar',
+        title: i18n.locale == 'id' ? 'Webinar ' : ' Webinar',
         image: 'webinar',
         link: 'webinar',
       },

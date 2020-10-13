@@ -18,15 +18,30 @@ export default {
   data: () => ({
     languages: [
       { flag: 'id', language: 'id', title: 'Bahasa', active: false },
-      { flag: 'us', language: 'en', title: 'English', active: true },
+      { flag: 'us', language: 'en', title: 'English', active: false },
     ]
   }),
 
+  mounted () {
+    if ( i18n.locale == 'id' ) {
+      this.languages[0].active = true
+    } else {
+      this.languages[1].active = true
+    }
+  },
+
   methods: {
     changeLocale(locale) {
-      this.languages.forEach(entry => {
-        entry.active = !entry.active
-      })
+      if ( locale == 'id' ) {
+        this.languages.forEach(entry => {
+          entry.active = entry.language == 'id' ? true : false
+        })
+      } else {
+          this.languages.forEach(entry => {
+            entry.active = entry.language == 'en' ? true : false
+          })
+      }
+      
       i18n.locale = locale
     }
   }

@@ -24,9 +24,23 @@
           </div>
           <div class="comp-text">
             <strong>{{ $t("competitions.timeline") }}</strong>
-            <p>{{ $t("competitions.photographyText.line1") }}</p>
-            <p>{{ $t("competitions.photographyText.line2") }}</p>
-            <p>{{ $t("competitions.photographyText.line3") }}</p>
+            <table class="table">
+            <tr>
+                <td>{{ $t("competitions.photographyText.open") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td v-html="$t('competitions.photographyText.opendate')"></td>
+              </tr>
+              <tr>
+                <td>{{ $t("competitions.photographyText.scor") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td v-html="$t('competitions.photographyText.scordate')"></td>
+              </tr>
+              <tr>
+                <td>{{ $t("competitions.photographyText.win") }} </td>
+                <td style="padding: 0 4px">:</td>
+                <td v-html="$t('competitions.photographyText.windate')"></td>
+              </tr>
+            </table>
           </div>
           <div class="comp-text">
             <strong>{{ $t("competitions.reward") }}</strong>

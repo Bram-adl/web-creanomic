@@ -50,17 +50,17 @@
               <tr>
                 <td>{{ $t("competitions.Winner1") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>Rp 5.000.000 + {{ $t("competitions.certificate") }}.</td>
+                <td>Rp 5.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.Winner2") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>Rp 4.000.000 + {{ $t("competitions.certificate") }}.</td>
+                <td>Rp 4.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.Winner1") }}</td>
+                <td>{{ $t("competitions.Winner3") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>Rp 3.000.000 + {{ $t("competitions.certificate") }}.</td>
+                <td>Rp 3.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
             </table>
             <p>({{ $t("competitions.tax") }})</p>
@@ -122,23 +122,23 @@
                 <td>31 {{ $t("competitions.october") }} 2020</td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.shortMovieText.pengumpulan") }} I</td>
+                <td>{{ $t("competitions.shortMovieText.pengumpulan") }}</td>
                 <td style="padding: 0 4px">:</td>
                 <td>2 November - 15 November 2020</td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.shortMovieText.penyisihan") }} I</td>
                 <td style="padding: 0 4px">:</td>
-                <td>17 - 19 November 2020</td>
+                <td>17 November - 19 November 2020</td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.shortMovieText.pengumpulan") }} II</td>
+                <td>{{ $t("competitions.techmeet") }} II</td>
                 <td style="padding: 0 4px">:</td>
                 <td>20 November 2020</td>
               </tr>
               <tr>
                 <td>
-                  {{ $t("competitions.shortMovieText.penyisihan") }} (Wawancara)
+                  {{ $t("competitions.shortMovieText.penyisihan") }} II (Wawancara)
                 </td>
                 <td style="padding: 0 4px">:</td>
                 <td>26 November - 27 November 2020</td>
