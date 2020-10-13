@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     routes: [
         /**
          * Routes di bawah ini adalah routes yang berbahasa inggris.
@@ -57,9 +57,10 @@ export default new VueRouter({
             component: () =>
                 import ('../views/NationalCompetition.vue')
         },
-        // {
-        //   path: "*",
-        //   component: () => import('../views/NotFound.vue')
-        // }
+        {
+            path: "/*",
+            component: () =>
+                import ('../views/LandingPage.vue')
+        }
     ]
 })

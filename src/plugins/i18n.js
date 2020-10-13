@@ -31,7 +31,7 @@ const messages = {
             WebinarBtn: 'Enroll Online Webinar',
         },
         cPage: {
-            CompetitionText: `Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short film, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.`,
+            CompetitionText: `Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short movie, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.`,
             CompetitionBtn1: 'International Competition',
             CompetitionBtn2: 'National Competition',
             NationalCompTitle: 'Creanomic National Competition',
@@ -65,7 +65,7 @@ const messages = {
                 line3: "Winner Announcement 30th November 2020",
             },
 
-            shortMovieTheme: "Become Inspirational Generation Admist The Pandemy",
+            shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
             shortMovieText: {
                 pengumpulan: "Works Submission",
                 penyisihan: "Elimination round",
@@ -74,7 +74,7 @@ const messages = {
 
             bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Area",
 
-            essayTheme: "Inovation and Creativity Youth On Pandemy",
+            essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
                 penilaian: "Scoring",
             },
@@ -82,7 +82,7 @@ const messages = {
             certificate: "e-certificate",
             tax: "Rewards do not include tax",
 
-            downloadPDF: 'Download PDF',
+            downloadPDF: 'Download Terms & Conditions',
             enrollComp: 'Enroll Competition',
         }
 
@@ -114,7 +114,7 @@ const messages = {
             WebinarBtn: 'Daftar Webinar Online',
         },
         cPage: {
-            CompetitionText: `Creanomic menyediakan kompetisi international dan nasional. Kami terbuka bagi semua orang untuk berpartisipasi dengan kemudahan pendaftaran. Mulai dari fotografi internasional, film pendek, essay, dan masih banyak lagi. Kami memiliki hadiah utama khusus yang akan menanti anda bersama dengan sertifikatnya. Untuk mendapatkan detail lebih lanjut tentang semua kompetisi, silahkan klik tombol di bawah ini.`,
+            CompetitionText: `Creanomic menyediakan kompetisi international dan nasional. Kompetisi terbuka untuk Mahasiswa/i aktif di Universitas atau Perguruan Tinggi Negeri maupun Swasta. Mulai dari fotografi internasional, film pendek, essay, dan masih banyak lagi. Kami memiliki hadiah utama khusus yang akan menanti anda bersama dengan sertifikatnya. Untuk mendapatkan detail lebih lanjut tentang semua kompetisi, silahkan klik tombol di bawah ini.`,
             CompetitionBtn1: 'Kompetisi Internasional',
             CompetitionBtn2: 'Kompetisi Nasional',
             NationalCompTitle: 'Kompetisi Nasional Creanomic',
@@ -140,7 +140,7 @@ const messages = {
             october: "Oktober",
             favwin: "Pemenang Favorit",
 
-            photographyTheme: "Optimisme Dalam Pandemi Dan Menuju Masa Depan Lebih Cerah",
+            photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
             photographyText: {
                 line1: "Buka Pendaftaran dan Pengumpulan 12 Oktober - 13 November 2020",
                 line2: "Penilaian 20 November - 28 November 2020",
@@ -154,7 +154,7 @@ const messages = {
                 pengumuman: "Pengumuman",
             },
 
-            bussinessPlanTheme: "Tujuan Bisnis Pembangunan Berkelanjutan Dengan Penggunaan Teknologi di Daerah Pandemi",
+            bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Area",
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {

@@ -5,314 +5,353 @@
 
     <header class="header">
       <h1 class="title">
-        {{ $t('cPage.NationalCompTitle') }}
+        {{ $t("cPage.NationalCompTitle") }}
       </h1>
     </header>
 
-    <section class="section" style="margin-bottom: 25px;">
+    <section class="section" style="margin-bottom: 25px">
+      <div class="competition-image">
+        <img src="img/national.jpg" alt="National Poster">
+      </div>
       <div class="competition-box">
-        <div class="competition-image">
-          <div class="comp-img"></div>
-          <div class="comp-img shadow"></div>
-        </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            {{ $t('competitions.shortMovie')}}
+            {{ $t("competitions.shortMovie") }}
           </h2>
           <div class="comp-text">
-            <strong>{{ $t('competitions.theme')}}</strong> <br>
-            <p>"{{ $t('competitions.shortMovieTheme')}}"</p>
+            <strong>{{ $t("competitions.theme") }}</strong> <br />
+            <p>"{{ $t("competitions.shortMovieTheme") }}"</p>
           </div>
           <div class="comp-text">
-            <strong>{{ $t('competitions.timeline')}}</strong> <br>
-            <table>
+            <strong>{{ $t("competitions.timeline") }}</strong> <br />
+            <table class="table">
               <tr>
-                <td>{{ $t('competitions.regist')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>12 {{ $t('competitions.october') }} - 29 {{ $t('competitions.october') }} 2020</td>
+                <td>{{ $t("competitions.regist") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  12 {{ $t("competitions.october") }} - 29
+                  {{ $t("competitions.october") }} 2020
+                </td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.techmeet') }}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>31 {{ $t('competitions.october') }} 2020 (<i>via google meets/zoom</i>)</td>
+                <td>{{ $t("competitions.techmeet") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  31 {{ $t("competitions.october") }} 2020 (<i
+                    >via google meets/zoom</i
+                  >)
+                </td>
               </tr>
             </table>
           </div>
           <div class="comp-text">
-            <strong>{{ $t('competitions.reward')}}</strong> <br>
-            <table>
+            <strong>{{ $t("competitions.reward") }}</strong> <br />
+            <table class="table">
               <tr>
-                <td>{{ $t ('competitions.Winner1')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 5.000.000 + {{ $t('competitions.certificate') }}.</td>
+                <td>{{ $t("competitions.Winner1") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 5.000.000 + {{ $t("competitions.certificate") }}.</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.Winner2')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 4.000.000 + {{ $t('competitions.certificate') }}.</td>
+                <td>{{ $t("competitions.Winner2") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 4.000.000 + {{ $t("competitions.certificate") }}.</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.Winner1')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 3.000.000 + {{ $t('competitions.certificate') }}.</td>
+                <td>{{ $t("competitions.Winner1") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 3.000.000 + {{ $t("competitions.certificate") }}.</td>
               </tr>
             </table>
-            <p>({{ $t('competitions.tax') }})</p>
+            <p>({{ $t("competitions.tax") }})</p>
           </div>
           <div class="comp-text">
-            <table>
+            <table class="table">
               <tr>
                 <td>Line</td>
-                <td style="padding: 0 4px;">:</td>
+                <td style="padding: 0 4px">:</td>
                 <td>riyadhussh</td>
               </tr>
               <tr>
                 <td>Whatsapp</td>
-                <td style="padding: 0 4px;">:</td>
-                <td><a href="https://api.whatsapp.com/send?+6285806553948&text=Halo">0858 - 0655 - 5394 (Galuh)</a></td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  <a
+                    href="https://api.whatsapp.com/send?+6285806553948&text=Halo"
+                    >0858 - 0655 - 5394 (Galuh)</a
+                  >
+                </td>
               </tr>
             </table>
           </div>
           <a href="pdf/nationalShortMovie.pdf" target="_blank" class="comp-btn">
-            {{ $t('competitions.downloadPDF') }}
+            {{ $t("competitions.downloadPDF") }}
           </a>
-          <a href="pdf/nationalShortMovie.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
-            {{ $t('competitions.enrollComp') }}
+          <a
+            href="pdf/nationalShortMovie.docx"
+            target="_blank"
+            class="comp-btn"
+          >
+            {{ $t("competitions.enrollComp") }}
           </a>
         </div>
       </div>
       <div class="competition-box flex-reversed">
-        <div class="competition-image">
-          <div class="comp-img"></div>
-          <div class="comp-img shadow"></div>
-        </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            {{ $t('competitions.bussinessPlan')}}
+            {{ $t("competitions.bussinessPlan") }}
           </h2>
           <div class="comp-text">
-            <strong>{{ $t('competitions.theme') }}</strong> <br>
-            <p>"{{ $t('competitions.bussinessPlanTheme') }}"</p>
+            <strong>{{ $t("competitions.theme") }}</strong> <br />
+            <p>"{{ $t("competitions.bussinessPlanTheme") }}"</p>
           </div>
           <div class="comp-text">
-            <strong>{{ $t('competitions.timeline')}}</strong> <br>
-            <table>
+            <strong>{{ $t("competitions.timeline") }}</strong> <br />
+            <table class="table">
               <tr>
-                <td>{{ $t('competitions.regist')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>10 {{ $t('competitions.october') }} - 29 {{ $t('competitions.october') }} 2020</td>
+                <td>{{ $t("competitions.regist") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  10 {{ $t("competitions.october") }} - 29
+                  {{ $t("competitions.october") }} 2020
+                </td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.techmeet') }} I</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>31 {{ $t('competitions.october') }} 2020</td>
+                <td>{{ $t("competitions.techmeet") }} I</td>
+                <td style="padding: 0 4px">:</td>
+                <td>31 {{ $t("competitions.october") }} 2020</td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.shortMovieText.pengumpulan') }} I</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>{{ $t("competitions.shortMovieText.pengumpulan") }} I</td>
+                <td style="padding: 0 4px">:</td>
                 <td>2 November - 15 November 2020</td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.shortMovieText.penyisihan') }} I</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>{{ $t("competitions.shortMovieText.penyisihan") }} I</td>
+                <td style="padding: 0 4px">:</td>
                 <td>17 - 19 November 2020</td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.shortMovieText.pengumpulan') }} II</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>{{ $t("competitions.shortMovieText.pengumpulan") }} II</td>
+                <td style="padding: 0 4px">:</td>
                 <td>20 November 2020</td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.shortMovieText.penyisihan') }} (Wawancara)</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>
+                  {{ $t("competitions.shortMovieText.penyisihan") }} (Wawancara)
+                </td>
+                <td style="padding: 0 4px">:</td>
                 <td>26 November - 27 November 2020</td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.shortMovieText.pengumuman') }}</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>{{ $t("competitions.shortMovieText.pengumuman") }}</td>
+                <td style="padding: 0 4px">:</td>
                 <td>30 November 2020</td>
               </tr>
             </table>
           </div>
           <div class="comp-text">
-            <strong>{{ $t('competitions.reward')}}</strong> <br>
-            <table>
+            <strong>{{ $t("competitions.reward") }}</strong> <br />
+            <table class="table">
               <tr>
-                <td>{{ $t ('competitions.Winner1')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 5.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.Winner1") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 5.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.Winner2')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 4.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.Winner2") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 4.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.Winner3')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 3.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.Winner3") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 3.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
             </table>
-            <p>({{ $t('competitions.tax') }})</p>
+            <p>({{ $t("competitions.tax") }})</p>
           </div>
           <div class="comp-text">
-            <table>
+            <table class="table">
               <tr>
                 <td>Line</td>
-                <td style="padding: 0 4px;">:</td>
+                <td style="padding: 0 4px">:</td>
                 <td>veniamantikasari</td>
               </tr>
               <tr>
                 <td>Whatsapp</td>
-                <td style="padding: 0 4px;">:</td>
-                <td><a href="https://api.whatsapp.com/send?+6285157235221&text=Halo">0851 - 5723 - 5221 (Mikail)</a></td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  <a
+                    href="https://api.whatsapp.com/send?+6285157235221&text=Halo"
+                    >0851 - 5723 - 5221 (Mikail)</a
+                  >
+                </td>
               </tr>
             </table>
           </div>
-          <a href="pdf/nationalBusinessPlan.pdf" target="_blank" class="comp-btn">
-            {{ $t('competitions.downloadPDF') }}
+          <a
+            href="pdf/nationalBusinessPlan.pdf"
+            target="_blank"
+            class="comp-btn"
+          >
+            {{ $t("competitions.downloadPDF") }}
           </a>
-          <a href="pdf/nationalBusinessPlan.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
-            {{ $t('competitions.enrollComp') }}
+          <a
+            href="pdf/nationalBusinessPlan.docx"
+            target="_blank"
+            class="comp-btn"
+          >
+            {{ $t("competitions.enrollComp") }}
           </a>
         </div>
       </div>
       <div class="competition-box">
-        <div class="competition-image">
-          <div class="comp-img"></div>
-          <div class="comp-img shadow"></div>
-        </div>
         <div class="competition-text">
           <h2 class="comp-title">
-            {{ $t('competitions.essay')}}
+            {{ $t("competitions.essay") }}
           </h2>
           <div class="comp-text">
-            <strong>{{ $t('competitions.theme')}}</strong> <br>
-            <p>"{{ $t('competitions.essayTheme') }}"</p>
+            <strong>{{ $t("competitions.theme") }}</strong> <br />
+            <p>"{{ $t("competitions.essayTheme") }}"</p>
           </div>
           <div class="comp-text">
-            <strong>{{ $t('competitions.timeline')}}</strong> <br>
-            <table>
+            <strong>{{ $t("competitions.timeline") }}</strong> <br />
+            <table class="table">
               <tr>
-                <td>{{ $t('competitions.regist')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>12 {{ $t('competitions.october') }} - 29 {{ $t('competitions.october') }} 2020</td>
+                <td>{{ $t("competitions.regist") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  12 {{ $t("competitions.october") }} - 29
+                  {{ $t("competitions.october") }} 2020
+                </td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.techmeet') }}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>31 {{ $t('competitions.october') }} 2020 (<i>via google meet/zoom</i>)</td>
+                <td>{{ $t("competitions.techmeet") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  31 {{ $t("competitions.october") }} 2020 (<i
+                    >via google meet/zoom</i
+                  >)
+                </td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.essayText.penilaian') }}</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>{{ $t("competitions.essayText.penilaian") }}</td>
+                <td style="padding: 0 4px">:</td>
                 <td>19 November - 27 November 2020</td>
               </tr>
               <tr>
-                <td>{{ $t('competitions.shortMovieText.pengumuman') }}</td>
-                <td style="padding: 0 4px;">:</td>
+                <td>{{ $t("competitions.shortMovieText.pengumuman") }}</td>
+                <td style="padding: 0 4px">:</td>
                 <td>30 November 2020</td>
               </tr>
             </table>
           </div>
           <div class="comp-text">
-            <strong>{{ $t('competitions.reward')}}</strong> <br>
-            <table>
+            <strong>{{ $t("competitions.reward") }}</strong> <br />
+            <table class="table">
               <tr>
-                <td>{{ $t ('competitions.Winner1')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 5.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.Winner1") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 5.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.Winner2')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 4.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.Winner2") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 4.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.Winner3')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 3.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.Winner3") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 3.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
-                <td>{{ $t ('competitions.runnerup')}}</td>
-                <td style="padding: 0 4px;">:</td>
-                <td>Rp 2.000.000 + {{ $t('competitions.certificate') }}</td>
+                <td>{{ $t("competitions.runnerup") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td>Rp 2.000.000 + {{ $t("competitions.certificate") }}</td>
               </tr>
             </table>
-            <p>({{ $t('competitions.tax') }})</p>
+            <p>({{ $t("competitions.tax") }})</p>
           </div>
           <div class="comp-text">
-            <table>
+            <table class="table">
               <tr>
                 <td>Line</td>
-                <td style="padding: 0 4px;">:</td>
+                <td style="padding: 0 4px">:</td>
                 <td>novymjth89</td>
               </tr>
               <tr>
                 <td>Whatsapp</td>
-                <td style="padding: 0 4px;">:</td>
-                <td><a href="https://api.whatsapp.com/send?+6281336781434&text=Halo">0813 - 3678 - 1434 (Edwin)</a></td>
+                <td style="padding: 0 4px">:</td>
+                <td>
+                  <a
+                    href="https://api.whatsapp.com/send?+6281336781434&text=Halo"
+                    >0813 - 3678 - 1434 (Edwin)</a
+                  >
+                </td>
               </tr>
             </table>
           </div>
-         <a href="pdf/nationalEssay.pdf" target="_blank" class="comp-btn">
-             {{ $t('competitions.downloadPDF') }}
+          <a href="pdf/nationalEssay.pdf" target="_blank" class="comp-btn">
+            {{ $t("competitions.downloadPDF") }}
           </a>
-          <a href="pdf/nationalEssay.docx" target="_blank" class="comp-btn" style="margin-left: 8px;">
-            {{ $t('competitions.enrollComp') }}
+          <a href="pdf/nationalEssay.docx" target="_blank" class="comp-btn">
+            {{ $t("competitions.enrollComp") }}
           </a>
         </div>
       </div>
     </section>
+
+    <lang-btn></lang-btn>
   </div>
 </template>
 
 <script>
-import MainHeader from "../components/MainHeader"
+import MainHeader from "../components/MainHeader";
 
 export default {
-  name: 'international-competition',
+  name: "international-competition",
 
   components: {
     MainHeader,
   },
 
   data: () => ({
-    prevLink: 'competition',
+    prevLink: "competition",
   }),
 
-  mounted () {
-    this.eventBus.$on('loadCompetitionPage', () => this.goToCompetitionPage())
-    this.runAnimation()
+  mounted() {
+    this.eventBus.$on("loadCompetitionPage", () => this.goToCompetitionPage());
+    this.runAnimation();
   },
 
   methods: {
-    runAnimation () {
+    runAnimation() {
       this.gsap.from(".overlay", {
         left: "0",
         duration: 1,
         delay: 1,
-        ease: "circ.inOut"
-      })
+        ease: "circ.inOut",
+      });
     },
 
-    goToCompetitionPage () {
-      this.$router.push({ name: 'competition' }).catch(() => {})
-    }
-  }
-}
+    goToCompetitionPage() {
+      this.$router.push({ name: "competition" }).catch(() => {});
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 // Global Color Variables.
-$white: #F5F5F5;
-$yellow: #FFB149;
-$blue: #00A8AA;
-$grey: #363C3E;
+$white: #f5f5f5;
+$yellow: #ffb149;
+$blue: #00a8aa;
+$grey: #363c3e;
 $serif: "Merriweather", serif;
 $sans-serif: "Open Sans", sans-serif;
 
-// Twitter Bootstrap Grid System. 
+// Twitter Bootstrap Grid System.
 $sm-min: 576px;
 $md-min: 768px;
 $lg-min: 992px;
@@ -376,69 +415,31 @@ $xl-min: 1200px;
     text-align: center;
     @include md {
       font-size: 2rem;
-      text-align: left;
     }
     @include lg {
       font-size: 2.4rem;
-      text-align: left;
     }
   }
 }
 .section {
   padding: 0 50px;
-  .competition-box {
-    margin-bottom: 50px;
-    padding: 50px 0;
-    display: block;
-    @include md {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0;
-    }
-    .competition-image {
-      flex: 1;
-      min-height: 300px;
-      position: relative;
-      .comp-img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 250px;
-        height: 300px;
-        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-        background: url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80') center center/cover;
-        z-index: 1;
-        @include md {
-          left: unset;
-          transform: translate(0, -50%);
-          width: 300px;
-          height: 350px;
-        }
-        @include lg {
-          width: 450px;
-          height: 500px;
-        }
-        &.shadow {
-          background: #000;
-          filter: blur(250px);
-          transform: translate(-49%, -49%);
-          z-index: 0;
-          @include md {
-            transform: translate(1%, -49%);
-          }
-        }
+  .competition-image {
+    margin-bottom: 25px;
+    line-height: 0;
+    text-align: center;
+    img {
+      width: 100%;
+      @include lg {
+        width: 500px;
       }
     }
+  }
+  .competition-box {
+    padding: 25px 0;
+    display: block;
     .competition-text {
-      margin-top: 25px;
-      flex: 1;
       color: $white;
       text-align: center;
-      @include md {
-        text-align: left;
-      }
       .comp-title {
         font-family: $serif;
         font-size: 1.2rem;
@@ -452,14 +453,18 @@ $xl-min: 1200px;
       }
       .comp-text {
         font-family: $sans-serif;
-        font-size: .8rem;
+        font-size: 0.8rem;
         font-weight: 300;
         margin: 25px 0;
         @include md {
-          font-size: .9rem;
+          font-size: 0.9rem;
         }
         @include lg {
           font-size: 1rem;
+        }
+        table {
+          margin: auto;
+          text-align: left;
         }
       }
       .comp-btn {
@@ -469,13 +474,19 @@ $xl-min: 1200px;
         border-radius: 4px;
         color: $blue;
         font-family: $sans-serif;
-        font-size: .8rem;
+        font-size: 0.8rem;
         font-weight: 300;
         padding: 10px 30px;
-        transition: .4s ease-out;
+        transition: 0.4s ease-out;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 8px;
         cursor: pointer;
         @include md {
-          font-size: .9rem;
+          display: inline-block;
+          margin-right: 8px;
+          margin-bottom: 0;
+          font-size: 0.9rem;
         }
         @include lg {
           font-size: 1rem;
@@ -485,19 +496,6 @@ $xl-min: 1200px;
           color: $white;
         }
       }
-    }
-  }
-}
-.flex-reversed {
-  @include md {
-    .competition-image {
-      order: 2;
-      .comp-img {
-        right: 0 !important;
-      }
-    }
-    .competition-text {
-      order: 1;
     }
   }
 }

@@ -11,8 +11,11 @@ Vue.prototype.gsap = gsap
 Vue.prototype.eventBus = new Vue()
 Vue.config.productionTip = false
 
+Vue.component('lang-btn', () =>
+    import ('./components/LangBtn.vue'))
+
 new Vue({
-  render: h => h(App),
-  router,
-  i18n,
+    render: h => h(App),
+    router,
+    i18n,
 }).$mount('#app')
