@@ -14,7 +14,7 @@
     <section class="section">
       <h3 class="section-title">{{ $t('webinar') }}</h3>
       <p class="section-text" v-html="$t('wPage.WebinarText')"></p>
-      <button class="section-btn" @click="showMaintenance">
+      <button class="section-btn" @click="enrollwebinar">
         {{ $t('wPage.WebinarBtn') }}
       </button>
     </section>
@@ -81,8 +81,8 @@ export default {
       }, "-=0.5")
     },
 
-    showMaintenance () {
-      window.alert('Webinar is not opened yet')
+    enrollwebinar () {
+      window.open("http://bit.ly/WebinarCreanomic2020Eps1")
     },
 
     goTo (link) {

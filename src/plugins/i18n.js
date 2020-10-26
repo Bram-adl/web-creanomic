@@ -14,7 +14,7 @@ const messages = {
         prev: 'Go Back',
         about: 'About',
         aboutCrea: 'About Creanomic',
-        aboutCreaText1: `Creative Economy and Innovation Center, which well-known as Creanomic, is an annual event which holds by Vocational Education Program, Brawijaya University. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.`,
+        aboutCreaText1: `Creative Economy and Innovation Centre, which well-known as Creanomic, is an annual event which holds by Vocational Education Program, Brawijaya University. The event itself brings up topic about <i>creativity</i> and <i>innovation</i> which maintains the standard economy.`,
         aboutCreaText2: `Due to <i>corona virus pandemic</i>, the event evolves to adapt the current situation along with bringing new concept this year. Creanomic also brings up new events: <strong>Virtual Art Exhibition</strong>, <strong>Webinar</strong>, and widen our competitions scope to International level.`,
         creanomic: {
             cr: 'Creative',
@@ -28,20 +28,20 @@ const messages = {
         },
         wPage: {
             WebinarText: `The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venue has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below`,
-            WebinarBtn: 'Enroll Online Webinar',
+            WebinarBtn: 'Enroll Webinar',
         },
         cPage: {
-            CompetitionText: `Creanomic provides both international and national competition. We are open for everyone to participate with ease registration. Starts from photography, short movie, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.`,
+            CompetitionText: `Creanomic provides both international and national competition. We are open for all active students of public/private university. Starts from photography, short movie, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.`,
             CompetitionBtn1: 'International Competition',
             CompetitionBtn2: 'National Competition',
             NationalCompTitle: 'Creanomic National Competition',
             InternationalCompTitle: 'Creanomic International Competition',
         },
         competitions: {
-            photography: 'Photography',
-            shortMovie: 'Short Movie',
-            essay: 'Essay',
-            bussinessPlan: 'Bussiness Plan',
+            photography: 'Photography Competition',
+            shortMovie: 'Short Movie Competition',
+            essay: 'Essay Contest Competition',
+            bussinessPlan: 'Bussiness Plan Competition',
 
             theme: 'Theme',
             timeline: 'Timeline',
@@ -73,13 +73,30 @@ const messages = {
                 pengumpulan: "Works Submission",
                 penyisihan: "Elimination round",
                 pengumuman: "Announcement",
+
+                timeline: "12<sup>th</sup> October - 29<sup>th</sup> October 2020",
+                techmeet: "31<sup>st</sup> October 2020 (<i>via google meet/zoom</i>)",
             },
 
-            bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Area",
+            bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
+            bussinessPlanText: {
+                regist: "10<sup>th</sup> October - 29<sup>th</sup> October 2020",
+                techmeet: "31<sup>st</sup> October 2020",
+                works: "2<sup>nd</sup> November - 15<sup>th</sup> November 2020",
+                elround: "17<sup>th</sup> November - 19<sup>th</sup> November 2020",
+                techmeeti: "20<sup>th</sup> November 2020",
+                elroundi: "26<sup>th</sup> November - 27<sup>th</sup> November 2020",
+                announcement: "30<sup>th</sup> November 2020",
+            },
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
                 penilaian: "Scoring",
+
+                regist: "10<sup>th</sup> October - 29<sup>th</sup> October 2020",
+                techmeet: "31<sup>st</sup> October 2020 (<i>via google meet/zoom</i>)",
+                scor: "19<sup>th</sup> November - 27<sup>th</sup> November 2020",
+                announcement: "30<sup>th</sup> November 2020",
             },
 
             certificate: "E-Certificate",
@@ -114,20 +131,20 @@ const messages = {
         },
         wPage: {
             WebinarText: `Kehadiran <i>pandemi virus corona</i> telah mendorong teknologi berkembang dan inovasi baru pun diciptakan. Seminar yang berlangsung dengan hadirin kini telah berkembang menjadi seminar online yang bekerja dengan website. Webinar adalah seminar online Creanomic kami yang berlangsung sesuai keinginan Anda dan Creanomic mempersembahkan seminar online dengan topik <strong>kreativitas untuk mengelola industri ekonomi</strong>. Daftar sekarang untuk mendapatkan pemberitahuan.`,
-            WebinarBtn: 'Daftar Webinar Online',
+            WebinarBtn: 'Daftar Webinar',
         },
         cPage: {
-            CompetitionText: `Creanomic menyediakan kompetisi international dan nasional. Kompetisi terbuka untuk Mahasiswa/i aktif di Universitas atau Perguruan Tinggi Negeri maupun Swasta. Mulai dari fotografi internasional, film pendek, essay, dan masih banyak lagi. Kami memiliki hadiah utama khusus yang akan menanti anda bersama dengan sertifikatnya. Untuk mendapatkan detail lebih lanjut tentang semua kompetisi, silahkan klik tombol di bawah ini.`,
+            CompetitionText: `Creanomic menyediakan kompetisi international dan nasional. Kompetisi terbuka untuk Mahasiswa/i aktif di Universitas atau Perguruan Tinggi Negeri maupun Swasta. Mulai dari fotografi internasional, short movie, essay, dan masih banyak lagi. Kami memiliki hadiah utama khusus yang akan menanti anda bersama dengan sertifikatnya. Untuk mendapatkan detail lebih lanjut tentang semua kompetisi, silahkan klik tombol di bawah ini.`,
             CompetitionBtn1: 'Kompetisi Internasional',
             CompetitionBtn2: 'Kompetisi Nasional',
             NationalCompTitle: 'Kompetisi Nasional Creanomic',
             InternationalCompTitle: 'Kompetisi Internasional Creanomic',
         },
         competitions: {
-            photography: 'Fotografi',
-            shortMovie: 'Film Pendek',
-            essay: 'Karangan',
-            bussinessPlan: 'Rencana Bisnis',
+            photography: 'Photography Competition',
+            shortMovie: 'Short Movie Competition',
+            essay: 'Essay Contest Competition',
+            bussinessPlan: 'Business Plan Competition',
 
             theme: 'Tema',
             timeline: 'Alur Waktu',
@@ -158,13 +175,35 @@ const messages = {
                 pengumpulan: "Pengumpulan Karya",
                 penyisihan: "Babak Penyisihan",
                 pengumuman: "Pengumuman",
+
+                timeline: "12 Oktober - 29 Oktober 2020",
+                techmeet: "31 Oktober 2020 (<i>via google meet/zoom</i>)",
             },
 
-            bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Area",
+            bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
+            bussinessPlanText: {
+                regist: "10 Oktober - 29 Oktober 2020",
+                techmeet: "31 Oktober 2020",
+                works: "2 November - 15 November 2020",
+                elround: "17 November - 19 November 2020",
+                techmeeti: "20 November 2020",
+                elroundi: "26 November - 27 November 2020",
+                announcement: "30 November 2020",
+
+
+            },
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
                 penilaian: "Penilaian",
+
+                regist: "10 Oktober - 29 Oktober 2020",
+                techmeet: "31 Oktober 2020",
+                scor: "19 November - 27 November 2020",
+                announcement: "30 November 2020",
+
+
+
             },
 
             certificate: "E-Sertifikat",

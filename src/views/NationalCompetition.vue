@@ -28,19 +28,12 @@
               <tr>
                 <td>{{ $t("competitions.regist") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>
-                  12 {{ $t("competitions.october") }} - 29
-                  {{ $t("competitions.october") }} 2020
-                </td>
+                <td v-html="$t('competitions.shortMovieText.timeline')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.techmeet") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>
-                  31 {{ $t("competitions.october") }} 2020 (<i
-                    >via google meets/zoom</i
-                  >)
-                </td>
+                <td v-html="$t('competitions.shortMovieText.techmeet')"></td>
               </tr>
             </table>
           </div>
@@ -77,7 +70,7 @@
                 <td style="padding: 0 4px">:</td>
                 <td>
                   <a
-                    href="https://api.whatsapp.com/send?+6285806553948&text=Halo"
+                    href="https://api.whatsapp.com/send?phone=6285806553948&text=Halo, Creanomic."
                     >0858 - 0655 - 5394 (Galuh)</a
                   >
                 </td>
@@ -111,42 +104,40 @@
               <tr>
                 <td>{{ $t("competitions.regist") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>
-                  10 {{ $t("competitions.october") }} - 29
-                  {{ $t("competitions.october") }} 2020
+                <td v-html="$t('competitions.bussinessPlanText.regist')">
                 </td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.techmeet") }} I</td>
                 <td style="padding: 0 4px">:</td>
-                <td>31 {{ $t("competitions.october") }} 2020</td>
+                <td v-html="$t('competitions.bussinessPlanText.techmeet')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.shortMovieText.pengumpulan") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>2 November - 15 November 2020</td>
+                <td v-html="$t('competitions.bussinessPlanText.works')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.shortMovieText.penyisihan") }} I</td>
                 <td style="padding: 0 4px">:</td>
-                <td>17 November - 19 November 2020</td>
+                <td v-html="$t('competitions.bussinessPlanText.elround')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.techmeet") }} II</td>
                 <td style="padding: 0 4px">:</td>
-                <td>20 November 2020</td>
+                <td v-html="$t('competitions.bussinessPlanText.techmeeti')"></td>
               </tr>
               <tr>
                 <td>
-                  {{ $t("competitions.shortMovieText.penyisihan") }} II (Wawancara)
+                  {{ $t("competitions.shortMovieText.penyisihan") }} (Wawancara)
                 </td>
                 <td style="padding: 0 4px">:</td>
-                <td>26 November - 27 November 2020</td>
+                <td v-html="$t('competitions.bussinessPlanText.elroundi')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.shortMovieText.pengumuman") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>30 November 2020</td>
+                <td v-html="$t('competitions.bussinessPlanText.announcement')"></td>
               </tr>
             </table>
           </div>
@@ -183,7 +174,7 @@
                 <td style="padding: 0 4px">:</td>
                 <td>
                   <a
-                    href="https://api.whatsapp.com/send?+6285157235221&text=Halo"
+                    href="https://api.whatsapp.com/send?phone=6285157235221&text=Halo, Creanomic."
                     >0851 - 5723 - 5221 (Mikail)</a
                   >
                 </td>
@@ -221,29 +212,22 @@
               <tr>
                 <td>{{ $t("competitions.regist") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>
-                  12 {{ $t("competitions.october") }} - 29
-                  {{ $t("competitions.october") }} 2020
-                </td>
+                <td v-html="$t('competitions.essayText.regist')"> </td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.techmeet") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>
-                  31 {{ $t("competitions.october") }} 2020 (<i
-                    >via google meet/zoom</i
-                  >)
-                </td>
+                <td v-html="$t('competitions.essayText.techmeet')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.essayText.penilaian") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>19 November - 27 November 2020</td>
+                <td v-html="$t('competitions.essayText.scor')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.shortMovieText.pengumuman") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>30 November 2020</td>
+                <td v-html="$t('competitions.essayText.announcement')"></td>
               </tr>
             </table>
           </div>
@@ -285,7 +269,7 @@
                 <td style="padding: 0 4px">:</td>
                 <td>
                   <a
-                    href="https://api.whatsapp.com/send?+6281336781434&text=Halo"
+                    href="https://api.whatsapp.com/send?phone=6281336781434&text=Halo, Creanomic."
                     >0813 - 3678 - 1434 (Edwin)</a
                   >
                 </td>

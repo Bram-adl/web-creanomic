@@ -58,7 +58,7 @@
               <tr>
                 <td>{{ $t("competitions.Winner3") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td>$400 + {{ $t("competitions.certificate") }}</td>
+                <td>$300 + {{ $t("competitions.certificate") }}</td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.favwin") }}</td>
@@ -88,8 +88,8 @@
                 <td>
                   <a
                     style="text-decoration: underline"
-                    href="https://api.whatsapp.com/send?+6281295639608&text=Halo"
-                    >0812 - 9563 - 9608 (Rachma Pebhira)</a
+                    href="https://api.whatsapp.com/send?phone=6281295639608&text=Halo, Creanomic."
+                    >0812 - 9563 - 9608 (Rachma Phebira)</a
                   >
                 </td>
               </tr>
