@@ -53,6 +53,11 @@ const messages = {
             Winner2: "2nd Winner",
             Winner3: "3rd Winner",
             runnerup: "Runner Up",
+            pendaftaran: "Registration",
+            pengumpulan: "Works Submission",
+            penilaian: "Scoring",
+            pengumuman: "Winner Announcement",
+            penyisihan: "Elimination round",
             techmeet: "Technical Meeting",
             october: "October",
             favwin: "Favorite Winner",
@@ -60,43 +65,45 @@ const messages = {
             // Photography
             photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
             photographyText: {
+                crea1: "CREANOMIC 2020",
+                crea2: "VOCATIONAL EDUCATION PROGRAM",
+                crea3: "UNIVERSITAS BRAWIJAYA",
+                crea4: "FOR UNIVERSITY STUDENTS ONLY",
+                crea5: "FREE REGISTRATION",
                 open: "Open Registration and Submission",
-                opendate: "12<sup>th</sup> October - 13<sup>th</sup> November 2020",
+                opendate: "12<sup>th</sup> October - 23<sup>th</sup> November 2020",
                 scor: "Scoring ",
-                scordate: "20<sup>th</sup> November - 28<sup>th</sup> November 2020",
+                scordate: "26<sup>th</sup> November - 4<sup>th</sup> December 2020",
                 win: "Winner Announcement",
-                windate: "30<sup>th</sup> November 2020",
+                windate: "10<sup>th</sup> December 2020",
             },
 
             shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
             shortMovieText: {
-                pengumpulan: "Works Submission",
-                penyisihan: "Elimination round",
-                pengumuman: "Announcement",
-
-                timeline: "12<sup>th</sup> October - 29<sup>th</sup> October 2020",
-                techmeet: "31<sup>st</sup> October 2020 (<i>via google meet/zoom</i>)",
+                pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
+                pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
+                penilaiandate: "1<sup>st</sup> December - 4<sup>th</sup> December 2020",
+                pengumumandate: "10<sup>th</sup> December 2020",
             },
 
             bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
             bussinessPlanText: {
-                regist: "10<sup>th</sup> October - 29<sup>th</sup> October 2020",
-                techmeet: "31<sup>st</sup> October 2020",
-                works: "2<sup>nd</sup> November - 15<sup>th</sup> November 2020",
-                elround: "17<sup>th</sup> November - 19<sup>th</sup> November 2020",
-                techmeeti: "20<sup>th</sup> November 2020",
-                elroundi: "26<sup>th</sup> November - 27<sup>th</sup> November 2020",
-                announcement: "30<sup>th</sup> November 2020",
+                pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
+                techmeetdate: "15<sup>th</sup> November 2020",
+                techmeetdate2: "3<sup>rd</sup> December 2020",
+                pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
+                penyisihandate: "1<sup>st</sup> December - 2<sup>nd</sup> December 2020",
+                penyisihandate2: "8<sup>th</sup> December - 9<sup>th</sup> December 2020",
+                pengumumandate: "10<sup>th</sup> December 2020",
+
             },
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
-                penilaian: "Scoring",
-
-                regist: "10<sup>th</sup> October - 29<sup>th</sup> October 2020",
-                techmeet: "31<sup>st</sup> October 2020 (<i>via google meet/zoom</i>)",
-                scor: "19<sup>th</sup> November - 27<sup>th</sup> November 2020",
-                announcement: "30<sup>th</sup> November 2020",
+                pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
+                pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
+                penilaiandate: "1<sup>st</sup> December - 4<sup>th</sup> December 2020",
+                pengumumandate: "10<sup>th</sup> December 2020"
             },
 
             certificate: "E-Certificate",
@@ -156,54 +163,57 @@ const messages = {
             Winner2: "Juara 2",
             Winner3: "Juara 3",
             runnerup: "Juara Harapan",
+            pendaftaran: "Pendaftaran",
+            pengumpulan: "Pengumpulan Karya",
+            penilaian: "penilaian",
+            pengumuman: "Pengumuman",
+            penyisihan: "Babak Penyisihan",
             techmeet: "Pertemuan Teknis",
             october: "Oktober",
             favwin: "Pemenang Favorit",
 
             photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
             photographyText: {
+                crea1: "CREANOMIC 2020",
+                crea2: "PROGRAM PENDIDIKAN VOKASI",
+                crea3: "UNIVERSITAS BRAWIJAYA",
+                crea4: "KHUSUS MAHASISWA",
+                crea5: "PENDAFTARAN GRATIS",
                 open: "Buka Pendaftaran dan Pengumpulan",
-                opendate: "12 Oktober - 13 November 2020",
+                opendate: "12 Oktober - 23 November 2020",
                 scor: "Penilaian ",
-                scordate: "20 November - 28 November 2020",
+                scordate: "26 November - 4 Desember 2020",
                 win: "Pengumuman Juara",
-                windate: "30 November 2020",
+                windate: "10 Desember 2020",
             },
 
             shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
             shortMovieText: {
-                pengumpulan: "Pengumpulan Karya",
-                penyisihan: "Babak Penyisihan",
-                pengumuman: "Pengumuman",
-
-                timeline: "12 Oktober - 29 Oktober 2020",
-                techmeet: "31 Oktober 2020 (<i>via google meet/zoom</i>)",
+                pendaftarandate: "12 Oktober - 12 November 2020",
+                pengumpulandate: "16 November - 30 November 2020",
+                penilaiandate: "1 Desember - 4 Desember 2020",
+                pengumumandate: "10 Desember 2020",
             },
 
             bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
             bussinessPlanText: {
-                regist: "10 Oktober - 29 Oktober 2020",
-                techmeet: "31 Oktober 2020",
-                works: "2 November - 15 November 2020",
-                elround: "17 November - 19 November 2020",
-                techmeeti: "20 November 2020",
-                elroundi: "26 November - 27 November 2020",
-                announcement: "30 November 2020",
+                pendaftarandate: "12 Oktober - 12 November 2020",
+                techmeetdate: "15 November 2020",
+                techmeetdate2: "3 Desember 2020",
+                pengumpulandate: "16 November - 30 November 2020",
+                penyisihandate: "1 Desember - 2 Desember 2020",
+                penyisihandate2: "8 Desember - 9 Desember 2020",
+                pengumumandate: "10 Desember 2020",
 
 
             },
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
-                penilaian: "Penilaian",
-
-                regist: "10 Oktober - 29 Oktober 2020",
-                techmeet: "31 Oktober 2020",
-                scor: "19 November - 27 November 2020",
-                announcement: "30 November 2020",
-
-
-
+                pendaftarandate: "12 Oktober - 12 November 2020",
+                pengumpulandate: "16 November - 30 November 2020",
+                penilaiandate: "1 Desember - 4 Desember 2020",
+                pengumumandate: "10 Desember 2020",
             },
 
             certificate: "E-Sertifikat",

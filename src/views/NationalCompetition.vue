@@ -11,10 +11,19 @@
 
     <section class="section" style="margin-bottom: 25px">
       <div class="competition-image">
-        <img src="img/national.jpg" alt="National Poster">
+        <!-- <img src="img/national.jpg" alt="National Poster"> -->
       </div>
       <div class="competition-box">
         <div class="competition-text">
+          <h2 class="comp-text">
+                <strong>{{$t("competitions.photographyText.crea1")}}</strong>
+                <p><strong>{{ $t("competitions.photographyText.crea2") }}</strong></p>
+                <p><strong>{{ $t("competitions.photographyText.crea3") }} </strong></p>
+          </h2>
+          <div class="comp-text">
+            <strong>{{$t("competitions.photographyText.crea4")}}</strong>
+            <p><strong>"{{$t("competitions.photographyText.crea5")}}"</strong></p>
+          </div>
           <h2 class="comp-title">
             {{ $t("competitions.shortMovie") }}
           </h2>
@@ -26,14 +35,24 @@
             <strong>{{ $t("competitions.timeline") }}</strong> <br />
             <table class="table">
               <tr>
-                <td>{{ $t("competitions.regist") }}</td>
+                <td>{{ $t("competitions.pendaftaran") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.shortMovieText.timeline')"></td>
+                <td v-html="$t('competitions.shortMovieText.pendaftarandate')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.techmeet") }}</td>
+                <td>{{ $t("competitions.pengumpulan") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.shortMovieText.techmeet')"></td>
+                <td v-html="$t('competitions.shortMovieText.pengumpulandate')"></td>
+              </tr>
+              <tr>
+                <td>{{ $t("competitions.penilaian") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td v-html="$t('competitions.shortMovieText.penilaiandate')"></td>
+              </tr>
+              <tr>
+                <td>{{ $t("competitions.pengumuman") }}</td>
+                <td style="padding: 0 4px">:</td>
+                <td v-html="$t('competitions.shortMovieText.pengumumandate')"></td>
               </tr>
             </table>
           </div>
@@ -102,42 +121,42 @@
             <strong>{{ $t("competitions.timeline") }}</strong> <br />
             <table class="table">
               <tr>
-                <td>{{ $t("competitions.regist") }}</td>
+                <td>{{ $t("competitions.pendaftaran") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.regist')">
+                <td v-html="$t('competitions.bussinessPlanText.pendaftarandate')">
                 </td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.techmeet") }} I</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.techmeet')"></td>
+                <td v-html="$t('competitions.bussinessPlanText.techmeetdate')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.shortMovieText.pengumpulan") }}</td>
+                <td>{{ $t("competitions.pengumpulan") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.works')"></td>
+                <td v-html="$t('competitions.bussinessPlanText.pengumpulandate')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.shortMovieText.penyisihan") }} I</td>
+                <td>{{ $t("competitions.penyisihan") }} I</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.elround')"></td>
+                <td v-html="$t('competitions.bussinessPlanText.penyisihandate')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.techmeet") }} II</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.techmeeti')"></td>
+                <td v-html="$t('competitions.bussinessPlanText.techmeetdate2')"></td>
               </tr>
               <tr>
                 <td>
-                  {{ $t("competitions.shortMovieText.penyisihan") }} (Wawancara)
+                  {{ $t("competitions.penyisihan") }} II (Wawancara)
                 </td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.elroundi')"></td>
+                <td v-html="$t('competitions.bussinessPlanText.penyisihandate2')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.shortMovieText.pengumuman") }}</td>
+                <td>{{ $t("competitions.pengumuman") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.announcement')"></td>
+                <td v-html="$t('competitions.bussinessPlanText.pengumumandate')"></td>
               </tr>
             </table>
           </div>
@@ -210,24 +229,24 @@
             <strong>{{ $t("competitions.timeline") }}</strong> <br />
             <table class="table">
               <tr>
-                <td>{{ $t("competitions.regist") }}</td>
+                <td>{{ $t("competitions.pendaftaran") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.essayText.regist')"> </td>
+                <td v-html="$t('competitions.essayText.pendaftarandate')"> </td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.techmeet") }}</td>
+                <td>{{ $t("competitions.pengumpulan") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.essayText.techmeet')"></td>
+                <td v-html="$t('competitions.essayText.pengumpulandate')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.essayText.penilaian") }}</td>
+                <td>{{ $t("competitions.penilaian") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.essayText.scor')"></td>
+                <td v-html="$t('competitions.essayText.penilaiandate')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.shortMovieText.pengumuman") }}</td>
+                <td>{{ $t("competitions.pengumuman") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.essayText.announcement')"></td>
+                <td v-html="$t('competitions.essayText.pengumumandate')"></td>
               </tr>
             </table>
           </div>
