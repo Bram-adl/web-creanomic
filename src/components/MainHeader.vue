@@ -66,6 +66,8 @@ export default {
         this.eventBus.$emit('loadLandingPage')
       } else if ( link == 'competition' ) {
         this.eventBus.$emit('loadCompetitionPage')
+      } else if ( link == 'webinar' ) {
+        this.eventBus.$emit('loadWebinarPage')
       } else {
         this.eventBus.$emit('loadHomePage')
       }
