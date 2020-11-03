@@ -40,6 +40,12 @@ export default new VueRouter({
                 import ('../views/Webinar.vue'),
         },
         {
+            path: "/webinar-registration",
+            name: "webinar-registration",
+            component: () =>
+                import ('../views/WebinarRegistration.vue'),
+        },
+        {
             path: "/competition",
             name: "competition",
             component: () =>

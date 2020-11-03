@@ -82,7 +82,13 @@ export default {
     },
 
     enrollwebinar () {
-      window.open("http://bit.ly/WebinarCreanomic2020Eps1")
+      this.gsap.to(".overlay", {
+        left: 0,
+        delay: 1,
+        duration: 1,
+        ease: "circ.inOut",
+        onComplete: () => this.$router.push({ name: 'webinar-registration' }).catch(() => {})
+      })
     },
 
     goTo (link) {

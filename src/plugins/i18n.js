@@ -111,8 +111,53 @@ const messages = {
 
             downloadPDF: 'Download Terms & Conditions',
             enrollComp: 'Enroll Competition',
-        }
+        },
+        webinars: `
+            <h1 style="text-align: left;">Creanomic 2020 proudly present our speakers on Webinar.</h1>
 
+            <div style="text-align: left;">
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                The speaker for this webinar is an extraordinary women with a high entrepreneurial spirit, they have many experiences and knowledge in business activities. 
+            </p>
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                The owner of famous brand in Indonesia and they are very inspiring woman with a lot of knowledge!
+            </p>
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                For this opportunity, they will share inspiring experiences and knowledge about the world of entrepreneurship! 
+            </p> 
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                We will share our details Speakers on Creanomic 2020 :
+                <br>
+                ➢ The speakers on first webinar is Jessica Amelia,  The owner of a famous brand, Lippie Serum By Raecca.
+                <br>
+                ➢ The speakers on second webinar is owner Kopi Soe, her name is Sylvia Surya, the owner of a famous coffee shop in Indonesia.
+                <br>
+                ➢ The speakers on third webinar is Gita Savitri Devi as content creator and Owner of Tesavara.
+            </p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">So, for those of you who want to chit-chat with our speakers, don't forget to join our webinar. See you!!</p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Register now on this link below :
+                <br>
+                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps1">Webinar 1 : bit.ly/WebinarCreanomic2020Eps1</a> <br>
+                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps2">Webinar 2 : bit.ly/WebinarCreanomic2020Eps2</a> <br>
+                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps3">Webinar 3 : bit.ly/WebinarCreanomic2020Eps3</a> <br>
+            </p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                For more information:
+                <br>
+                <a
+                href="https://api.whatsapp.com/send?phone=6285155408711&text=Halo, Creanomic."
+                >WA : 085155408711 (Aliyya)</a
+                >
+                <br>
+                Line : Rimbafp (Rimba)
+            </p>
+            </div>
+        `
     },
     'id': {
         home: 'Beranda',
@@ -197,23 +242,23 @@ const messages = {
 
             bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
             bussinessPlanText: {
-                pendaftarandate: "12 Oktober - 12 November 2020",
-                techmeetdate: "15 November 2020",
-                techmeetdate2: "3 Desember 2020",
-                pengumpulandate: "16 November - 30 November 2020",
-                penyisihandate: "1 Desember - 2 Desember 2020",
-                penyisihandate2: "8 Desember - 9 Desember 2020",
-                pengumumandate: "10 Desember 2020",
-
-
+                regist: "10 Oktober - 29 Oktober 2020",
+                techmeet: "31 Oktober 2020",
+                works: "2 November - 15 November 2020",
+                elround: "17 November - 19 November 2020",
+                techmeeti: "20 November 2020",
+                elroundi: "26 November - 27 November 2020",
+                announcement: "30 November 2020",
             },
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
-                pendaftarandate: "12 Oktober - 12 November 2020",
-                pengumpulandate: "16 November - 30 November 2020",
-                penilaiandate: "1 Desember - 4 Desember 2020",
-                pengumumandate: "10 Desember 2020",
+                penilaian: "Penilaian",
+
+                regist: "10 Oktober - 29 Oktober 2020",
+                techmeet: "31 Oktober 2020",
+                scor: "19 November - 27 November 2020",
+                announcement: "30 November 2020",
             },
 
             certificate: "E-Sertifikat",
@@ -221,7 +266,57 @@ const messages = {
 
             downloadPDF: 'Unduh Ketentuan & Persyaratan',
             enrollComp: 'Daftar Lomba',
-        }
+        },
+        webinars: `
+            <h1 style="text-align: left;">Creanomic 2020 dengan bangga memperkenalkan narasumber pada webinar Creanomic 2020.</h1>
+
+            <div style="text-align: left;">
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Pada webinar kali ini Creanomic menghadirkan wanita luar biasa dengan jiwa wirausaha yang tinggi, memiliki banyak pengalaman dan pengetahuan dalam kegiatan bisnis. 
+            </p>
+                
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Seorang wirausahawan pemilik Brand terkenal di Indonesia yang inspiratif dengan banyak pengetahuan yang mereka miliki! 
+            </p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Dalam kesempatan kali ini, mereka akan berbagi pengalaman dan pengetahuan yang menginspirasi tentang dunia kewirausahaan!
+            </p> 
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Kami akan membagikan detail Narasumber pada Webinar Creanomic 2020 :
+                <br>
+                ➢ Webinar pertama akan dimeriahkan oleh Jessica Amelia, pemiliki merek terkenal, Lippie Serum By Reecha.
+                <br>
+                ➢ Webinar kedua akan dimeriahkan oleh Sylvia Surya pemilik Kopi Soe yang merupakan kedai kopi terkenal di Indonesia.
+                <br>
+                ➢ Webinar ketiga akan dimeriahkan oleh Gita Savitri Devi seorang content creator dan owner Tesavara.
+            </p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Untuk kalian semua yang ingin berbicara dan bertukar pikiran bersama narasumber kami jangan lupa ikut webinar kami ya! Sampai jumpa.
+            </p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Daftar sekarang pada tautan di bawah ini :
+                <br>
+                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps1">Webinar 1 : bit.ly/WebinarCreanomic2020Eps1</a> <br>
+                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps2">Webinar 2 : bit.ly/WebinarCreanomic2020Eps2</a> <br>
+                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps3">Webinar 3 : bit.ly/WebinarCreanomic2020Eps3</a> <br>
+            </p>
+
+            <p style="line-height: 1.5; margin: 1rem 0;">
+                Untuk informasi lebih lanjut:
+                <br>
+                <a
+                href="https://api.whatsapp.com/send?phone=6285155408711&text=Halo, Creanomic."
+                >WA : 085155408711 (Aliyya)</a
+                >
+                <br>
+                Line : Rimbafp (Rimba)
+            </p>
+            </div>
+        `,
     }
 }
 
