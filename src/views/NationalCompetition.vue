@@ -10,9 +10,9 @@
     </header>
 
     <section class="section" style="margin-bottom: 25px">
-      <div class="competition-image">
+      <!-- <div class="competition-image"> -->
         <!-- <img src="img/national.jpg" alt="National Poster"> -->
-      </div>
+      <!-- </div> -->
       <div class="competition-box">
         <div class="competition-text">
           <h2 class="comp-text">

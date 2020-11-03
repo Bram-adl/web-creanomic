@@ -27,8 +27,10 @@ const messages = {
             VirtualArtExhibitionBtn: 'Enter Virtual Art Exhibition',
         },
         wPage: {
-            WebinarText: `The presence of <i>corona virus</i> has pushed technology to evolve and new innovation is then created. The prior seminar which takes venue has now changed into the brand new online seminar which works with website, known as Webinar. This year, Creanomic provides an online seminar with a topic about <strong>creativity</strong> to manage economy and industry. To take a part on this webinar, please click the button below`,
+            WebinarText: 'Creanomic 2020 proudly present our speakers on Webinar.<p>The speaker for this webinar is an extraordinary women with a high entrepreneurial spirit, they have many experiences and knowledge in business activities.</p><p>The owner of famous brand in Indonesia and they are very inspiring woman with a lot of knowledge!</p><p>For this opportunity, they will share inspiring experiences and knowledge about the world of entrepreneurship!</p><br><p>We will share our details Speakers on Creanomic 2020 :</p><p>1. The speakers on first webinar is Jessica Amelia,  The owner of a famous brand, Lippie Serum By Raecca.</p><p>2. The speakers on second webinar is owner Kopi Soe, her name is Sylvia Surya, the owner of a famous coffee shop in Indonesia.</p><p>3. The speakers on third webinar is Gita Savitri Devi as content creator and Owner of Tesavara.</p><br><p>So, for those of you who want to chit-chat with our speakers, don`t forget to join our webinar. See you!</p><br><p>Register now on this link below :</p>',
+            cp: 'For more information:',
             WebinarBtn: 'Enroll Webinar',
+
         },
         cPage: {
             CompetitionText: `Creanomic provides both international and national competition. We are open for all active students of public/private university. Starts from photography, short movie, essay, and more. We have grandprized awaits you along with certificates. To get more information, please click the button below.`,
@@ -63,14 +65,14 @@ const messages = {
             favwin: "Favorite Winner",
 
             // Photography
-            photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
+            photographyTheme: "An Optimistic Through the Pandemic and on to a Brighter Future",
             photographyText: {
                 crea1: "CREANOMIC 2020",
                 crea2: "VOCATIONAL EDUCATION PROGRAM",
                 crea3: "UNIVERSITAS BRAWIJAYA",
                 crea4: "FOR UNIVERSITY STUDENTS ONLY",
                 crea5: "FREE REGISTRATION",
-                open: "Open Registration and Submission",
+                open: "Open Registration and Submission of works",
                 opendate: "12<sup>th</sup> October - 23<sup>th</sup> November 2020",
                 scor: "Scoring ",
                 scordate: "26<sup>th</sup> November - 4<sup>th</sup> December 2020",
@@ -78,11 +80,11 @@ const messages = {
                 windate: "10<sup>th</sup> December 2020",
             },
 
-            shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
+            shortMovieTheme: "Menjadi Generasi yang Menginspirasi di Tengah Pandemi",
             shortMovieText: {
                 pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
                 pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
-                penilaiandate: "1<sup>st</sup> December - 4<sup>th</sup> December 2020",
+                penilaiandate: "1<sup>st</sup> December - 7<sup>th</sup> December 2020",
                 pengumumandate: "10<sup>th</sup> December 2020",
             },
 
@@ -102,7 +104,7 @@ const messages = {
             essayText: {
                 pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
                 pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
-                penilaiandate: "1<sup>st</sup> December - 4<sup>th</sup> December 2020",
+                penilaiandate: "1<sup>st</sup> December - 7<sup>th</sup> December 2020",
                 pengumumandate: "10<sup>th</sup> December 2020"
             },
 
@@ -137,7 +139,8 @@ const messages = {
             VirtualArtExhibitionBtn: 'Masuk ke Pameran Seni Virtual',
         },
         wPage: {
-            WebinarText: `Kehadiran <i>pandemi virus corona</i> telah mendorong teknologi berkembang dan inovasi baru pun diciptakan. Seminar yang berlangsung dengan hadirin kini telah berkembang menjadi seminar online yang bekerja dengan website. Webinar adalah seminar online Creanomic kami yang berlangsung sesuai keinginan Anda dan Creanomic mempersembahkan seminar online dengan topik <strong>kreativitas untuk mengelola industri ekonomi</strong>. Daftar sekarang untuk mendapatkan pemberitahuan.`,
+            WebinarText: 'Creanomic 2020 dengan bangga memperkenalkan narasumber pada webinar Creanomic 2020.<p>Pada webinar kali ini Creanomic menghadirkan wanita luar biasa dengan jiwa wirausaha yang tinggi, memiliki banyak pengalaman dan pengetahuan dalam kegiatan bisnis.</p><p>Seorang wirausahawan pemilik Brand terkenal di Indonesia yang inspiratif dengan banyak pengetahuan yang mereka miliki!</p><p>Dalam kesempatan kali ini, mereka akan berbagi pengalaman dan pengetahuan yang menginspirasi tentang dunia kewirausahaan!</p><br><p>Kami akan membagikan detail Narasumber pada Webinar Creanomic 2020:</p><p>1. Webinar pertama akan dimeriahkan oleh Jessica Amelia, pemiliki merek terkenal, Lippie Serum By Reecha.</p><p>2. Webinar kedua akan dimeriahkan oleh Sylvia Surya pemilik Kopi Soe yang merupakan kedai kopi terkenal di Indonesia.</p><p>3. Webinar ketiga akan dimeriahkan oleh Gita Savitri Devi seorang content creator dan owner Tesavara.</p><br><p>Untuk kalian semua yang ingin berbicara dan bertukar pikiran bersama narasumber kami jangan lupa ikut webinar kami ya! Sampai jumpa.</p><br><p>Daftar sekarang pada tautan di bawah ini:</p>',
+            cp: 'Untuk informasi lebih lanjut:',
             WebinarBtn: 'Daftar Webinar',
         },
         cPage: {
@@ -172,14 +175,14 @@ const messages = {
             october: "Oktober",
             favwin: "Pemenang Favorit",
 
-            photographyTheme: "An Optimistic Through the Pandemic And On To A Brighter Future",
+            photographyTheme: "An Optimistic Through the Pandemic and on to a Brighter Future",
             photographyText: {
                 crea1: "CREANOMIC 2020",
                 crea2: "PROGRAM PENDIDIKAN VOKASI",
                 crea3: "UNIVERSITAS BRAWIJAYA",
                 crea4: "KHUSUS MAHASISWA",
                 crea5: "PENDAFTARAN GRATIS",
-                open: "Buka Pendaftaran dan Pengumpulan",
+                open: "Buka Pendaftaran dan Pengumpulan Karya",
                 opendate: "12 Oktober - 23 November 2020",
                 scor: "Penilaian ",
                 scordate: "26 November - 4 Desember 2020",
@@ -187,11 +190,11 @@ const messages = {
                 windate: "10 Desember 2020",
             },
 
-            shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
+            shortMovieTheme: "Menjadi Generasi yang Menginspirasi di Tengah Pandemi",
             shortMovieText: {
                 pendaftarandate: "12 Oktober - 12 November 2020",
                 pengumpulandate: "16 November - 30 November 2020",
-                penilaiandate: "1 Desember - 4 Desember 2020",
+                penilaiandate: "1 Desember - 7 Desember 2020",
                 pengumumandate: "10 Desember 2020",
             },
 
@@ -212,7 +215,7 @@ const messages = {
             essayText: {
                 pendaftarandate: "12 Oktober - 12 November 2020",
                 pengumpulandate: "16 November - 30 November 2020",
-                penilaiandate: "1 Desember - 4 Desember 2020",
+                penilaiandate: "1 Desember - 7 Desember 2020",
                 pengumumandate: "10 Desember 2020",
             },
 

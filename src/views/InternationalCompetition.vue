@@ -10,23 +10,23 @@
     </header>
 
     <section class="section">
-      <div class="competition-image">
+      <!-- <div class="competition-image"> -->
         <!-- <img src="img/international.jpg" alt="International Poster"> -->
-      </div>
+      <!-- </div> -->
       <div class="competition-box">
         <div class="competition-text">
-          <h2 class="comp-title">
-            {{ $t("competitions.photography") }}
-          </h2>
-          <div class="comp-text">
+          <h2 class="comp-text">
                 <strong>{{$t("competitions.photographyText.crea1")}}</strong>
                 <p><strong>{{ $t("competitions.photographyText.crea2") }}</strong></p>
                 <p><strong>{{ $t("competitions.photographyText.crea3") }} </strong></p>
-          </div>
+          </h2>
           <div class="comp-text">
             <strong>{{$t("competitions.photographyText.crea4")}}</strong>
             <p><strong>"{{$t("competitions.photographyText.crea5")}}"</strong></p>
           </div>
+          <h2 class="comp-title">
+            {{ $t("competitions.photography") }}
+          </h2>
           <div class="comp-text">
             <strong>{{ $t("competitions.theme") }}</strong>
             <p>"{{ $t("competitions.photographyTheme") }}"</p>
@@ -75,7 +75,7 @@
                 <td>$200 + {{ $t("competitions.certificate") }}</td>
               </tr>
             </table>
-            <p>{{ $t("competitions.tax") }}</p>
+            <p>({{ $t("competitions.tax") }})</p>
           </div>
           <div class="comp-text">
             <strong>{{ $t("competitions.contactPerson") }}</strong>
@@ -98,7 +98,7 @@
                   <a
                     style="text-decoration: underline"
                     href="https://api.whatsapp.com/send?phone=6281295639608&text=Halo, Creanomic."
-                    >0812 - 9563 - 9608 (Rachma Phebira)</a
+                    >+62 812 - 9563 - 9608 (Rachma Phebira)</a
                   >
                 </td>
               </tr>
