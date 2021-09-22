@@ -11,17 +11,19 @@
     </header>
 
     <section class="section section-flex" style="margin-bottom: 25px">
-      <div class="competition-image">
+      <div class="competition-image" style="position: relative;">
         <!-- <img src="img/national.jpg" alt="National Poster"> -->
         <video id="video" width="400" autoplay muted loop>
           <source src="video/webinar.mp4" type="video/mp4">
         </video>
+        <div class="download-box">
+          <a href="video/webinar.mp4" target="_blank" download><i class="fas fa-download"></i></a>
+        </div>
       </div>
       <div class="competition-box"  style="padding: 0;">
         <div class="competition-text">
           <div class="comp-text" style="margin: 0;">
             <div style="max-width: 800px; margin: auto;" v-html="$t('webinars')">
-              
             </div>
           </div>
         </div>
@@ -64,6 +66,10 @@ export default {
     goToWebinarPage() {
       this.$router.push({ name: "webinar" }).catch(() => {});
     },
+
+    openRegistration () {
+      alert('hahaha')
+    }
   },
 };
 </script>
@@ -259,6 +265,32 @@ $xl-min: 1200px;
       margin: 0 -25px;
       display: flex;
     }
+  }
+}
+
+.download-box {
+  align-items: center;
+  background: $blue;
+  border-radius: 50%;
+  bottom: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, -50%);
+  transition: .4s ease-out;
+  width: 2rem;
+
+  &:hover {
+    transform: translate(-50%, -75%);
+  }
+
+  i {
+    color: white;
+    transform: scale(.8);
   }
 }
 </style>

@@ -10,39 +10,66 @@
     </header>
 
     <section class="section" style="margin-bottom: 25px">
-      <div class="competition-image">
-        <!-- <img src="img/national.jpg" alt="National Poster"> -->
-      </div>
+      <!-- <div class="competition-image">
+        <img src="img/national.JPEG" alt="National Poster">
+      </div> -->
       <div class="competition-box">
         <div class="competition-text">
-          <h2 class="comp-text">
-                <strong>{{$t("competitions.photographyText.crea1")}}</strong>
-                <p><strong>{{ $t("competitions.photographyText.crea2") }}</strong></p>
-                <p><strong>{{ $t("competitions.photographyText.crea3") }} </strong></p>
+          <h2 class="comp-title">
+                <strong>{{$t("competitions.essayAnn.text1")}}</strong>
+                <p><strong>{{ $t("competitions.essayAnn.text2") }}</strong></p>
           </h2>
-          <div class="comp-text">
+          <br>
+          <!-- <div class="comp-text">
             <strong>{{$t("competitions.photographyText.crea4")}}</strong>
             <p><strong>"{{$t("competitions.photographyText.crea5")}}"</strong></p>
-          </div>
-          <h2 class="comp-title">
+          </div> -->
+          <div class="comp-title">
             {{ $t("competitions.shortMovie") }}
-          </h2>
-          <div class="comp-text">
-            <strong>{{ $t("competitions.theme") }}</strong> <br />
-            <p>"{{ $t("competitions.shortMovieTheme") }}"</p>
           </div>
           <div class="comp-text">
+            <strong>{{ $t("competitions.Winner1") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.shortmovieAnn.theme1") }}</strong></p>
+            <p>{{ $t("competitions.shortmovieAnn.tim11") }}</p>
+            <p>{{ $t("competitions.shortmovieAnn.tim12") }}</p>
+            <p>{{ $t("competitions.shortmovieAnn.tim13") }}</p>
+            <p><strong>{{ $t("competitions.shortmovieAnn.univ1") }}</strong></p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.Winner2") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.shortmovieAnn.theme2") }}</strong></p>
+            <p>{{ $t("competitions.shortmovieAnn.tim2") }}</p>
+            <p><strong>{{ $t("competitions.shortmovieAnn.univ2") }}</strong></p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.Winner3") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.shortmovieAnn.theme3") }}</strong></p>
+            <p>{{ $t("competitions.shortmovieAnn.tim31") }}</p>
+            <p>{{ $t("competitions.shortmovieAnn.tim32") }}</p>
+            <p>{{ $t("competitions.shortmovieAnn.tim33") }}</p>
+            <p>{{ $t("competitions.shortmovieAnn.tim34") }}</p>
+            <p><strong>{{ $t("competitions.shortmovieAnn.univ3") }}</strong></p>
+          </div>
+           <div class="comp-text">
+            <strong>{{ $t("competitions.essayAnn.cok1") }}</strong>
+            <strong><p>{{ $t("competitions.essayAnn.cok2") }}</p></strong>
+            <br>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok3") }}</i></strong></p>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok4") }}</i></strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.cok5") }}</strong></p>
+          </div>
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.timeline") }}</strong> <br />
             <table class="table">
               <tr>
-                <td>{{ $t("competitions.pendaftaran") }}</td>
+                <td>{{ $t("competitions.pendaftarantech") }}</td>
                 <td style="padding: 0 4px">:</td>
                 <td v-html="$t('competitions.shortMovieText.pendaftarandate')"></td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.pengumpulan") }}</td>
+                <td>{{ $t("competitions.techmeet") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.shortMovieText.pengumpulandate')"></td>
+                <td v-html="$t('competitions.shortMovieText.techmeetdate')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.penilaian") }}</td>
@@ -55,8 +82,8 @@
                 <td v-html="$t('competitions.shortMovieText.pengumumandate')"></td>
               </tr>
             </table>
-          </div>
-          <div class="comp-text">
+          </div> -->
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.reward") }}</strong> <br />
             <table class="table">
               <tr>
@@ -76,8 +103,8 @@
               </tr>
             </table>
             <p>({{ $t("competitions.tax") }})</p>
-          </div>
-          <div class="comp-text">
+          </div> -->
+          <!-- <div class="comp-text">
             <table class="table">
               <tr>
                 <td>Line</td>
@@ -95,17 +122,17 @@
                 </td>
               </tr>
             </table>
-          </div>
-          <a href="pdf/nationalShortMovie.pdf" target="_blank" class="comp-btn">
+          </div> -->
+          <!-- <a href="pdf/nationalShortMovie.pdf" target="_blank" class="comp-btn">
             {{ $t("competitions.downloadPDF") }}
-          </a>
-          <a
+          </a> -->
+          <!-- <a
             href="pdf/nationalShortMovie.docx"
             target="_blank"
             class="comp-btn"
           >
             {{ $t("competitions.enrollComp") }}
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="competition-box flex-reversed">
@@ -114,14 +141,41 @@
             {{ $t("competitions.bussinessPlan") }}
           </h2>
           <div class="comp-text">
-            <strong>{{ $t("competitions.theme") }}</strong> <br />
-            <p>"{{ $t("competitions.bussinessPlanTheme") }}"</p>
+            <strong>{{ $t("competitions.Winner1") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.bussinessplanAnn.theme1") }}</strong></p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim11") }}</p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim12") }}</p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim13") }}</p>
+            <p><strong>{{ $t("competitions.bussinessplanAnn.univ1") }}</strong></p>
           </div>
           <div class="comp-text">
+            <strong>{{ $t("competitions.Winner2") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.bussinessplanAnn.theme2") }}</strong></p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim21") }}</p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim22") }}</p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim23") }}</p>
+            <p><strong>{{ $t("competitions.bussinessplanAnn.univ2") }}</strong></p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.Winner3") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.bussinessplanAnn.theme3") }}</strong></p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim31") }}</p>
+            <p>{{ $t("competitions.bussinessplanAnn.tim32") }}</p>
+            <p><strong>{{ $t("competitions.bussinessplanAnn.univ3") }}</strong></p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.essayAnn.cok1") }}</strong>
+            <strong><p>{{ $t("competitions.essayAnn.cok2") }}</p></strong>
+            <br>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok3") }}</i></strong></p>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok4") }}</i></strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.cok5") }}</strong></p>
+          </div>
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.timeline") }}</strong> <br />
             <table class="table">
               <tr>
-                <td>{{ $t("competitions.pendaftaran") }}</td>
+                <td>{{ $t("competitions.pendaftarantech") }}</td>
                 <td style="padding: 0 4px">:</td>
                 <td v-html="$t('competitions.bussinessPlanText.pendaftarandate')">
                 </td>
@@ -130,11 +184,6 @@
                 <td>{{ $t("competitions.techmeet") }} I</td>
                 <td style="padding: 0 4px">:</td>
                 <td v-html="$t('competitions.bussinessPlanText.techmeetdate')"></td>
-              </tr>
-              <tr>
-                <td>{{ $t("competitions.pengumpulan") }}</td>
-                <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.bussinessPlanText.pengumpulandate')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.penyisihan") }} I</td>
@@ -159,8 +208,8 @@
                 <td v-html="$t('competitions.bussinessPlanText.pengumumandate')"></td>
               </tr>
             </table>
-          </div>
-          <div class="comp-text">
+          </div> -->
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.reward") }}</strong> <br />
             <table class="table">
               <tr>
@@ -180,8 +229,8 @@
               </tr>
             </table>
             <p>({{ $t("competitions.tax") }})</p>
-          </div>
-          <div class="comp-text">
+          </div> -->
+          <!-- <div class="comp-text">
             <table class="table">
               <tr>
                 <td>Line</td>
@@ -199,21 +248,21 @@
                 </td>
               </tr>
             </table>
-          </div>
-          <a
+          </div> -->
+          <!-- <a
             href="pdf/nationalBusinessPlan.pdf"
             target="_blank"
             class="comp-btn"
           >
             {{ $t("competitions.downloadPDF") }}
-          </a>
-          <a
+          </a> -->
+          <!-- <a
             href="pdf/nationalBusinessPlan.docx"
             target="_blank"
             class="comp-btn"
           >
             {{ $t("competitions.enrollComp") }}
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="competition-box">
@@ -222,21 +271,56 @@
             {{ $t("competitions.essay") }}
           </h2>
           <div class="comp-text">
-            <strong>{{ $t("competitions.theme") }}</strong> <br />
-            <p>"{{ $t("competitions.essayTheme") }}"</p>
+            <strong>{{ $t("competitions.Winner1") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.essayAnn.name1") }}</strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.univ1") }}</strong></p>
+            <p>{{ $t("competitions.essayAnn.theme1") }}</p>
           </div>
           <div class="comp-text">
+            <strong>{{ $t("competitions.Winner2") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.essayAnn.name2") }}</strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.univ2") }}</strong></p>
+            <p>{{ $t("competitions.essayAnn.theme2") }}</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.Winner3") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.essayAnn.name3") }}</strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.univ3") }}</strong></p>
+            <p>{{ $t("competitions.essayAnn.theme3") }}</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.runnerup") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.essayAnn.name4") }}</strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.univ4") }}</strong></p>
+            <p>{{ $t("competitions.essayAnn.theme4") }}</p>
+          </div>
+          <div class="comp-text">
+            <strong>{{ $t("competitions.essayAnn.cok1") }}</strong>
+            <strong><p>{{ $t("competitions.essayAnn.cok2") }}</p></strong>
+            <br>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok3") }}</i></strong></p>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok4") }}</i></strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.cok5") }}</strong></p>
+          </div>
+          <!-- <div class="comp-text">
+            <table class="table" style="text-align:center">
+            <tr>
+            <td><p><strong>"{{ $t("competitions.essayText.ttp") }}"</strong></p></td>
+            </tr>
+            </table>
+          </div>
+          <div class="comp-text"> 
             <strong>{{ $t("competitions.timeline") }}</strong> <br />
             <table class="table">
               <tr>
-                <td>{{ $t("competitions.pendaftaran") }}</td>
+                <td>{{ $t("competitions.pendaftarantech") }}</td>
                 <td style="padding: 0 4px">:</td>
                 <td v-html="$t('competitions.essayText.pendaftarandate')"> </td>
               </tr>
               <tr>
-                <td>{{ $t("competitions.pengumpulan") }}</td>
+                <td>{{ $t("competitions.techmeet") }}</td>
                 <td style="padding: 0 4px">:</td>
-                <td v-html="$t('competitions.essayText.pengumpulandate')"></td>
+                <td v-html="$t('competitions.essayText.techmeetdate')"></td>
               </tr>
               <tr>
                 <td>{{ $t("competitions.penilaian") }}</td>
@@ -275,9 +359,9 @@
               </tr>
             </table>
             <p>({{ $t("competitions.tax") }})</p>
-          </div>
+          </div> 
           <div class="comp-text">
-            <table class="table">
+            <table class="table"> 
               <tr>
                 <td>Line</td>
                 <td style="padding: 0 4px">:</td>
@@ -300,7 +384,7 @@
           </a>
           <a href="pdf/nationalEssay.docx" target="_blank" class="comp-btn">
             {{ $t("competitions.enrollComp") }}
-          </a>
+          </a> -->
         </div>
       </div>
     </section>

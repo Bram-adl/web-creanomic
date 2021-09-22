@@ -14,7 +14,7 @@
     <section class="section">
       <h3 class="section-title">{{ $t('virtualArtGallery') }}</h3>
       <p class="section-text" v-html="$t('vaePage.VirtualArtExhibitionText')"></p>
-      <button class="section-btn" @click="showMaintenance">
+      <button class="section-btn" @click="showVirtualArt">
           {{ $t('vaePage.VirtualArtExhibitionBtn') }}
       </button>
     </section>
@@ -81,8 +81,8 @@ export default {
       }, "-=0.5")
     },
 
-    showMaintenance () {
-      window.alert('Virtual Art Gallery is now under maintenance')
+    showVirtualArt () {
+      window.open('https://creanomic2020.xpomania.com/')
     },
 
     goTo (link) {

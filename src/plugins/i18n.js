@@ -59,6 +59,7 @@ const messages = {
             pengumuman: "Winner Announcement",
             penyisihan: "Elimination round",
             techmeet: "Technical Meeting",
+            pendaftarantech: "Registration and Works Submission",
             october: "October",
             favwin: "Favorite Winner",
 
@@ -67,7 +68,7 @@ const messages = {
             photographyText: {
                 crea1: "CREANOMIC 2020",
                 crea2: "VOCATIONAL EDUCATION PROGRAM",
-                crea3: "UNIVERSITAS BRAWIJAYA",
+                crea3: "BRAWIJAYA UNIVERSITY",
                 crea4: "FOR UNIVERSITY STUDENTS ONLY",
                 crea5: "FREE REGISTRATION",
                 open: "Open Registration and Submission",
@@ -76,22 +77,22 @@ const messages = {
                 scordate: "26<sup>th</sup> November - 4<sup>th</sup> December 2020",
                 win: "Winner Announcement",
                 windate: "10<sup>th</sup> December 2020",
+                cap: "“Our Registration and Submission is officially Extended until 25th November 2020 at 08.00 P.M Indonesian Time”",
             },
 
             shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
             shortMovieText: {
-                pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
-                pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
-                penilaiandate: "1<sup>st</sup> December - 4<sup>th</sup> December 2020",
+                pendaftarandate: "12<sup>th</sup> October - 30<sup>th</sup> November 2020",
+                techmeetdate: "21<sup>th</sup> November 2020",
+                penilaiandate: "1<sup>st</sup> December - 9<sup>th</sup> December 2020",
                 pengumumandate: "10<sup>th</sup> December 2020",
             },
 
             bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
             bussinessPlanText: {
-                pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
-                techmeetdate: "15<sup>th</sup> November 2020",
+                pendaftarandate: "12<sup>th</sup> October - 30<sup>th</sup> November 2020",
+                techmeetdate: "21<sup>th</sup> November 2020",
                 techmeetdate2: "3<sup>rd</sup> December 2020",
-                pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
                 penyisihandate: "1<sup>st</sup> December - 2<sup>nd</sup> December 2020",
                 penyisihandate2: "8<sup>th</sup> December - 9<sup>th</sup> December 2020",
                 pengumumandate: "10<sup>th</sup> December 2020",
@@ -100,10 +101,23 @@ const messages = {
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
-                pendaftarandate: "12<sup>th</sup> October - 12<sup>th</sup> November 2020",
-                pengumpulandate: "16<sup>th</sup> November - 30<sup>th</sup> November 2020",
-                penilaiandate: "1<sup>st</sup> December - 4<sup>th</sup> December 2020",
-                pengumumandate: "10<sup>th</sup> December 2020"
+                pendaftarandate: "12<sup>th</sup> October - 30<sup>th</sup> November 2020",
+                techmeetdate: "21<sup>th</sup> November 2020",
+                penilaiandate: "1<sup>st</sup> December - 9<sup>th</sup> December 2020",
+                pengumumandate: "10<sup>th</sup> December 2020",
+                ttp: "Due to the number of registrants who have exceeded the limit. We are sorry about the registration for the ESSAY COMPETITION is officially CLOSED.  Thank you to everyone that already registered and you can send your ESSAY before 30th November 2020. For those that have no chance to register for the essay competition, don’t worry, because Creanomic is still open registration for BUSINESS PLAN, SHORT MOVIE, and INTERNATIONAL PHOTOGRAPHY COMPETITION.",
+            },
+            //Announcement
+            essayAnn: {
+                text1: "WINNER ANNOUNCEMENT OF NATIONAL COMPETITION",
+                text2: "CREANOMIC 2020",
+                text3: "WINNER ANNOUNCEMENT OF INTERNATIONAL COMPETITION",
+                cok1: "Congratulations to all winners of the Creanomic National Competition 2020. Thank you for the enthusiasm for joining this competition.",
+                cok6: "Congratulations to all winners of the Creanomic International Competition 2020. Thank you for the enthusiasm for joining this competition.",
+                cok2: "For those that have no chance to win, don't be sad because you can take that chance to succeed in the next year!",
+                cok3: "Notes:",
+                cok4: "Winners announcement will also notify through email, so to all the winners kindly check the email from our Creanomic 2020 committee for confirmation.",
+                cok5: "Thank you!",
             },
 
             certificate: "E-Certificate",
@@ -117,33 +131,33 @@ const messages = {
 
             <div style="text-align: left;">
             <p style="line-height: 1.5; margin: 1rem 0;">
-                The speaker for this webinar is an extraordinary women with a high entrepreneurial spirit, they have many experiences and knowledge in business activities. 
+            The speakers for our webinar are extraordinary womans with a high entrepreneurial spirit, they have many experiences and knowledge in business activities.
             </p>
             <p style="line-height: 1.5; margin: 1rem 0;">
-                The owner of famous brand in Indonesia and they are very inspiring woman with a lot of knowledge!
+            The owner of famous brand in Indonesia and they are very inspiring woman with a lot of knowledge!
             </p>
             <p style="line-height: 1.5; margin: 1rem 0;">
-                For this opportunity, they will share inspiring experiences and knowledge about the world of entrepreneurship! 
+            For this opportunity, they will share their inspiring experiences and knowledge about the world of entrepreneurship!
             </p> 
 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                We will share our details Speakers on Creanomic 2020 :
+                We will share our details Speakers on Creanomic 2020:
                 <br>
-                ➢ The speakers on first webinar is Jessica Amelia,  The owner of a famous brand, Lippie Serum By Raecca.
+                ➢ The speaker for our first webinar at 15th of November is Jessica Amelia, The owner of a famous brand, Lippie Serum By Raecca.
                 <br>
-                ➢ The speakers on second webinar is owner Kopi Soe, her name is Sylvia Surya, the owner of a famous coffee shop in Indonesia.
+                ➢ The speaker for our second webinar at 22th of November is the owner of Kopi Soe, her name is Sylvia Surya, as an owner of very famous coffee shop in Indonesia.
                 <br>
-                ➢ The speakers on third webinar is Gita Savitri Devi as content creator and Owner of Tesavara.
-            </p>
+                ➢ The speaker for our third webinar at 29th of November is Gita Savitri Devi as content creator and Owner of Tesavara.
+                </p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">So, for those of you who want to chit-chat with our speakers, don't forget to join our webinar. See you!!</p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Register now on this link below :
+                Register now on this link below:
                 <br>
-                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps1">Webinar 1 : bit.ly/WebinarCreanomic2020Eps1</a> <br>
-                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps2">Webinar 2 : bit.ly/WebinarCreanomic2020Eps2</a> <br>
-                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps3">Webinar 3 : bit.ly/WebinarCreanomic2020Eps3</a> <br>
+                <a class="text-link" href="http://bit.ly/WebinarCreanomic2020Eps1">Webinar 1 : bit.ly/WebinarCreanomic2020Eps1</a> <br>
+                <a class="text-link" href="http://bit.ly/WebinarCreanomic2020Eps2">Webinar 2 : bit.ly/WebinarCreanomic2020Eps2</a> <br>
+                <a class="text-link" href="http://bit.ly/WebinarCreanomic2020Eps3">Webinar 3 : bit.ly/WebinarCreanomic2020Eps3</a> <br>
             </p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">
@@ -154,7 +168,7 @@ const messages = {
                 >WA : 085155408711 (Aliyya)</a
                 >
                 <br>
-                Line : Rimbafp (Rimba)
+                Line : Rimbafap (Rimba)
             </p>
             </div>
         `
@@ -214,6 +228,7 @@ const messages = {
             pengumuman: "Pengumuman",
             penyisihan: "Babak Penyisihan",
             techmeet: "Pertemuan Teknis",
+            pendaftarantech: "Pendaftaran dan Pengumpulan Karya",
             october: "Oktober",
             favwin: "Pemenang Favorit",
 
@@ -230,35 +245,34 @@ const messages = {
                 scordate: "26 November - 4 Desember 2020",
                 win: "Pengumuman Juara",
                 windate: "10 Desember 2020",
+                cap: "“Pendaftaran dan Pengumpulan secara resmi Diperpanjang hingga tanggal 25 November 2020 pukul 20.00 WIB”",
             },
 
             shortMovieTheme: "Menjadi Generasi yang Menginsipirasi di Tengah Pandemi",
             shortMovieText: {
-                pendaftarandate: "12 Oktober - 12 November 2020",
-                pengumpulandate: "16 November - 30 November 2020",
-                penilaiandate: "1 Desember - 4 Desember 2020",
+                pendaftarandate: "12 Oktober - 30 November 2020",
+                techmeetdate: " 21 November 2020",
+                penilaiandate: "1 Desember - 9 Desember 2020",
                 pengumumandate: "10 Desember 2020",
             },
 
             bussinessPlanTheme: "Sustainable Development Bussiness Goals With The Use of Technology in Pandemic Era",
             bussinessPlanText: {
-                regist: "10 Oktober - 29 Oktober 2020",
-                techmeet: "31 Oktober 2020",
-                works: "2 November - 15 November 2020",
-                elround: "17 November - 19 November 2020",
-                techmeeti: "20 November 2020",
-                elroundi: "26 November - 27 November 2020",
-                announcement: "30 November 2020",
+                pendaftarandate: "12 Oktober - 30 November 2020",
+                techmeetdate: "21 November 2020",
+                techmeetdate2: "3 Desember 2020",
+                penyisihandate: "1 Desember - 2 Desember 2020",
+                penyisihandate2: "8 Desember - 9 Desember 2020",
+                pengumumandate: "10 Desember 2020",
             },
 
             essayTheme: "Inovasi dan Kreativitas Generasi Muda di Masa Pandemi",
             essayText: {
-                penilaian: "Penilaian",
-
-                regist: "10 Oktober - 29 Oktober 2020",
-                techmeet: "31 Oktober 2020",
-                scor: "19 November - 27 November 2020",
-                announcement: "30 November 2020",
+                pendaftarandate: "12 Oktober - 30 November 2020",
+                techmeetdate: "21 November 2020",
+                penilaiandate: "1 Desember - 9 Desember 2020",
+                pengumumandate: "10 Desember 2020",
+                ttp: "Dikarenakan jumlah pendaftar yang melampaui batas. Maka kami mohon maaf untuk pendaftaran lomba ESSAY resmi DITUTUP. Terimakasih untuk teman - teman yang telah mendaftar dan dimohon untuk segera mengirimkan karya nya paling lambat tanggal 30 November 2020. Bagi yang belum berkesempatan mendaftar di lomba ESSAY, jangan khawatir karena masih dibuka pendaftran untuk lomba BUSINESS PLAN, SHORT MOVIE, dan FOTOGRAFI INTERNASIONAL.",
             },
 
             certificate: "E-Sertifikat",
@@ -266,43 +280,128 @@ const messages = {
 
             downloadPDF: 'Unduh Ketentuan & Persyaratan',
             enrollComp: 'Daftar Lomba',
+
+            //Announcement
+            essayAnn: {
+                text1: "PENGUMUMAN PEMENANG LOMBA NASIONAL",
+                text2: "CREANOMIC 2020",
+                text3: "PENGUMUMAN PEMENANG LOMBA INTERNASIONAL",
+                cok1: "Selamat kepada para pemenang Lomba Nasional Creanomic 2020. Terima kasih atas antusiasmenya untuk mengikuti lomba ini.",
+                cok6: "Selamat kepada para pemenang Lomba Internasional Creanomic 2020. Terima kasih atas antusiasmenya untuk mengikuti lomba ini.",
+                cok2: "Bagi yang belum sempat menang jangan berkecil hati karena masih ada peluang lain tahun depan!",
+                cok3: "Catatan:",
+                cok4: "Pengumuman pemenang juga akan diberitahukan melalui email, untuk semua pemenang mohon cek email dari panitia kami untuk konfirmasi.",
+                cok5: "Terima kasih!",
+                name1: "Dinda Arum Mustiko Weni",
+                univ1: "Universitas Brawijaya",
+                theme1: "“VIRCHO - Pengembangan High-Tech Education Berbasis Virtual Reality dengan Teknologi Immersion dan Integrated Network System untuk Mewujudkan Indonesia Emas 2045 di Tengah Pandemi Covid-19”",
+
+                name2: "Muhammad Fakhri Jayadi",
+                univ2: "Institut Teknologi Sepuluh Nopember ",
+                theme2: "“LAPAN (Lapak Pak Tani) : Inovasi Aplikasi Digital Berbasis Electronic Supply Chain Management Sebagai Solusi Untuk Meningkatkan Efisiensi dan Efektivitas Proses Bisnis Komoditas Pertanian di Masa Pandemi Covid-19”",
+
+                name3: "Primaresty Millenda Susanto",
+                univ3: "Universitas Brawijaya",
+                theme3: "“ASTRO (Virtual Wisata Agro) : Program Eskalasi Pariwisata dan Pertanian Milenial dengan Aplikasi Wisata Agro Berbasis Virtual Reality sebagai Upaya Stabilitas Ekonomi di Masa Pandemi”",
+
+                name4: "Sandi Sakti Hidayatulloh",
+                univ4: "Universitas Brawijaya",
+                theme4: "“Geopark Virtual Apps : Geopark dengan Konsep Virtual Reality”",
+            },
+
+            shortmovieAnn: {
+                theme1: "“Pemuda dan Pandemi”",
+                tim11: "Suhadi Adit Prastowo",
+                tim12: "Galih Cahyo Nugroho",
+                tim13: "Akmal Dwi Pramudya",
+                univ1: "Universitas Diponegoro",
+
+                theme2: "“A Tout Le Monde”",
+                tim2: "Syamil Ghifari Ansharullah Satria ",
+                univ2: "Telkom University",
+
+                theme3: "“Ngabdi”",
+                tim31: "Lucky Candra Musahada",
+                tim32: "Ahmad Sulton Nasta'in",
+                tim33: "Bramasta Bima Prakoso",
+                tim34: "Tatang Adi Nugroho",
+                univ3: "Universitas Brawijaya",
+            },
+            bussinessplanAnn: {
+                theme1: "“Green Auto Cage”",
+                tim11: "Aprilia Yulihanita",
+                tim12: "Akbar Sena Wijaya",
+                tim13: "Ahmad Mustafa",
+                univ1: "Universitas Negeri Surabaya",
+
+                theme2: "“Mahajasa”",
+                tim21: "Sriana Wahyuni",
+                tim22: "Itsna Nabilla",
+                tim23: "Sekar Larasati Muslimah",
+                univ2: "Institut Teknologi Bandung",
+
+                theme3: "“Goresanku”",
+                tim31: "Avenzoar Zufar Qisthauzan",
+                tim32: "Muhammad Ainul Yaqin",
+                univ3: "Institut Teknologi Sepuluh Nopember",
+            },
+            photographyAnn: {
+
+                theme1: "“Looking For Hope”",
+                name1: "Annisa Hasna Kartina",
+                univ1: "Universitas Pendidikan Indonesia",
+
+                theme2: "“The Importance of Parental Support”",
+                name2: "Kahfi Kusnandi",
+                univ2: "Universitas Pendidikan Indonesia",
+
+                theme3: "“Plant goodness during a pandemic for good future”",
+                name3: "Muhammad Ghozi Aminulloh",
+                univ3: "UIN Maulana Malik Ibrahim Malang",
+
+                theme4: "“Work Can Be Anywhere”",
+                name4: "Muhammad Rofiq",
+                univ4: "Universitas Lambung Mangkurat",
+
+            },
+
         },
         webinars: `
-            <h1 style="text-align: left;">Creanomic 2020 dengan bangga memperkenalkan narasumber pada webinar Creanomic 2020.</h1>
+            <h1 style="text-align: left;">Creanomic 2020 dengan bangga memperkenalkan narasumber pada webinar kali ini.</h1>
 
             <div style="text-align: left;">
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Pada webinar kali ini Creanomic menghadirkan wanita luar biasa dengan jiwa wirausaha yang tinggi, memiliki banyak pengalaman dan pengetahuan dalam kegiatan bisnis. 
+            Creanomic menghadirkan wanita-wanita luar biasa dengan jiwa wirausaha yang tinggi, memiliki banyak pengalaman dan pengetahuan dalam kegiatan bisnis.
             </p>
                 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Seorang wirausahawan pemilik Brand terkenal di Indonesia yang inspiratif dengan banyak pengetahuan yang mereka miliki! 
+            Seorang wirausahawan pemilik Brand terkenal di Indonesia yang inspiratif dengan banyak pengetahuan yang mereka miliki!
             </p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Dalam kesempatan kali ini, mereka akan berbagi pengalaman dan pengetahuan yang menginspirasi tentang dunia kewirausahaan!
+            Dalam kesempatan kali ini, mereka akan berbagi pengalaman dan pengetahuan yang menginspirasi tentang dunia kewirausahaan!
             </p> 
 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Kami akan membagikan detail Narasumber pada Webinar Creanomic 2020 :
-                <br>
-                ➢ Webinar pertama akan dimeriahkan oleh Jessica Amelia, pemiliki merek terkenal, Lippie Serum By Reecha.
-                <br>
-                ➢ Webinar kedua akan dimeriahkan oleh Sylvia Surya pemilik Kopi Soe yang merupakan kedai kopi terkenal di Indonesia.
-                <br>
-                ➢ Webinar ketiga akan dimeriahkan oleh Gita Savitri Devi seorang content creator dan owner Tesavara.
+            Kami akan membagikan detail Narasumber pada Webinar Creanomic 2020:
+            <br>
+            ➢ Webinar pertama pada tanggal 15 November 2020 akan dimeriahkan oleh Jessica Amelia, pemiliki merek terkenal, Lippie Serum By Reecha.
+            <br>
+            ➢ Webinar kedua pada tanggal 22 November 2020 akan dimeriahkan oleh Sylvia Surya pemilik Kopi Soe yang merupakan kedai kopi terkenal di Indonesia.
+            <br>
+            ➢ Webinar ketiga pada tanggal 29 November 2020 akan dimeriahkan oleh Gita Savitri Devi seorang content creator dan owner Tesavara.
             </p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Untuk kalian semua yang ingin berbicara dan bertukar pikiran bersama narasumber kami jangan lupa ikut webinar kami ya! Sampai jumpa.
+            Untuk kalian semua yang ingin berbicara dan bertukar pikiran bersama narasumber kami jangan lupa ikut webinar kami ya. Sampai jumpa!!
             </p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">
-                Daftar sekarang pada tautan di bawah ini :
+                Daftar sekarang pada tautan di bawah ini:
                 <br>
-                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps1">Webinar 1 : bit.ly/WebinarCreanomic2020Eps1</a> <br>
-                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps2">Webinar 2 : bit.ly/WebinarCreanomic2020Eps2</a> <br>
-                <a class="text-link" href="bit.ly/WebinarCreanomic2020Eps3">Webinar 3 : bit.ly/WebinarCreanomic2020Eps3</a> <br>
+                <a class="text-link" href="http://bit.ly/WebinarCreanomic2020Eps1">Webinar 1 : bit.ly/WebinarCreanomic2020Eps1</a> <br>
+                <a class="text-link" href="http://bit.ly/WebinarCreanomic2020Eps2">Webinar 2 : bit.ly/WebinarCreanomic2020Eps2</a> <br>
+                <a class="text-link" href="http://bit.ly/WebinarCreanomic2020Eps3">Webinar 3 : bit.ly/WebinarCreanomic2020Eps3</a> <br>
             </p>
 
             <p style="line-height: 1.5; margin: 1rem 0;">
@@ -313,7 +412,7 @@ const messages = {
                 >WA : 085155408711 (Aliyya)</a
                 >
                 <br>
-                Line : Rimbafp (Rimba)
+                Line : Rimbafap (Rimba)
             </p>
             </div>
         `,

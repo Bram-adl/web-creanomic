@@ -10,28 +10,75 @@
     </header>
 
     <section class="section">
-      <div class="competition-image">
-        <!-- <img src="img/international.jpg" alt="International Poster"> -->
-      </div>
+      <!-- <div class="competition-image">
+        <img src="img/international.jpg" alt="International Poster">
+      </div> -->
       <div class="competition-box">
         <div class="competition-text">
           <h2 class="comp-title">
-            {{ $t("competitions.photography") }}
+                <strong>{{$t("competitions.essayAnn.text3")}}</strong>
+                <p><strong>{{ $t("competitions.essayAnn.text2") }}</strong></p>
           </h2>
-          <div class="comp-text">
-                <strong>{{$t("competitions.photographyText.crea1")}}</strong>
-                <p><strong>{{ $t("competitions.photographyText.crea2") }}</strong></p>
-                <p><strong>{{ $t("competitions.photographyText.crea3") }} </strong></p>
+          <br>
+          <div class="comp-title">
+            {{ $t("competitions.photography") }}
           </div>
           <div class="comp-text">
+            <strong>{{ $t("competitions.Winner1") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.photographyAnn.theme1") }}</strong></p>
+            <p>{{ $t("competitions.photographyAnn.name1") }}</p>
+            <p><strong>{{ $t("competitions.photographyAnn.univ1") }}</strong></p>
+          </div>
+          <div class="competition-image">
+            <img src="img/photowin1.jpg">
+          </div>
+          <br>
+
+          <div class="comp-text">
+            <strong>{{ $t("competitions.Winner2") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.photographyAnn.theme2") }}</strong></p>
+            <p>{{ $t("competitions.photographyAnn.name2") }}</p>
+            <p><strong>{{ $t("competitions.photographyAnn.univ2") }}</strong></p>
+          </div>
+          <div class="competition-image">
+            <img src="img/photowin2.jpg">
+          </div>
+          <br>
+
+          <div class="comp-text">
+            <strong>{{ $t("competitions.Winner3") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.photographyAnn.theme3") }}</strong></p>
+            <p>{{ $t("competitions.photographyAnn.name3") }}</p>
+            <p><strong>{{ $t("competitions.photographyAnn.univ3") }}</strong></p>
+          </div>
+          <div class="competition-image">
+            <img src="img/photowin3.jpg">
+          </div>
+         <br>
+         
+          <div class="comp-text">
+            <strong>{{ $t("competitions.favwin") }}</strong> <br/>
+            <p><strong>{{ $t("competitions.photographyAnn.theme4") }}</strong></p>
+            <p>{{ $t("competitions.photographyAnn.name4") }}</p>
+            <p><strong>{{ $t("competitions.photographyAnn.univ4") }}</strong></p>
+          </div>
+          <div class="competition-image">
+            <img src="img/photowin4.jpg">
+          </div>
+          <div class="comp-text">
+            <p><strong><i>{{ $t("competitions.essayAnn.cok6") }}</i></strong></p>
+            <p><strong><i>{{ $t("competitions.essayAnn.cok4") }}</i></strong></p>
+            <p><strong>{{ $t("competitions.essayAnn.cok5") }}</strong></p>
+          </div>
+          <!-- <div class="comp-text">
             <strong>{{$t("competitions.photographyText.crea4")}}</strong>
             <p><strong>"{{$t("competitions.photographyText.crea5")}}"</strong></p>
-          </div>
-          <div class="comp-text">
+          </div> -->
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.theme") }}</strong>
             <p>"{{ $t("competitions.photographyTheme") }}"</p>
-          </div>
-          <div class="comp-text">
+          </div> -->
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.timeline") }}</strong>
             <table class="table">
             <tr>
@@ -50,8 +97,10 @@
                 <td v-html="$t('competitions.photographyText.windate')"></td>
               </tr>
             </table>
-          </div>
-          <div class="comp-text">
+            <br>
+            <p><strong>{{ $t("competitions.photographyText.cap") }}</strong></p>
+          </div> -->
+          <!-- <div class="comp-text">
             <strong>{{ $t("competitions.reward") }}</strong>
             <table class="table">
               <tr>
@@ -98,7 +147,7 @@
                   <a
                     style="text-decoration: underline"
                     href="https://api.whatsapp.com/send?phone=6281295639608&text=Halo, Creanomic."
-                    >0812 - 9563 - 9608 (Rachma Phebira)</a
+                    >+62 812 - 9563 - 9608 (Rachma Phebira)</a
                   >
                 </td>
               </tr>
@@ -113,7 +162,7 @@
           </a>
           <a href="pdf/internationalForm.docx" target="_blank" class="comp-btn">
             {{ $t("competitions.enrollComp") }}
-          </a>
+          </a> -->
         </div>
       </div>
     </section>
